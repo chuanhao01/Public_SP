@@ -646,13 +646,13 @@ Then access the wordpress site from your browser using, `http://127.0.0.1/p19222
 Now we will be setting up the group permssions for the WebDev group.
 First we will be setting the whole dir of /var/www/html to owner and group to be www-data
 ```
-sudo chown -r www-data /var/www/
-sudo chgrp -r www-data /var/www
+sudo chown -R www-data /var/www/
+sudo chgrp -R www-data /var/www
 ```
 
 The change the modes for owner, groups and others using,
 ```
-sudo chgrp -r WebDev /var/www/
+sudo chgrp -R WebDev /var/www/
 find /var/www -type d -exec chmod 2770 {} \;
 find /var/www -type f -exec chmod 0660 {} \;
 ```
