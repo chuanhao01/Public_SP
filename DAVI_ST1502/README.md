@@ -1,4 +1,4 @@
-# DAVI (Data Visualisation)
+# DAVI (Data Visualisation) ST1502
 
 This was a module I took in Year 1 Semester 2 (Y1S2).
 
