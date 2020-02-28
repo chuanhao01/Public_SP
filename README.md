@@ -11,7 +11,7 @@ To find out more about the projects/assignemts for the module you can look into 
 ```bash
 module folder
 ├── CAx
-│   ├── assignment folder
+│   ├── specs folder/file
 │   └── project/assignment folder
 └── README.md
 ```
