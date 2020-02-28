@@ -1,0 +1,3674 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.19.0821.2225                               -->
+<workbook source-build='2019.3.0 (20193.19.0821.2225)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+        <calculation class='tableau' formula='100.0' />
+      </column>
+    </datasource>
+    <datasource caption='clean_v2' inline='true' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_v2' name='textscan.0p3z65g10h24xy0zr3ezc16blhfm'>
+            <connection class='textscan' directory='C:/My Folder/School Work/Polytechnic/Curriculum/Year 1 Sem 2/DataVIS/CA SOLO' filename='clean_v2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0p3z65g10h24xy0zr3ezc16blhfm' name='clean_v2.csv' table='[clean_v2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Subtitle' ordinal='2' />
+            <column datatype='real' name='Average User Rating' ordinal='3' />
+            <column datatype='real' name='User Rating Count' ordinal='4' />
+            <column datatype='real' name='Price' ordinal='5' />
+            <column datatype='string' name='In-app Purchases' ordinal='6' />
+            <column datatype='string' name='Description' ordinal='7' />
+            <column datatype='string' name='Developer' ordinal='8' />
+            <column datatype='string' name='Age Rating' ordinal='9' />
+            <column datatype='string' name='Languages' ordinal='10' />
+            <column datatype='real' name='Size' ordinal='11' />
+            <column datatype='string' name='Primary Genre' ordinal='12' />
+            <column datatype='string' name='Genres' ordinal='13' />
+            <column datatype='date' name='Original Release Date' ordinal='14' />
+            <column datatype='date' name='Current Version Release Date' ordinal='15' />
+            <column datatype='integer' name='Number of genres' ordinal='16' />
+            <column datatype='integer' name='Number of languages' ordinal='17' />
+            <column datatype='integer' name='Number of In-app purchases' ordinal='18' />
+            <column datatype='real' name='Mean price of In-app purchases' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subtitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Subtitle]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Subtitle</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average User Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average User Rating]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Average User Rating</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User Rating Count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[User Rating Count]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>User Rating Count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In-app Purchases</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[In-app Purchases]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>In-app Purchases</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Developer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Developer]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Developer</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age Rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age Rating]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Age Rating</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Languages</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Languages]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Languages</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Size</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Size]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Size</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary Genre]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Primary Genre</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genres</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genres]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Genres</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original Release Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Original Release Date]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Original Release Date</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current Version Release Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Current Version Release Date]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Current Version Release Date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of genres</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of genres]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Number of genres</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of languages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of languages]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Number of languages</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of In-app purchases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of In-app purchases]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Number of In-app purchases</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean price of In-app purchases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mean price of In-app purchases]</local-name>
+            <parent-name>[clean_v2.csv]</parent-name>
+            <remote-alias>Mean price of In-app purchases</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='Average User Rating (Discrete)' datatype='real' name='[Average User Rating (copy)]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Average User Rating]' />
+      </column>
+      <column caption='Size in MB' datatype='real' name='[Calculation_337488557342572544]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Size] / 1000000' />
+      </column>
+      <column caption='Price type of game' datatype='string' name='[Calculation_337488557343412225]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ([Price] == 0) AND ([Mean price of In-app purchases] == 0) THEN &apos;Free game&apos;&#13;&#10;ELSEIF ([Price] == 0) THEN &apos;Pay-to-win games&apos;&#13;&#10;ELSE &apos;Paid games&apos; END' />
+      </column>
+      <column caption='Sub-languages' datatype='integer' hidden='true' name='[Calculation_434878899289612288]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Number of languages] - 1' />
+      </column>
+      <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+      </column>
+      <column caption='Sub-genres' datatype='string' hidden='true' name='[Calculation_519602867389153281]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='SPLIT([Genres], &apos;,&apos;, 2)' />
+      </column>
+      <column datatype='date' name='[Current Version Release Date]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Developer]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Number of sub-genres' datatype='integer' name='[Number of genres]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Number of sub-genres (Discrete)' datatype='integer' name='[Number of sub-genres (copy)]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Number of genres]' />
+      </column>
+      <column aggregation='Sum' caption='Number Sub-languages (Discrete)' datatype='integer' hidden='true' name='[Sub-languages (copy)]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Number of languages] - 1' />
+      </column>
+      <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Developer]' derivation='None' name='[none:Developer:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Current Version Release Date]' derivation='Year' name='[yr:Current Version Release Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Has active playerbase)' hidden='true' name='[Action (Has active playerbase)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_434878899290603521]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Has active playerbase,YEAR(Current Version Release Date))' hidden='true' name='[Action (Has active playerbase,YEAR(Current Version Release Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_434878899290603521]' />
+          <groupfilter function='level-members' level='[yr:Current Version Release Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Price type of game)' hidden='true' name='[Action (Price type of game)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_337488557343412225]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Inclusions (Developer,Has active playerbase)]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Developer:nk]' />
+          <groupfilter function='level-members' level='[none:Calculation_434878899290603521:nk]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.573727' measure-ordering='alphabetic' measure-percentage='0.386059' parameter-percentage='0.0402145' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_434878899290603521:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Does not have active playerbase&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Has active playerbase&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Singapore&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+          <calculation class='tableau' formula='100.0' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight1' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='player 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='player 1' />
+      </command>
+    </action>
+    <action caption='Highlight2' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='player 2' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='player 2' />
+      </command>
+    </action>
+    <action caption='Highlight3' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='player 3' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='player 3' />
+      </command>
+    </action>
+    <action caption='Highlight4' name='[Action4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='player 4' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='player 4' />
+      </command>
+    </action>
+    <action caption='Highlight5' name='[Action5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='player 5' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='player 5' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='rating 2' type='sheet' worksheet='price type and rating' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='rating 2' />
+      </command>
+    </action>
+    <action caption='Highlight6' name='[Action7]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='rating 3' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='date-time' />
+        <param name='target' value='rating 3' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated) 1' name='[Action8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='rating 2 updated' type='sheet' worksheet='price type and rating' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='rating 2 updated' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action9]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='rating 2 updated' type='sheet' worksheet='Player base rating bar' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='rating 2 updated' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average size of games with player base'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average size (MB) of games by player base</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column caption='Size in MB' datatype='real' name='[Calculation_337488557342572544]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Size] / 1000000' />
+            </column>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='real' name='[Size]' role='measure' type='quantitative' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_337488557342572544]' derivation='Avg' name='[avg:Calculation_337488557342572544:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[avg:Calculation_337488557342572544:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[avg:Calculation_337488557342572544:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]</cols>
+      </table>
+      <simple-id uuid='{177A80B6-EBDC-4ED4-9E62-52F570BC6FB1}' />
+    </worksheet>
+    <worksheet name='Player base by developer'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of games with an active player base by developer</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='string' name='[Developer]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Developer]' derivation='None' name='[none:Developer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Inclusions (Developer,Has active playerbase)]'>
+            <groupfilter function='reorder-dimensionality' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='union'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Calculation_434878899290603521:nk]' member='&quot;Does not have active playerbase&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Conceptis Ltd.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;EASY Inc.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Flipline Studios&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Kairosoft Co.,Ltd&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Ninja Kiwi&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Romit Dodhia&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Software River Solutions, Inc&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Tapps Tecnologia da Informa\\xe7\\xe3o Ltda.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Triniti Interactive Limited&quot;' />
+                  </groupfilter>
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Calculation_434878899290603521:nk]' member='&quot;Has active playerbase&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Conceptis Ltd.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;EASY Inc.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Flipline Studios&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Glu Games Inc&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Kairosoft Co.,Ltd&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Ninja Kiwi&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Romit Dodhia&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Software River Solutions, Inc&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Tapps Tecnologia da Informa\\xe7\\xe3o Ltda.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Triniti Interactive Limited&quot;' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+              <order>
+                <hierarchy name='[none:Developer:nk]' />
+                <hierarchy name='[none:Calculation_434878899290603521:nk]' />
+              </order>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Developer:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[sum:Number of Records:qk]' shelf='columns'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' member-value='&quot;Has active playerbase&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Inclusions (Developer,Has active playerbase)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[pcto:sum:Number of Records:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[sum:Number of Records:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Developer:nk]</cols>
+      </table>
+      <simple-id uuid='{045EFF09-242A-417B-8CA9-B6EB8B17E7BD}' />
+    </worksheet>
+    <worksheet name='Player base num by developer'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Medium player base by developer</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='string' name='[Developer]' role='dimension' type='nominal' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[User Rating Count]' derivation='Median' name='[med:User Rating Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Developer]' derivation='None' name='[none:Developer:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Inclusions (Developer,Has active playerbase)]'>
+            <groupfilter function='reorder-dimensionality' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='union'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Calculation_434878899290603521:nk]' member='&quot;Does not have active playerbase&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Conceptis Ltd.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;EASY Inc.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Flipline Studios&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Kairosoft Co.,Ltd&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Ninja Kiwi&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Romit Dodhia&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Software River Solutions, Inc&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Tapps Tecnologia da Informa\\xe7\\xe3o Ltda.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Triniti Interactive Limited&quot;' />
+                  </groupfilter>
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Calculation_434878899290603521:nk]' member='&quot;Has active playerbase&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Conceptis Ltd.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;EASY Inc.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Flipline Studios&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Glu Games Inc&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Kairosoft Co.,Ltd&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Ninja Kiwi&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Romit Dodhia&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Software River Solutions, Inc&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Tapps Tecnologia da Informa\\xe7\\xe3o Ltda.&quot;' />
+                    <groupfilter function='member' level='[none:Developer:nk]' member='&quot;Triniti Interactive Limited&quot;' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+              <order>
+                <hierarchy name='[none:Developer:nk]' />
+                <hierarchy name='[none:Calculation_434878899290603521:nk]' />
+              </order>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]'>
+            <groupfilter function='member' level='[none:Calculation_434878899290603521:nk]' member='&quot;Has active playerbase&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Developer:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:User Rating Count:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Inclusions (Developer,Has active playerbase)]</column>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:User Rating Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:User Rating Count:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Developer:nk]</cols>
+      </table>
+      <simple-id uuid='{4EE46EAB-C8C4-4A8E-BFE8-23F92682F620}' />
+    </worksheet>
+    <worksheet name='Player base num with num of sub-genres'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Medium player base by number of sub-genres</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column caption='Number of sub-genres' datatype='integer' name='[Number of genres]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Number of sub-genres (Discrete)' datatype='integer' name='[Number of sub-genres (copy)]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Number of genres]' />
+            </column>
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[User Rating Count]' derivation='Median' name='[med:User Rating Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of sub-genres (copy)]' derivation='None' name='[none:Number of sub-genres (copy):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]'>
+            <groupfilter function='member' level='[none:Calculation_434878899290603521:nk]' member='&quot;Has active playerbase&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Number of sub-genres (copy):ok]'>
+            <groupfilter from='1' function='range' level='[none:Number of sub-genres (copy):ok]' to='3' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Number of sub-genres (copy):ok]</column>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:User Rating Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:User Rating Count:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Number of sub-genres (copy):ok]</cols>
+      </table>
+      <simple-id uuid='{6609AE6C-A9F6-4D6E-B28F-0F32AA09D4C9}' />
+    </worksheet>
+    <worksheet name='Player base rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Boxplot of ratings by player base</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column datatype='real' name='[Average User Rating]' role='measure' type='quantitative' />
+            <column caption='Price type of game' datatype='string' name='[Calculation_337488557343412225]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Price] == 0) AND ([Mean price of In-app purchases] == 0) THEN &apos;Free game&apos;&#13;&#10;ELSEIF ([Price] == 0) THEN &apos;Pay-to-win games&apos;&#13;&#10;ELSE &apos;Paid games&apos; END' />
+            </column>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='real' name='[Mean price of In-app purchases]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[User Rating Count]' derivation='None' name='[none:User Rating Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Average User Rating]' derivation='Sum' name='[sum:Average User Rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Has active playerbase)]'>
+            <groupfilter function='level-members' level='[Calculation_434878899290603521]' user:ui-action-filter='[Action9]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Price type of game)]'>
+            <groupfilter function='level-members' level='[Calculation_337488557343412225]' user:ui-action-filter='[Action8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]' filter-group='5' included-values='in-range'>
+            <min>1.0</min>
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]</column>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Has active playerbase)]</column>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Price type of game)]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[sum:Average User Rating:qk]' boxplot-mark-exclusion='true' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[sum:Average User Rating:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[sum:Average User Rating:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]</cols>
+      </table>
+      <simple-id uuid='{11A10BCE-B5A1-48D0-BBA1-32DAE17F0A2B}' />
+    </worksheet>
+    <worksheet name='Player base rating bar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Medium rating by player base</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column datatype='real' name='[Average User Rating]' role='measure' type='quantitative' />
+            <column caption='Price type of game' datatype='string' name='[Calculation_337488557343412225]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Price] == 0) AND ([Mean price of In-app purchases] == 0) THEN &apos;Free game&apos;&#13;&#10;ELSEIF ([Price] == 0) THEN &apos;Pay-to-win games&apos;&#13;&#10;ELSE &apos;Paid games&apos; END' />
+            </column>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='real' name='[Mean price of In-app purchases]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Average User Rating]' derivation='Median' name='[med:Average User Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[User Rating Count]' derivation='None' name='[none:User Rating Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Price type of game)]'>
+            <groupfilter function='level-members' level='[Calculation_337488557343412225]' user:ui-action-filter='[Action8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]' filter-group='5' included-values='in-range'>
+            <min>1.0</min>
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]</column>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Price type of game)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]</cols>
+      </table>
+      <simple-id uuid='{656AA28A-D429-4DFE-93D4-8E50910903A6}' />
+    </worksheet>
+    <worksheet name='Player base with num of sub-genres'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of games with an active player base by number of sub-genres</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Number of sub-genres' datatype='integer' name='[Number of genres]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Number of sub-genres (Discrete)' datatype='integer' name='[Number of sub-genres (copy)]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Number of genres]' />
+            </column>
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of sub-genres (copy)]' derivation='None' name='[none:Number of sub-genres (copy):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Number of sub-genres (copy):ok]'>
+            <groupfilter from='1' function='range' level='[none:Number of sub-genres (copy):ok]' to='3' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Number of sub-genres (copy):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[sum:Number of Records:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Number of sub-genres (copy):ok]</cols>
+      </table>
+      <simple-id uuid='{8207A7E3-ACEE-4C15-A6A5-FD8FA138F978}' />
+    </worksheet>
+    <worksheet name='Player base with num of sub-genres Table'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Proportion of games with an active player base by number of sub-genres table</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Number of sub-genres' datatype='integer' name='[Number of genres]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Number of sub-genres (Discrete)' datatype='integer' name='[Number of sub-genres (copy)]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Number of genres]' />
+            </column>
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of sub-genres (copy)]' derivation='None' name='[none:Number of sub-genres (copy):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Number of sub-genres (copy):ok]'>
+            <groupfilter from='1' function='range' level='[none:Number of sub-genres (copy):ok]' to='3' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Number of sub-genres (copy):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[pcto:sum:Number of Records:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Number of sub-genres (copy):ok]</cols>
+      </table>
+      <simple-id uuid='{98A277B4-2AC4-4169-ACB1-641BE64042C0}' />
+    </worksheet>
+    <worksheet name='Price type by active playerbase'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column caption='Price type of game' datatype='string' name='[Calculation_337488557343412225]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Price] == 0) AND ([Mean price of In-app purchases] == 0) THEN &apos;Free game&apos;&#13;&#10;ELSEIF ([Price] == 0) THEN &apos;Pay-to-win games&apos;&#13;&#10;ELSE &apos;Paid games&apos; END' />
+            </column>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='real' name='[Mean price of In-app purchases]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_337488557343412225]' derivation='None' name='[none:Calculation_337488557343412225:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[sum:Number of Records:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_337488557343412225:nk]</cols>
+      </table>
+      <simple-id uuid='{2B3FCD4F-FAB7-4A82-BEE5-1C1769F3500A}' />
+    </worksheet>
+    <worksheet name='Price type by active playerbase table'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column caption='Price type of game' datatype='string' name='[Calculation_337488557343412225]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Price] == 0) AND ([Mean price of In-app purchases] == 0) THEN &apos;Free game&apos;&#13;&#10;ELSEIF ([Price] == 0) THEN &apos;Pay-to-win games&apos;&#13;&#10;ELSE &apos;Paid games&apos; END' />
+            </column>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='real' name='[Mean price of In-app purchases]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_337488557343412225]' derivation='None' name='[none:Calculation_337488557343412225:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01rmfgw1wjjdje155fngc1mwf7xp].[pcto:sum:Number of Records:qk:3]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01rmfgw1wjjdje155fngc1mwf7xp].[sum:Number of Records:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk] / [federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_337488557343412225:nk])</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{29028460-690D-46D7-B307-E655E0004204}' />
+    </worksheet>
+    <worksheet name='Proportion of player base by age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Proportion of games with an active player base by age group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column datatype='string' name='[Age Rating]' role='dimension' type='nominal' />
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Age Rating]' derivation='None' name='[none:Age Rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[sum:Number of Records:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Age Rating:nk]</cols>
+      </table>
+      <simple-id uuid='{FC2C6BD5-4D8A-48E0-BCC2-8A24A72B15EF}' />
+    </worksheet>
+    <worksheet name='Proportion of player base by age table'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Proportion of games with an active player base by age group table</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column datatype='string' name='[Age Rating]' role='dimension' type='nominal' />
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Age Rating]' derivation='None' name='[none:Age Rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Field' type='PctTotal'>
+                <order field='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Age Rating:nk]' />
+                <order field='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01rmfgw1wjjdje155fngc1mwf7xp].[pcto:sum:Number of Records:qk:1]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01rmfgw1wjjdje155fngc1mwf7xp].[sum:Number of Records:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk] / [federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Age Rating:nk])</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{6E0CDB9C-AC9C-4853-A22A-802FD181CF62}' />
+    </worksheet>
+    <worksheet name='Release with rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Medium rating by original release date</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column datatype='real' name='[Average User Rating]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Original Release Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Average User Rating]' derivation='Median' name='[med:Average User Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[User Rating Count]' derivation='None' name='[none:User Rating Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Original Release Date]' derivation='Year' name='[yr:Original Release Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]' filter-group='5' included-values='in-range'>
+            <min>1.0</min>
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[yr:Original Release Date:ok]</cols>
+      </table>
+      <simple-id uuid='{2883C104-2F3C-4E0D-96D8-AAE6444EEFEE}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1217A4CC-50B2-4850-A786-73DAC38F9FE3}' />
+    </worksheet>
+    <worksheet name='Size by current version'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Medium size of game by player base by how recently updated the game is</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column caption='Size in MB' datatype='real' name='[Calculation_337488557342572544]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Size] / 1000000' />
+            </column>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='date' name='[Current Version Release Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Size]' role='measure' type='quantitative' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_337488557342572544]' derivation='Median' name='[med:Calculation_337488557342572544:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Current Version Release Date]' derivation='Year' name='[yr:Current Version Release Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Calculation_337488557342572544:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[yr:Current Version Release Date:ok]</cols>
+      </table>
+      <simple-id uuid='{60B0CD53-8711-41AD-AE3D-F0A4B7151896}' />
+    </worksheet>
+    <worksheet name='Size of player base by age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column datatype='string' name='[Age Rating]' role='dimension' type='nominal' />
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[User Rating Count]' derivation='Median' name='[med:User Rating Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age Rating]' derivation='None' name='[none:Age Rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]'>
+            <groupfilter function='member' level='[none:Calculation_434878899290603521:nk]' member='&quot;Has active playerbase&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:User Rating Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:User Rating Count:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Age Rating:nk]</cols>
+      </table>
+      <simple-id uuid='{2E19DA66-1591-44B3-B394-D28C93E00D17}' />
+    </worksheet>
+    <worksheet name='Total active player base by price type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column caption='Price type of game' datatype='string' name='[Calculation_337488557343412225]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Price] == 0) AND ([Mean price of In-app purchases] == 0) THEN &apos;Free game&apos;&#13;&#10;ELSEIF ([Price] == 0) THEN &apos;Pay-to-win games&apos;&#13;&#10;ELSE &apos;Paid games&apos; END' />
+            </column>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='real' name='[Mean price of In-app purchases]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[User Rating Count]' derivation='Median' name='[med:User Rating Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_337488557343412225]' derivation='None' name='[none:Calculation_337488557343412225:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]'>
+            <groupfilter function='member' level='[none:Calculation_434878899290603521:nk]' member='&quot;Has active playerbase&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:User Rating Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:User Rating Count:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_337488557343412225:nk]</cols>
+      </table>
+      <simple-id uuid='{87A3790E-E713-4750-9718-5F7ABC663F06}' />
+    </worksheet>
+    <worksheet name='Update player base'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Proportion of games by player base by how recently updated the game is</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='date' name='[Current Version Release Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_434878899290603521]' derivation='None' name='[none:Calculation_434878899290603521:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Current Version Release Date]' derivation='Year' name='[yr:Current Version Release Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[sum:Number of Records:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[yr:Current Version Release Date:ok]</cols>
+      </table>
+      <simple-id uuid='{5906A03C-D950-455C-BF20-F29D0C1FEC40}' />
+    </worksheet>
+    <worksheet name='age with rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Medium rating by game&apos;s age rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column datatype='string' name='[Age Rating]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Average User Rating]' role='measure' type='quantitative' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Average User Rating]' derivation='Median' name='[med:Average User Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age Rating]' derivation='None' name='[none:Age Rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[User Rating Count]' derivation='None' name='[none:User Rating Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]' filter-group='5' included-values='in-range'>
+            <min>1.0</min>
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Age Rating:nk]' />
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Age Rating:nk]</cols>
+      </table>
+      <simple-id uuid='{36C64AF0-5B28-4157-83ED-2587E2A9B3EE}' />
+    </worksheet>
+    <worksheet name='avg size for each rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average size (MB) of games for each rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column aggregation='Sum' caption='Average User Rating (Discrete)' datatype='real' name='[Average User Rating (copy)]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Average User Rating]' />
+            </column>
+            <column datatype='real' name='[Average User Rating]' role='measure' type='quantitative' />
+            <column caption='Size in MB' datatype='real' name='[Calculation_337488557342572544]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Size] / 1000000' />
+            </column>
+            <column datatype='real' name='[Size]' role='measure' type='quantitative' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_337488557342572544]' derivation='Avg' name='[avg:Calculation_337488557342572544:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Average User Rating (copy)]' derivation='None' name='[none:Average User Rating (copy):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[User Rating Count]' derivation='None' name='[none:User Rating Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]' filter-group='5' included-values='in-range'>
+            <min>1.0</min>
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[avg:Calculation_337488557342572544:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[avg:Calculation_337488557342572544:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Average User Rating (copy):ok]</cols>
+      </table>
+      <simple-id uuid='{B76C1793-5F60-47BC-8C75-45EFE89320AA}' />
+    </worksheet>
+    <worksheet name='num sub-genres vs rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Medium rating for games by number of sub-genres</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column datatype='real' name='[Average User Rating]' role='measure' type='quantitative' />
+            <column caption='Price type of game' datatype='string' name='[Calculation_337488557343412225]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Price] == 0) AND ([Mean price of In-app purchases] == 0) THEN &apos;Free game&apos;&#13;&#10;ELSEIF ([Price] == 0) THEN &apos;Pay-to-win games&apos;&#13;&#10;ELSE &apos;Paid games&apos; END' />
+            </column>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='real' name='[Mean price of In-app purchases]' role='measure' type='quantitative' />
+            <column caption='Number of sub-genres' datatype='integer' name='[Number of genres]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Number of sub-genres (Discrete)' datatype='integer' name='[Number of sub-genres (copy)]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Number of genres]' />
+            </column>
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Average User Rating]' derivation='Median' name='[med:Average User Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of sub-genres (copy)]' derivation='None' name='[none:Number of sub-genres (copy):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[User Rating Count]' derivation='None' name='[none:User Rating Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Has active playerbase)]'>
+            <groupfilter function='level-members' level='[Calculation_434878899290603521]' user:ui-action-filter='[Action9]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Price type of game)]'>
+            <groupfilter function='level-members' level='[Calculation_337488557343412225]' user:ui-action-filter='[Action6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]' filter-group='5' included-values='in-range'>
+            <min>1.0</min>
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]</column>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Price type of game)]</column>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Has active playerbase)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Number of sub-genres (copy):ok]</cols>
+      </table>
+      <simple-id uuid='{CB0B7BEE-9F02-4107-8E51-67C2F38E55A4}' />
+    </worksheet>
+    <worksheet name='price type and rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Medium rating for games by price type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+              <calculation class='tableau' formula='100.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column datatype='real' name='[Average User Rating]' role='measure' type='quantitative' />
+            <column caption='Price type of game' datatype='string' name='[Calculation_337488557343412225]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Price] == 0) AND ([Mean price of In-app purchases] == 0) THEN &apos;Free game&apos;&#13;&#10;ELSEIF ([Price] == 0) THEN &apos;Pay-to-win games&apos;&#13;&#10;ELSE &apos;Paid games&apos; END' />
+            </column>
+            <column caption='Has active playerbase' datatype='string' name='[Calculation_434878899290603521]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [User Rating Count] &gt;= [Parameters].[Parameter 1] THEN &apos;Has active playerbase&apos;&#13;&#10;ELSE &apos;Does not have active playerbase&apos; END' />
+            </column>
+            <column datatype='real' name='[Mean price of In-app purchases]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Average User Rating]' derivation='Median' name='[med:Average User Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_337488557343412225]' derivation='None' name='[none:Calculation_337488557343412225:nk]' pivot='key' type='nominal' />
+            <column-instance column='[User Rating Count]' derivation='None' name='[none:User Rating Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Has active playerbase)]'>
+            <groupfilter function='level-members' level='[Calculation_434878899290603521]' user:ui-action-filter='[Action9]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]' filter-group='5' included-values='in-range'>
+            <min>1.0</min>
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]</column>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[Action (Has active playerbase)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_337488557343412225:nk]' />
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_337488557343412225:nk]</cols>
+      </table>
+      <simple-id uuid='{9E3AA7D2-1C1F-43AA-B970-22B9D9C98E32}' />
+    </worksheet>
+    <worksheet name='rating by update'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Medium rating by when it was most recently update</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_v2' name='federated.01rmfgw1wjjdje155fngc1mwf7xp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01rmfgw1wjjdje155fngc1mwf7xp'>
+            <column datatype='real' name='[Average User Rating]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Current Version Release Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[User Rating Count]' role='measure' type='quantitative' />
+            <column-instance column='[Average User Rating]' derivation='Median' name='[med:Average User Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[User Rating Count]' derivation='None' name='[none:User Rating Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Current Version Release Date]' derivation='Year' name='[yr:Current Version Release Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]' filter-group='5' included-values='in-range'>
+            <min>1.0</min>
+          </filter>
+          <slices>
+            <column>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:User Rating Count:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[med:Average User Rating:qk]</rows>
+        <cols>[federated.01rmfgw1wjjdje155fngc1mwf7xp].[yr:Current Version Release Date:ok]</cols>
+      </table>
+      <simple-id uuid='{A538FA7B-6FB9-41FC-9C52-EE65982C716B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Player base story' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='151' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4357' id='3' type='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98426' x='787' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98426' x='787' y='15664'>
+              <flipboard active-id='5' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Is price type a factor?' captured-sheet='player 1' id='1' />
+                  <story-point caption='Does the targetted age group matter?' captured-sheet='player 2' id='2' />
+                  <story-point caption='Are some developers better than others?' captured-sheet='player 3' id='6' />
+                  <story-point caption='How many sub-genres should your game have?' captured-sheet='player 4' id='4' />
+                  <story-point caption='Do recently updated games have an active player base' captured-sheet='player 5' id='5' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{F8D6519A-E308-4F50-A4B8-560867B281E8}' />
+    </dashboard>
+    <dashboard name='User rating story' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4357' id='3' type='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98426' x='787' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98426' x='787' y='15664'>
+              <flipboard active-id='4' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='How does price type, player base and number of sub-genres affect ratings?' captured-sheet='rating 2 updated' id='5' />
+                  <story-point caption='Are recent games rated higher?' captured-sheet='rating 3' id='3' />
+                  <story-point caption='Does age rating and size affect ratings?' captured-sheet='rating 4' id='4' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{C9FDD67B-716E-4119-84F1-D61CC1A19224}' />
+    </dashboard>
+    <dashboard name='player 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Active playerbase Parameter' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='100.0'>
+          <calculation class='tableau' formula='100.0' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='55800' x='800' y='1000'>
+              <zone h='98000' id='3' name='Price type by active playerbase' w='55800' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='426' h='98000' id='6' is-fixed='true' param='vert' type='layout-flow' w='42600' x='56600' y='1000'>
+              <zone h='9000' id='8' name='Price type by active playerbase' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='42600' x='56600' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7000' id='9' mode='type_in' param='[Parameters].[Parameter 1]' type='paramctrl' w='42600' x='56600' y='10000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='38125' id='12' name='Price type by active playerbase table' w='42600' x='56600' y='17000'>
+                <layout-cache cell-count-h='6' cell-count-w='2' non-cell-size-h='125' non-cell-size-w='241' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43875' id='11' name='Total active player base by price type' w='42600' x='56600' y='55125'>
+                <layout-cache cell-count-w='3' minheight='245' non-cell-size-w='77' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='18' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Price type by active playerbase' w='55800' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='8' name='Price type by active playerbase' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='42600' x='56600' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7000' id='9' mode='type_in' param='[Parameters].[Parameter 1]' type='paramctrl' w='42600' x='56600' y='10000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38125' id='12' is-fixed='true' name='Price type by active playerbase table' w='42600' x='56600' y='17000'>
+                  <layout-cache cell-count-h='6' cell-count-w='2' non-cell-size-h='125' non-cell-size-w='241' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43875' id='11' is-fixed='true' name='Total active player base by price type' w='42600' x='56600' y='55125'>
+                  <layout-cache cell-count-w='3' minheight='245' non-cell-size-w='77' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C8CF4C75-9E8D-42D5-A98A-6D1CE7D6A258}' />
+    </dashboard>
+    <dashboard name='player 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='8' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='6' type='layout-basic' w='62300' x='800' y='1000'>
+              <zone h='98000' id='5' name='Proportion of player base by age' w='31150' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98000' id='10' name='Size of player base by age' w='31150' x='31950' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='361' h='98000' id='7' is-fixed='true' param='vert' type='layout-flow' w='36100' x='63100' y='1000'>
+              <zone h='9000' id='9' name='Proportion of player base by age' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='36100' x='63100' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='89000' id='11' name='Proportion of player base by age table' w='36100' x='63100' y='10000'>
+                <layout-cache cell-count-h='8' cell-count-w='2' non-cell-size-h='160' non-cell-size-w='181' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='17' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='5' is-fixed='true' name='Proportion of player base by age' w='31150' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='9' name='Proportion of player base by age' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='36100' x='63100' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='10' is-fixed='true' name='Size of player base by age' w='31150' x='31950' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='89000' id='11' is-fixed='true' name='Proportion of player base by age table' w='36100' x='63100' y='10000'>
+                  <layout-cache cell-count-h='8' cell-count-w='2' non-cell-size-h='160' non-cell-size-w='181' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{91E114AD-661B-494C-A083-6FB0AA25287F}' />
+    </dashboard>
+    <dashboard name='player 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='Player base by developer' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='Player base num by developer' w='82400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='9000' id='8' name='Player base by developer' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Player base by developer' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='8' name='Player base by developer' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='Player base num by developer' w='82400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8A66A944-A381-4D39-9C74-0AF3B13AFF30}' />
+    </dashboard>
+    <dashboard name='player 4'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='61700' x='800' y='1000'>
+              <zone h='49000' id='3' name='Player base with num of sub-genres' w='61700' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='Player base num with num of sub-genres' w='61700' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='367' h='98000' id='6' is-fixed='true' param='vert' type='layout-flow' w='36700' x='62500' y='1000'>
+              <zone h='9000' id='8' name='Player base with num of sub-genres' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='36700' x='62500' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='89000' id='10' name='Player base with num of sub-genres Table' w='36700' x='62500' y='10000'>
+                <layout-cache cell-count-h='2' cell-count-w='3' non-cell-size-h='160' non-cell-size-w='101' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Player base with num of sub-genres' w='61700' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='8' name='Player base with num of sub-genres' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='36700' x='62500' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='89000' id='10' is-fixed='true' name='Player base with num of sub-genres Table' w='36700' x='62500' y='10000'>
+                  <layout-cache cell-count-h='2' cell-count-w='3' non-cell-size-h='160' non-cell-size-w='101' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='Player base num with num of sub-genres' w='61700' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C861CA5E-A606-44BD-8007-2655143E1D88}' />
+    </dashboard>
+    <dashboard name='player 5'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='81200' x='800' y='1000'>
+              <zone h='49000' id='3' name='Update player base' w='81200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='Size by current version' w='81200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='172' h='98000' id='6' is-fixed='true' param='vert' type='layout-flow' w='17200' x='82000' y='1000'>
+              <zone h='9000' id='8' name='Update player base' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='17200' x='82000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Update player base' w='81200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='8' name='Update player base' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='17200' x='82000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='Size by current version' w='81200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8ED1A5EC-8B76-4A9E-95E5-9A8BF5204F27}' />
+    </dashboard>
+    <dashboard name='rating 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='8' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='6' type='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Player base rating' w='41200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98000' id='5' name='Player base rating bar' w='41200' x='42000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='7' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='9000' id='9' name='Player base rating bar' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Player base rating' w='41200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='5' is-fixed='true' name='Player base rating bar' w='41200' x='42000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='9' name='Player base rating bar' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{29B37B98-2C38-4699-BBBB-46AC2EF87176}' />
+    </dashboard>
+    <dashboard name='rating 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='15' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='13' type='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='5' name='num sub-genres vs rating' w='41200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98000' id='12' name='price type and rating' w='41200' x='42000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='14' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='11625' id='16' name='price type and rating' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_337488557343412225:nk]' type='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='10' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='11' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='5' is-fixed='true' name='num sub-genres vs rating' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{61E98740-5495-4E5F-8FE8-874D88CFA7BB}' />
+    </dashboard>
+    <dashboard name='rating 2 updated'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='15' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='13' type='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='5' name='num sub-genres vs rating' w='41200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='12' name='price type and rating' w='41200' x='42000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='17' name='Player base rating' w='41200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='19' name='Player base rating bar' w='41200' x='42000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='14' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='11625' id='16' name='price type and rating' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_337488557343412225:nk]' type='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9000' id='18' name='Player base rating' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' w='16000' x='83200' y='12625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='10' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='11' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='5' is-fixed='true' name='num sub-genres vs rating' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C20DBE5F-AA78-485A-888C-038A900161B1}' />
+    </dashboard>
+    <dashboard name='rating 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='9' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='7' type='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='49000' id='5' name='Release with rating' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='11' name='rating by update' w='98400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='1' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='2' param='vert' type='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{21432BB9-1694-4B10-95A5-2F8E33B6A1E5}' />
+    </dashboard>
+    <dashboard name='rating 4'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='8' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='6' type='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='avg size for each rating' w='82400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='5' name='age with rating' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='7' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='14250' id='9' name='age with rating' pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Age Rating:nk]' type='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='1' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='2' param='vert' type='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{547F882B-1D92-40DF-8EFB-44EC652DCB8A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Price type by active playerbase'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ECA72F74-8698-449E-BA2D-E703D503216F}' />
+    </window>
+    <window class='worksheet' name='Price type by active playerbase table'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{685A85BF-185E-487F-9911-EA9724404A77}' />
+    </window>
+    <window class='worksheet' name='Total active player base by price type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B1630E37-8D2F-471C-A08A-F046B79C81C0}' />
+    </window>
+    <window class='worksheet' name='Average size of games with player base'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F2E1F915-6975-4F20-9F8E-3F72FB65D592}' />
+    </window>
+    <window class='worksheet' name='Proportion of player base by age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{37D01383-FA82-472A-9C3D-9746BBE3B13E}' />
+    </window>
+    <window class='worksheet' name='Proportion of player base by age table'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1A6EF36F-210E-482C-9BDD-AA4DADAF9B67}' />
+    </window>
+    <window class='worksheet' name='Size of player base by age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{61248468-0A0E-4D26-BA51-23A6C91E09B7}' />
+    </window>
+    <window class='worksheet' name='Player base by developer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{170E7029-2E1E-413E-94B9-9CF41DDE3543}' />
+    </window>
+    <window class='worksheet' name='Player base num by developer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{85F971AA-08BA-44F5-A0D2-7F3BD96B1057}' />
+    </window>
+    <window class='worksheet' name='Player base with num of sub-genres'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{83066899-CF35-43B3-9697-158312424C1C}' />
+    </window>
+    <window class='worksheet' name='Player base num with num of sub-genres'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Number of sub-genres (copy):ok]' type='filter' />
+            <card pane-specification-id='2' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C1EDD216-01E2-46D1-8B35-7709663EF3A1}' />
+    </window>
+    <window class='worksheet' name='Player base with num of sub-genres Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ADE97DF3-643C-4EA9-B3AB-BF741D013685}' />
+    </window>
+    <window class='worksheet' name='Update player base'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C196B6B9-5C17-4DD6-937E-39E86F5E3880}' />
+    </window>
+    <window class='worksheet' name='Size by current version'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2DF5F5DE-D3FC-433B-B57D-7F7C68007DFC}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7B11453A-4879-4B68-B288-861A9FFF7436}' />
+    </window>
+    <window class='worksheet' name='Player base rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{86B4AE68-DEE6-4F33-85EF-CFD6529A1B6C}' />
+    </window>
+    <window class='worksheet' name='Player base rating bar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_434878899290603521:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{45FA51AF-8C87-4826-98E2-E0218AB60B18}' />
+    </window>
+    <window class='worksheet' name='rating by update'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{948A6001-D57E-4663-AB7A-4BFBD8A6DBF7}' />
+    </window>
+    <window class='worksheet' name='price type and rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Calculation_337488557343412225:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0C3826C2-0AD4-43E2-A8B6-EF431385D79F}' />
+    </window>
+    <window class='worksheet' name='num sub-genres vs rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A678B398-DE16-486F-8FAC-DA21B1A1F170}' />
+    </window>
+    <window class='worksheet' name='age with rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01rmfgw1wjjdje155fngc1mwf7xp].[none:Age Rating:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B79F2D7-730D-459B-8852-E8E68F83477E}' />
+    </window>
+    <window class='worksheet' name='Release with rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DEF5D4C5-DEA5-41EE-9DF5-1408FFEB4E81}' />
+    </window>
+    <window class='worksheet' name='avg size for each rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C2B2489C-F378-42CA-9D5D-38DB59A710C1}' />
+    </window>
+    <window class='dashboard' name='player 1'>
+      <viewpoints>
+        <viewpoint name='Price type by active playerbase'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Price type by active playerbase table'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total active player base by price type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{6E1423AB-3191-4307-ADB3-8F8627B54253}' />
+    </window>
+    <window class='dashboard' name='player 2'>
+      <viewpoints>
+        <viewpoint name='Proportion of player base by age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Proportion of player base by age table'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Size of player base by age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{8739ACED-C705-49B9-88D8-5709EC9ED4F3}' />
+    </window>
+    <window class='dashboard' name='player 3'>
+      <viewpoints>
+        <viewpoint name='Player base by developer'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Player base num by developer'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8FE9D630-E6C4-4C87-803A-19B96163E01D}' />
+    </window>
+    <window class='dashboard' name='player 4'>
+      <viewpoints>
+        <viewpoint name='Player base num with num of sub-genres'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Player base with num of sub-genres'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Player base with num of sub-genres Table'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A3DCBF9B-6625-4C78-8938-939900D23D4A}' />
+    </window>
+    <window class='dashboard' name='player 5'>
+      <viewpoints>
+        <viewpoint name='Size by current version'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Update player base'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{829BC595-50D1-4C91-BFEE-1830C45D66BC}' />
+    </window>
+    <window class='dashboard' name='Player base story'>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{2E0CBF53-F7C9-4B37-940C-0FB18670E63F}' />
+    </window>
+    <window class='dashboard' name='rating 1'>
+      <viewpoints>
+        <viewpoint name='Player base rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Player base rating bar'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{6E755754-53C0-4F64-8939-7D08E82BB66A}' />
+    </window>
+    <window class='dashboard' name='rating 2'>
+      <viewpoints>
+        <viewpoint name='num sub-genres vs rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='price type and rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C01FF9D3-8638-47D1-A6B7-20719779C2EE}' />
+    </window>
+    <window class='dashboard' name='rating 2 updated'>
+      <viewpoints>
+        <viewpoint name='Player base rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Player base rating bar'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='num sub-genres vs rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='price type and rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='19' />
+      <simple-id uuid='{9A346EB6-13B7-4E6A-924C-9B69B82A9F2B}' />
+    </window>
+    <window class='dashboard' name='rating 3'>
+      <viewpoints>
+        <viewpoint name='Release with rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='rating by update'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{F4FE0A0E-B9EC-4693-BBC3-2B2D311F03C1}' />
+    </window>
+    <window class='dashboard' maximized='true' name='rating 4'>
+      <viewpoints>
+        <viewpoint name='age with rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='avg size for each rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{646AD40A-A60E-4EFB-8777-3C4467D77CF2}' />
+    </window>
+    <window class='dashboard' name='User rating story'>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{36260528-F1AA-43FA-B093-A9AFC120BA10}' />
+    </window>
+  </windows>
+</workbook>
