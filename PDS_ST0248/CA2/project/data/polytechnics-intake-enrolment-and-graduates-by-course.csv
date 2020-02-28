@@ -1,0 +1,337 @@
+year,sex,course,intake,enrolment,graduates
+2005,MF,Applied Arts,1128,2593,550
+2005,F,Applied Arts,687,1538,302
+2005,MF,"Architecture, Building & Real Estate",515,1466,425
+2005,F,"Architecture, Building & Real Estate",312,870,249
+2005,MF,Business & Administration,3483,10143,3044
+2005,F,Business & Administration,2389,7038,2270
+2005,MF,Education,189,484,111
+2005,F,Education,180,469,111
+2005,MF,Engineering Sciences,7826,22462,6536
+2005,F,Engineering Sciences,2097,5939,2005
+2005,MF,Health Sciences,1639,4962,1016
+2005,F,Health Sciences,1326,3971,877
+2005,MF,Humanities & Social Sciences,81,83,0
+2005,F,Humanities & Social Sciences,71,73,0
+2005,MF,Information Technology,4122,11607,3356
+2005,F,Information Technology,1887,5065,1464
+2005,MF,Law,126,341,102
+2005,F,Law,83,221,71
+2005,MF,Mass Communication,448,1426,419
+2005,F,Mass Communication,324,1029,282
+2005,MF,"Natural, Physical & Mathematical Sciences",1209,2844,768
+2005,F,"Natural, Physical & Mathematical Sciences",712,1678,447
+2005,MF,Services,140,469,188
+2005,F,Services,68,173,35
+2006,MF,Applied Arts,1300,3255,542
+2006,F,Applied Arts,742,1894,319
+2006,MF,"Architecture, Building & Real Estate",596,1622,394
+2006,F,"Architecture, Building & Real Estate",342,955,233
+2006,MF,Business & Administration,3944,10869,3046
+2006,F,Business & Administration,2487,7225,2208
+2006,MF,Education,266,614,131
+2006,F,Education,209,545,128
+2006,MF,Engineering Sciences,8209,23713,6415
+2006,F,Engineering Sciences,2108,6197,1786
+2006,MF,Health Sciences,1955,5607,1328
+2006,F,Health Sciences,1554,4428,1080
+2006,MF,Humanities & Social Sciences,75,153,0
+2006,F,Humanities & Social Sciences,66,136,0
+2006,MF,Information Technology,3972,11753,3351
+2006,F,Information Technology,1728,5134,1477
+2006,MF,Law,116,353,88
+2006,F,Law,70,221,63
+2006,MF,Mass Communication,450,1428,416
+2006,F,Mass Communication,310,1019,296
+2006,MF,"Natural, Physical & Mathematical Sciences",1184,3063,761
+2006,F,"Natural, Physical & Mathematical Sciences",684,1777,460
+2006,MF,Services,209,532,166
+2006,F,Services,94,211,50
+2007,MF,Applied Arts,1455,3801,707
+2007,F,Applied Arts,865,2221,409
+2007,MF,"Architecture, Building & Real Estate",624,1742,449
+2007,F,"Architecture, Building & Real Estate",363,1010,273
+2007,MF,Business & Administration,4597,12098,3243
+2007,F,Business & Administration,2939,7839,2247
+2007,MF,Education,309,765,159
+2007,F,Education,238,623,156
+2007,MF,Engineering Sciences,7972,24716,6307
+2007,F,Engineering Sciences,2054,6461,1685
+2007,MF,Health Sciences,2110,5865,1755
+2007,F,Health Sciences,1653,4602,1400
+2007,MF,Humanities & Social Sciences,72,262,0
+2007,F,Humanities & Social Sciences,58,222,0
+2007,MF,Information Technology,3969,12088,3250
+2007,F,Information Technology,1651,5199,1410
+2007,MF,Law,117,351,103
+2007,F,Law,81,226,65
+2007,MF,Mass Communication,530,1428,512
+2007,F,Mass Communication,354,989,377
+2007,MF,"Natural, Physical & Mathematical Sciences",1367,3547,764
+2007,F,"Natural, Physical & Mathematical Sciences",846,2095,453
+2007,MF,Services,240,627,164
+2007,F,Services,86,247,51
+2008,MF,Applied Arts,1646,4176,963
+2008,F,Applied Arts,918,2355,582
+2008,MF,"Architecture, Building & Real Estate",623,1774,465
+2008,F,"Architecture, Building & Real Estate",327,982,292
+2008,MF,Business & Administration,5827,14812,3376
+2008,F,Business & Administration,3524,9221,2315
+2008,MF,Education,194,547,184
+2008,F,Education,188,529,175
+2008,MF,Engineering Sciences,7452,24156,7157
+2008,F,Engineering Sciences,1809,6039,1996
+2008,MF,Health Sciences,2363,6423,1675
+2008,F,Health Sciences,1788,5002,1327
+2008,MF,Humanities & Social Sciences,479,953,75
+2008,F,Humanities & Social Sciences,306,603,67
+2008,MF,Information Technology,3943,11987,3730
+2008,F,Information Technology,1707,5057,1716
+2008,MF,Law,128,334,121
+2008,F,Law,66,204,78
+2008,MF,Mass Communication,542,1539,435
+2008,F,Mass Communication,378,1036,318
+2008,MF,"Natural, Physical & Mathematical Sciences",1354,3711,978
+2008,F,"Natural, Physical & Mathematical Sciences",833,2207,568
+2008,MF,Services,287,725,158
+2008,F,Services,109,294,62
+2009,MF,Applied Arts,1690,4681,1004
+2009,F,Applied Arts,942,2629,576
+2009,MF,"Architecture, Building & Real Estate",545,1724,540
+2009,F,"Architecture, Building & Real Estate",291,936,307
+2009,MF,Business & Administration,5715,16024,3942
+2009,F,Business & Administration,3524,9947,2533
+2009,MF,Education,206,569,177
+2009,F,Education,190,540,173
+2009,MF,Engineering Sciences,7775,24248,7399
+2009,F,Engineering Sciences,1891,5922,1972
+2009,MF,Health Sciences,2539,7082,1759
+2009,F,Health Sciences,1953,5477,1396
+2009,MF,Humanities & Social Sciences,535,1294,153
+2009,F,Humanities & Social Sciences,321,803,96
+2009,MF,Information Technology,4026,12097,3472
+2009,F,Information Technology,1789,5192,1505
+2009,MF,Law,129,354,96
+2009,F,Law,82,222,55
+2009,MF,Mass Communication,685,1743,435
+2009,F,Mass Communication,471,1186,303
+2009,MF,"Natural, Physical & Mathematical Sciences",1503,3977,1044
+2009,F,"Natural, Physical & Mathematical Sciences",917,2416,592
+2009,MF,Services,276,773,203
+2009,F,Services,127,330,82
+2010,MF,Applied Arts,1939,5169,1193
+2010,F,Applied Arts,1074,2872,703
+2010,MF,"Architecture, Building & Real Estate",603,1734,539
+2010,F,"Architecture, Building & Real Estate",330,923,318
+2010,MF,Business & Administration,5707,16967,4516
+2010,F,Business & Administration,3567,10455,2934
+2010,MF,Education,271,660,174
+2010,F,Education,258,625,167
+2010,MF,Engineering Sciences,7555,23882,7295
+2010,F,Engineering Sciences,1752,5666,1893
+2010,MF,Health Sciences,2655,7588,1968
+2010,F,Health Sciences,2022,5779,1591
+2010,MF,Humanities & Social Sciences,683,1673,275
+2010,F,Humanities & Social Sciences,392,993,183
+2010,MF,Information Technology,3687,11885,3693
+2010,F,Information Technology,1586,5117,1586
+2010,MF,Law,143,377,108
+2010,F,Law,85,225,74
+2010,MF,Mass Communication,664,1940,377
+2010,F,Mass Communication,485,1347,254
+2010,MF,"Natural, Physical & Mathematical Sciences",1534,4346,1070
+2010,F,"Natural, Physical & Mathematical Sciences",993,2686,663
+2010,MF,Services,266,768,237
+2010,F,Services,118,340,96
+2011,MF,Applied Arts,1990,5607,1343
+2011,F,Applied Arts,1130,3104,770
+2011,MF,"Architecture, Building & Real Estate",775,1880,565
+2011,F,"Architecture, Building & Real Estate",459,1063,297
+2011,MF,Business & Administration,5789,17215,5306
+2011,F,Business & Administration,3510,10571,3271
+2011,MF,Education,276,736,183
+2011,F,Education,255,687,178
+2011,MF,Engineering Sciences,7946,23873,7186
+2011,F,Engineering Sciences,1837,5550,1814
+2011,MF,Health Sciences,2537,7747,2158
+2011,F,Health Sciences,1906,5879,1661
+2011,MF,Humanities & Social Sciences,770,1952,429
+2011,F,Humanities & Social Sciences,422,1109,278
+2011,MF,Information Technology,3942,11689,3732
+2011,F,Information Technology,1626,4939,1607
+2011,MF,Law,141,404,95
+2011,F,Law,77,235,53
+2011,MF,Mass Communication,587,1806,511
+2011,F,Mass Communication,418,1283,348
+2011,MF,"Natural, Physical & Mathematical Sciences",1587,4620,1178
+2011,F,"Natural, Physical & Mathematical Sciences",984,2846,732
+2011,MF,Services,397,914,232
+2011,F,Services,177,412,97
+2012,MF,Applied Arts,2024,5983,1559
+2012,F,Applied Arts,1164,3346,855
+2012,MF,"Architecture, Building & Real Estate",779,2088,512
+2012,F,"Architecture, Building & Real Estate",423,1185,271
+2012,MF,Business & Administration,6066,17449,5422
+2012,F,Business & Administration,3772,10706,3361
+2012,MF,Education,294,821,196
+2012,F,Education,275,768,180
+2012,MF,Engineering Sciences,7741,23537,7291
+2012,F,Engineering Sciences,1753,5301,1815
+2012,MF,Health Sciences,2243,7338,2478
+2012,F,Health Sciences,1675,5515,1923
+2012,MF,Humanities & Social Sciences,801,2214,477
+2012,F,Humanities & Social Sciences,461,1248,289
+2012,MF,Information Technology,3976,11677,3642
+2012,F,Information Technology,1559,4797,1580
+2012,MF,Law,139,414,114
+2012,F,Law,79,232,75
+2012,MF,Mass Communication,628,1695,653
+2012,F,Mass Communication,459,1182,452
+2012,MF,"Natural, Physical & Mathematical Sciences",1639,4735,1391
+2012,F,"Natural, Physical & Mathematical Sciences",1050,2971,845
+2012,MF,Services,424,1052,264
+2012,F,Services,207,499,118
+2013,MF,Applied Arts,2097,5935,1746
+2013,F,Applied Arts,1214,3389,963
+2013,MF,"Architecture, Building & Real Estate",796,2296,630
+2013,F,"Architecture, Building & Real Estate",447,1310,353
+2013,MF,Business & Administration,6267,18117,5400
+2013,F,Business & Administration,3861,11087,3365
+2013,MF,Education,323,880,262
+2013,F,Education,288,805,250
+2013,MF,Engineering Sciences,7655,23474,7016
+2013,F,Engineering Sciences,1691,5205,1618
+2013,MF,Health Sciences,2410,7162,2454
+2013,F,Health Sciences,1842,5413,1853
+2013,MF,Humanities & Social Sciences,756,2290,627
+2013,F,Humanities & Social Sciences,425,1278,369
+2013,MF,Information Technology,3756,11622,3523
+2013,F,Information Technology,1431,4520,1509
+2013,MF,Law,140,405,132
+2013,F,Law,76,218,78
+2013,MF,Mass Communication,661,1850,638
+2013,F,Mass Communication,473,1328,463
+2013,MF,"Natural, Physical & Mathematical Sciences",1602,4765,1469
+2013,F,"Natural, Physical & Mathematical Sciences",992,2980,922
+2013,MF,Services,416,1174,260
+2013,F,Services,202,586,117
+2014,MF,Applied Arts,2123,6133,1720
+2014,F,Applied Arts,1183,3448,995
+2014,MF,"Architecture, Building & Real Estate",797,2339,707
+2014,F,"Architecture, Building & Real Estate",471,1329,435
+2014,MF,Business & Administration,6017,18339,5596
+2014,F,Business & Administration,3799,11355,3394
+2014,MF,Education,333,938,260
+2014,F,Education,317,872,239
+2014,MF,Engineering Sciences,7030,21919,6983
+2014,F,Engineering Sciences,1558,4734,1612
+2014,MF,Health Sciences,2276,6902,2413
+2014,F,Health Sciences,1659,5154,1838
+2014,MF,Humanities & Social Sciences,778,2326,703
+2014,F,Humanities & Social Sciences,430,1299,388
+2014,MF,Information Technology,3297,11146,3577
+2014,F,Information Technology,1230,4204,1483
+2014,MF,Law,134,407,122
+2014,F,Law,79,224,66
+2014,MF,Mass Communication,654,1932,555
+2014,F,Mass Communication,491,1413,393
+2014,MF,"Natural, Physical & Mathematical Sciences",1629,4814,1486
+2014,F,"Natural, Physical & Mathematical Sciences",1022,3010,931
+2014,MF,Services,709,2119,599
+2014,F,Services,298,894,238
+2015,MF,Applied Arts,1739,5473,1708
+2015,F,Applied Arts,1021,3186,977
+2015,MF,"Architecture, Building & Real Estate",670,2217,715
+2015,F,"Architecture, Building & Real Estate",390,1283,396
+2015,MF,Business & Administration,4871,16293,5455
+2015,F,Business & Administration,3062,10062,3384
+2015,MF,Education,340,977,292
+2015,F,Education,319,911,274
+2015,MF,Engineering Sciences,7317,22181,6967
+2015,F,Engineering Sciences,1705,5064,1659
+2015,MF,Health Sciences,2690,7960,2297
+2015,F,Health Sciences,1996,5794,1693
+2015,MF,Humanities & Social Sciences,330,1047,343
+2015,F,Humanities & Social Sciences,248,773,257
+2015,MF,Information Technology,3037,10023,3413
+2015,F,Information Technology,1074,3629,1298
+2015,MF,Law,116,390,126
+2015,F,Law,73,222,71
+2015,MF,Mass Communication,609,2033,644
+2015,F,Mass Communication,456,1496,470
+2015,MF,"Natural, Physical & Mathematical Sciences",1415,4564,1477
+2015,F,"Natural, Physical & Mathematical Sciences",864,2817,919
+2015,MF,Services,1117,3707,1194
+2015,F,Services,567,1748,583
+2016,MF,Applied Arts,1721,5236,1783
+2016,F,Applied Arts,1011,3064,1024
+2016,MF,"Architecture, Building & Real Estate",623,2039,743
+2016,F,"Architecture, Building & Real Estate",371,1207,420
+2016,MF,Business & Administration,4646,15203,5595
+2016,F,Business & Administration,2846,9406,3417
+2016,MF,Education,586,1252,307
+2016,F,Education,548,1181,277
+2016,MF,Engineering Sciences,6811,21334,6939
+2016,F,Engineering Sciences,1395,4721,1601
+2016,MF,Health Sciences,2537,7806,2556
+2016,F,Health Sciences,1894,5704,1895
+2016,MF,Humanities & Social Sciences,342,1020,353
+2016,F,Humanities & Social Sciences,256,758,261
+2016,MF,Information Technology,2769,9198,3305
+2016,F,Information Technology,906,3175,1275
+2016,MF,Law,101,357,126
+2016,F,Law,66,218,68
+2016,MF,Mass Communication,618,1920,701
+2016,F,Mass Communication,457,1436,498
+2016,MF,"Natural, Physical & Mathematical Sciences",1296,4302,1457
+2016,F,"Natural, Physical & Mathematical Sciences",789,2634,904
+2016,MF,Services,1071,3482,1239
+2016,F,Services,479,1624,571
+2017,MF,Applied Arts,1885,5291,1682
+2017,F,Applied Arts,1147,3128,1000
+2017,MF,"Architecture, Building & Real Estate",714,1979,736
+2017,F,"Architecture, Building & Real Estate",390,1129,441
+2017,MF,Business & Administration,4834,14453,5416
+2017,F,Business & Administration,2931,8836,3384
+2017,MF,Education,709,1618,320
+2017,F,Education,650,1503,307
+2017,MF,Engineering Sciences,6938,21019,6615
+2017,F,Engineering Sciences,1481,4518,1572
+2017,MF,Health Sciences,2567,7798,2467
+2017,F,Health Sciences,1933,5807,1771
+2017,MF,Humanities & Social Sciences,391,1048,347
+2017,F,Humanities & Social Sciences,298,792,257
+2017,MF,Information Technology,2909,8766,3089
+2017,F,Information Technology,889,2889,1099
+2017,MF,Law,97,330,120
+2017,F,Law,64,208,72
+2017,MF,Mass Communication,642,1842,697
+2017,F,Mass Communication,475,1368,523
+2017,MF,"Natural, Physical & Mathematical Sciences",1304,3982,1529
+2017,F,"Natural, Physical & Mathematical Sciences",778,2400,955
+2017,MF,Services,1074,3310,1192
+2017,F,Services,500,1559,547
+2018,MF,Applied Arts,"1,894","5,424","1,610"
+2018,F,Applied Arts,"1,111","3,215",941
+2018,MF,"Architecture, Building & Real Estate",724,"2,007",614
+2018,F,"Architecture, Building & Real Estate",382,"1,104",370
+2018,MF,Business & Administration,"4,642","14,164","4,784"
+2018,F,Business & Administration,"2,811","8,546","3,006"
+2018,MF,Education,717,"1,989",332
+2018,F,Education,660,"1,843",312
+2018,MF,Engineering Sciences,"6,868","20,645","6,540"
+2018,F,Engineering Sciences,"1,473","4,328","1,543"
+2018,MF,Health Sciences,"2,758","7,856","2,565"
+2018,F,Health Sciences,"2,093","5,909","1,895"
+2018,MF,Humanities & Social Sciences,352,"1,071",310
+2018,F,Humanities & Social Sciences,268,809,233
+2018,MF,Information Technology,"2,820","8,538","2,747"
+2018,F,Information Technology,817,"2,608",996
+2018,MF,Law,104,301,124
+2018,F,Law,70,197,76
+2018,MF,Mass Communication,675,"1,917",582
+2018,F,Mass Communication,500,"1,420",437
+2018,MF,"Natural, Physical & Mathematical Sciences","1,232","3,794","1,353"
+2018,F,"Natural, Physical & Mathematical Sciences",773,"2,308",825
+2018,MF,Services,"1,083","3,279","1,053"
+2018,F,Services,436,"1,436",541

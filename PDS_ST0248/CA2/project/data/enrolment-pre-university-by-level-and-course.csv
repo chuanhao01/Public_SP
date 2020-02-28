@@ -1,0 +1,1167 @@
+year,level,course,sex,enrolment_preu
+1980,Junior College 1,Arts,MF,1158
+1980,Junior College 1,Arts,F,903
+1980,Junior College 1,Commerce,MF,1210
+1980,Junior College 1,Commerce,F,995
+1980,Junior College 1,Science,MF,3301
+1980,Junior College 1,Science,F,1355
+1980,Junior College 2,Arts,MF,1167
+1980,Junior College 2,Arts,F,889
+1980,Junior College 2,Commerce,MF,852
+1980,Junior College 2,Commerce,F,724
+1980,Junior College 2,Science,MF,3225
+1980,Junior College 2,Science,F,1458
+1980,Pre-University 1,Arts,MF,754
+1980,Pre-University 1,Arts,F,521
+1980,Pre-University 1,Commerce,MF,1384
+1980,Pre-University 1,Commerce,F,1006
+1980,Pre-University 1,Science,MF,773
+1980,Pre-University 1,Science,F,270
+1980,Pre-University 2,Arts,MF,1038
+1980,Pre-University 2,Arts,F,695
+1980,Pre-University 2,Commerce,MF,683
+1980,Pre-University 2,Commerce,F,496
+1980,Pre-University 2,Science,MF,727
+1980,Pre-University 2,Science,F,306
+1980,Pre-University 3,Arts,MF,-
+1980,Pre-University 3,Arts,F,-
+1980,Pre-University 3,Commerce,MF,-
+1980,Pre-University 3,Commerce,F,-
+1980,Pre-University 3,Science,MF,-
+1980,Pre-University 3,Science,F,-
+1981,Junior College 1,Arts,MF,777
+1981,Junior College 1,Arts,F,576
+1981,Junior College 1,Commerce,MF,1418
+1981,Junior College 1,Commerce,F,1138
+1981,Junior College 1,Science,MF,3128
+1981,Junior College 1,Science,F,1235
+1981,Junior College 2,Arts,MF,1156
+1981,Junior College 2,Arts,F,908
+1981,Junior College 2,Commerce,MF,1204
+1981,Junior College 2,Commerce,F,986
+1981,Junior College 2,Science,MF,3044
+1981,Junior College 2,Science,F,1320
+1981,Pre-University 1,Arts,MF,502
+1981,Pre-University 1,Arts,F,348
+1981,Pre-University 1,Commerce,MF,1301
+1981,Pre-University 1,Commerce,F,913
+1981,Pre-University 1,Science,MF,908
+1981,Pre-University 1,Science,F,274
+1981,Pre-University 2,Arts,MF,733
+1981,Pre-University 2,Arts,F,505
+1981,Pre-University 2,Commerce,MF,1200
+1981,Pre-University 2,Commerce,F,874
+1981,Pre-University 2,Science,MF,965
+1981,Pre-University 2,Science,F,314
+1981,Pre-University 3,Arts,MF,839
+1981,Pre-University 3,Arts,F,581
+1981,Pre-University 3,Commerce,MF,545
+1981,Pre-University 3,Commerce,F,409
+1981,Pre-University 3,Science,MF,433
+1981,Pre-University 3,Science,F,207
+1982,Junior College 1,Arts,MF,938
+1982,Junior College 1,Arts,F,638
+1982,Junior College 1,Commerce,MF,1452
+1982,Junior College 1,Commerce,F,1101
+1982,Junior College 1,Science,MF,3319
+1982,Junior College 1,Science,F,1211
+1982,Junior College 2,Arts,MF,930
+1982,Junior College 2,Arts,F,681
+1982,Junior College 2,Commerce,MF,1498
+1982,Junior College 2,Commerce,F,1193
+1982,Junior College 2,Science,MF,3621
+1982,Junior College 2,Science,F,1392
+1982,Pre-University 1,Arts,MF,532
+1982,Pre-University 1,Arts,F,362
+1982,Pre-University 1,Commerce,MF,1147
+1982,Pre-University 1,Commerce,F,769
+1982,Pre-University 1,Science,MF,531
+1982,Pre-University 1,Science,F,192
+1982,Pre-University 2,Arts,MF,379
+1982,Pre-University 2,Arts,F,255
+1982,Pre-University 2,Commerce,MF,1260
+1982,Pre-University 2,Commerce,F,878
+1982,Pre-University 2,Science,MF,502
+1982,Pre-University 2,Science,F,156
+1982,Pre-University 3,Arts,MF,674
+1982,Pre-University 3,Arts,F,442
+1982,Pre-University 3,Commerce,MF,1159
+1982,Pre-University 3,Commerce,F,832
+1982,Pre-University 3,Science,MF,697
+1982,Pre-University 3,Science,F,253
+1983,Junior College 1,Arts,MF,1276
+1983,Junior College 1,Arts,F,917
+1983,Junior College 1,Commerce,MF,1326
+1983,Junior College 1,Commerce,F,1010
+1983,Junior College 1,Science,MF,3908
+1983,Junior College 1,Science,F,1622
+1983,Junior College 2,Arts,MF,1013
+1983,Junior College 2,Arts,F,697
+1983,Junior College 2,Commerce,MF,1426
+1983,Junior College 2,Commerce,F,1095
+1983,Junior College 2,Science,MF,3421
+1983,Junior College 2,Science,F,1241
+1983,Pre-University 1,Arts,MF,843
+1983,Pre-University 1,Arts,F,550
+1983,Pre-University 1,Commerce,MF,1175
+1983,Pre-University 1,Commerce,F,794
+1983,Pre-University 1,Science,MF,770
+1983,Pre-University 1,Science,F,323
+1983,Pre-University 2,Arts,MF,471
+1983,Pre-University 2,Arts,F,320
+1983,Pre-University 2,Commerce,MF,980
+1983,Pre-University 2,Commerce,F,651
+1983,Pre-University 2,Science,MF,401
+1983,Pre-University 2,Science,F,154
+1983,Pre-University 3,Arts,MF,433
+1983,Pre-University 3,Arts,F,280
+1983,Pre-University 3,Commerce,MF,1244
+1983,Pre-University 3,Commerce,F,853
+1983,Pre-University 3,Science,MF,518
+1983,Pre-University 3,Science,F,164
+1984,Junior College 1,Arts,MF,1412
+1984,Junior College 1,Arts,F,1006
+1984,Junior College 1,Commerce,MF,1802
+1984,Junior College 1,Commerce,F,1335
+1984,Junior College 1,Science,MF,4587
+1984,Junior College 1,Science,F,1729
+1984,Junior College 2,Arts,MF,1325
+1984,Junior College 2,Arts,F,942
+1984,Junior College 2,Commerce,MF,1415
+1984,Junior College 2,Commerce,F,1072
+1984,Junior College 2,Science,MF,4168
+1984,Junior College 2,Science,F,1697
+1984,Pre-University 1,Arts,MF,779
+1984,Pre-University 1,Arts,F,448
+1984,Pre-University 1,Commerce,MF,1199
+1984,Pre-University 1,Commerce,F,810
+1984,Pre-University 1,Science,MF,487
+1984,Pre-University 1,Science,F,200
+1984,Pre-University 2,Arts,MF,770
+1984,Pre-University 2,Arts,F,509
+1984,Pre-University 2,Commerce,MF,1070
+1984,Pre-University 2,Commerce,F,724
+1984,Pre-University 2,Science,MF,553
+1984,Pre-University 2,Science,F,247
+1984,Pre-University 3,Arts,MF,483
+1984,Pre-University 3,Arts,F,327
+1984,Pre-University 3,Commerce,MF,1015
+1984,Pre-University 3,Commerce,F,658
+1984,Pre-University 3,Science,MF,406
+1984,Pre-University 3,Science,F,148
+1985,Junior College 1,Arts,MF,2061
+1985,Junior College 1,Arts,F,1534
+1985,Junior College 1,Commerce,MF,2131
+1985,Junior College 1,Commerce,F,1589
+1985,Junior College 1,Science,MF,5636
+1985,Junior College 1,Science,F,2147
+1985,Junior College 2,Arts,MF,1425
+1985,Junior College 2,Arts,F,1015
+1985,Junior College 2,Commerce,MF,1792
+1985,Junior College 2,Commerce,F,1340
+1985,Junior College 2,Science,MF,4609
+1985,Junior College 2,Science,F,1761
+1985,Pre-University 1,Arts,MF,788
+1985,Pre-University 1,Arts,F,488
+1985,Pre-University 1,Commerce,MF,1264
+1985,Pre-University 1,Commerce,F,889
+1985,Pre-University 1,Science,MF,415
+1985,Pre-University 1,Science,F,173
+1985,Pre-University 2,Arts,MF,716
+1985,Pre-University 2,Arts,F,419
+1985,Pre-University 2,Commerce,MF,1046
+1985,Pre-University 2,Commerce,F,720
+1985,Pre-University 2,Science,MF,402
+1985,Pre-University 2,Science,F,170
+1985,Pre-University 3,Arts,MF,750
+1985,Pre-University 3,Arts,F,497
+1985,Pre-University 3,Commerce,MF,1103
+1985,Pre-University 3,Commerce,F,739
+1985,Pre-University 3,Science,MF,561
+1985,Pre-University 3,Science,F,249
+1986,Junior College 1,Arts,MF,2259
+1986,Junior College 1,Arts,F,1615
+1986,Junior College 1,Commerce,MF,2721
+1986,Junior College 1,Commerce,F,1961
+1986,Junior College 1,Science,MF,6100
+1986,Junior College 1,Science,F,2172
+1986,Junior College 2,Arts,MF,2028
+1986,Junior College 2,Arts,F,1515
+1986,Junior College 2,Commerce,MF,2133
+1986,Junior College 2,Commerce,F,1596
+1986,Junior College 2,Science,MF,5485
+1986,Junior College 2,Science,F,2076
+1986,Pre-University 1,Arts,MF,816
+1986,Pre-University 1,Arts,F,480
+1986,Pre-University 1,Commerce,MF,1273
+1986,Pre-University 1,Commerce,F,864
+1986,Pre-University 1,Science,MF,385
+1986,Pre-University 1,Science,F,146
+1986,Pre-University 2,Arts,MF,734
+1986,Pre-University 2,Arts,F,460
+1986,Pre-University 2,Commerce,MF,1186
+1986,Pre-University 2,Commerce,F,845
+1986,Pre-University 2,Science,MF,351
+1986,Pre-University 2,Science,F,150
+1986,Pre-University 3,Arts,MF,715
+1986,Pre-University 3,Arts,F,428
+1986,Pre-University 3,Commerce,MF,1011
+1986,Pre-University 3,Commerce,F,696
+1986,Pre-University 3,Science,MF,401
+1986,Pre-University 3,Science,F,164
+1987,Junior College 1,Arts,MF,2744
+1987,Junior College 1,Arts,F,1935
+1987,Junior College 1,Commerce,MF,2633
+1987,Junior College 1,Commerce,F,1909
+1987,Junior College 1,Science,MF,6507
+1987,Junior College 1,Science,F,2410
+1987,Junior College 2,Arts,MF,2176
+1987,Junior College 2,Arts,F,1582
+1987,Junior College 2,Commerce,MF,2603
+1987,Junior College 2,Commerce,F,1887
+1987,Junior College 2,Science,MF,5838
+1987,Junior College 2,Science,F,2106
+1987,Pre-University 1,Arts,MF,718
+1987,Pre-University 1,Arts,F,416
+1987,Pre-University 1,Commerce,MF,1742
+1987,Pre-University 1,Commerce,F,1195
+1987,Pre-University 1,Science,MF,226
+1987,Pre-University 1,Science,F,71
+1987,Pre-University 2,Arts,MF,706
+1987,Pre-University 2,Arts,F,422
+1987,Pre-University 2,Commerce,MF,1212
+1987,Pre-University 2,Commerce,F,818
+1987,Pre-University 2,Science,MF,305
+1987,Pre-University 2,Science,F,115
+1987,Pre-University 3,Arts,MF,698
+1987,Pre-University 3,Arts,F,437
+1987,Pre-University 3,Commerce,MF,1086
+1987,Pre-University 3,Commerce,F,766
+1987,Pre-University 3,Science,MF,314
+1987,Pre-University 3,Science,F,134
+1988,Junior College 1,Arts,MF,2991
+1988,Junior College 1,Arts,F,2163
+1988,Junior College 1,Commerce,MF,3393
+1988,Junior College 1,Commerce,F,2525
+1988,Junior College 1,Science,MF,7557
+1988,Junior College 1,Science,F,2811
+1988,Junior College 2,Arts,MF,2467
+1988,Junior College 2,Arts,F,1731
+1988,Junior College 2,Commerce,MF,2422
+1988,Junior College 2,Commerce,F,1748
+1988,Junior College 2,Science,MF,6138
+1988,Junior College 2,Science,F,2284
+1988,Pre-University 1,Arts,MF,797
+1988,Pre-University 1,Arts,F,496
+1988,Pre-University 1,Commerce,MF,1840
+1988,Pre-University 1,Commerce,F,1247
+1988,Pre-University 1,Science,MF,207
+1988,Pre-University 1,Science,F,81
+1988,Pre-University 2,Arts,MF,611
+1988,Pre-University 2,Arts,F,346
+1988,Pre-University 2,Commerce,MF,1534
+1988,Pre-University 2,Commerce,F,1059
+1988,Pre-University 2,Science,MF,128
+1988,Pre-University 2,Science,F,40
+1988,Pre-University 3,Arts,MF,642
+1988,Pre-University 3,Arts,F,389
+1988,Pre-University 3,Commerce,MF,1081
+1988,Pre-University 3,Commerce,F,737
+1988,Pre-University 3,Science,MF,274
+1988,Pre-University 3,Science,F,98
+1989,Junior College 1,Arts,MF,2157
+1989,Junior College 1,Arts,F,1554
+1989,Junior College 1,Commerce,MF,2477
+1989,Junior College 1,Commerce,F,1856
+1989,Junior College 1,Science,MF,6789
+1989,Junior College 1,Science,F,2582
+1989,Junior College 2,Arts,MF,2720
+1989,Junior College 2,Arts,F,1958
+1989,Junior College 2,Commerce,MF,3166
+1989,Junior College 2,Commerce,F,2366
+1989,Junior College 2,Science,MF,7174
+1989,Junior College 2,Science,F,2673
+1989,Pre-University 1,Arts,MF,492
+1989,Pre-University 1,Arts,F,311
+1989,Pre-University 1,Commerce,MF,1837
+1989,Pre-University 1,Commerce,F,1302
+1989,Pre-University 1,Science,MF,343
+1989,Pre-University 1,Science,F,105
+1989,Pre-University 2,Arts,MF,625
+1989,Pre-University 2,Arts,F,394
+1989,Pre-University 2,Commerce,MF,1683
+1989,Pre-University 2,Commerce,F,1137
+1989,Pre-University 2,Science,MF,129
+1989,Pre-University 2,Science,F,57
+1989,Pre-University 3,Arts,MF,577
+1989,Pre-University 3,Arts,F,335
+1989,Pre-University 3,Commerce,MF,1423
+1989,Pre-University 3,Commerce,F,976
+1989,Pre-University 3,Science,MF,137
+1989,Pre-University 3,Science,F,37
+1990,Junior College 1,Arts,MF,1992
+1990,Junior College 1,Arts,F,1408
+1990,Junior College 1,Commerce,MF,2685
+1990,Junior College 1,Commerce,F,1951
+1990,Junior College 1,Science,MF,6370
+1990,Junior College 1,Science,F,2464
+1990,Junior College 2,Arts,MF,2056
+1990,Junior College 2,Arts,F,1489
+1990,Junior College 2,Commerce,MF,2399
+1990,Junior College 2,Commerce,F,1809
+1990,Junior College 2,Science,MF,6593
+1990,Junior College 2,Science,F,2504
+1990,Pre-University 1,Arts,MF,351
+1990,Pre-University 1,Arts,F,253
+1990,Pre-University 1,Commerce,MF,1901
+1990,Pre-University 1,Commerce,F,1382
+1990,Pre-University 1,Science,MF,280
+1990,Pre-University 1,Science,F,85
+1990,Pre-University 2,Arts,MF,416
+1990,Pre-University 2,Arts,F,269
+1990,Pre-University 2,Commerce,MF,1707
+1990,Pre-University 2,Commerce,F,1208
+1990,Pre-University 2,Science,MF,204
+1990,Pre-University 2,Science,F,80
+1990,Pre-University 3,Arts,MF,575
+1990,Pre-University 3,Arts,F,367
+1990,Pre-University 3,Commerce,MF,1567
+1990,Pre-University 3,Commerce,F,1061
+1990,Pre-University 3,Science,MF,118
+1990,Pre-University 3,Science,F,48
+1991,Junior College 1,Arts,MF,1757
+1991,Junior College 1,Arts,F,1321
+1991,Junior College 1,Commerce,MF,2415
+1991,Junior College 1,Commerce,F,1765
+1991,Junior College 1,Science,MF,5947
+1991,Junior College 1,Science,F,2288
+1991,Junior College 2,Arts,MF,1891
+1991,Junior College 2,Arts,F,1332
+1991,Junior College 2,Commerce,MF,2494
+1991,Junior College 2,Commerce,F,1818
+1991,Junior College 2,Science,MF,6075
+1991,Junior College 2,Science,F,2346
+1991,Pre-University 1,Arts,MF,334
+1991,Pre-University 1,Arts,F,224
+1991,Pre-University 1,Commerce,MF,1820
+1991,Pre-University 1,Commerce,F,1215
+1991,Pre-University 1,Science,MF,279
+1991,Pre-University 1,Science,F,105
+1991,Pre-University 2,Arts,MF,274
+1991,Pre-University 2,Arts,F,203
+1991,Pre-University 2,Commerce,MF,1661
+1991,Pre-University 2,Commerce,F,1209
+1991,Pre-University 2,Science,MF,157
+1991,Pre-University 2,Science,F,57
+1991,Pre-University 3,Arts,MF,388
+1991,Pre-University 3,Arts,F,259
+1991,Pre-University 3,Commerce,MF,1557
+1991,Pre-University 3,Commerce,F,1115
+1991,Pre-University 3,Science,MF,175
+1991,Pre-University 3,Science,F,72
+1992,Junior College 1,Arts,MF,1607
+1992,Junior College 1,Arts,F,1130
+1992,Junior College 1,Commerce,MF,1962
+1992,Junior College 1,Commerce,F,1437
+1992,Junior College 1,Science,MF,5802
+1992,Junior College 1,Science,F,2349
+1992,Junior College 2,Arts,MF,1656
+1992,Junior College 2,Arts,F,1252
+1992,Junior College 2,Commerce,MF,2201
+1992,Junior College 2,Commerce,F,1622
+1992,Junior College 2,Science,MF,5673
+1992,Junior College 2,Science,F,2165
+1992,Pre-University 1,Arts,MF,242
+1992,Pre-University 1,Arts,F,171
+1992,Pre-University 1,Commerce,MF,1400
+1992,Pre-University 1,Commerce,F,970
+1992,Pre-University 1,Science,MF,182
+1992,Pre-University 1,Science,F,69
+1992,Pre-University 2,Arts,MF,298
+1992,Pre-University 2,Arts,F,205
+1992,Pre-University 2,Commerce,MF,1508
+1992,Pre-University 2,Commerce,F,1022
+1992,Pre-University 2,Science,MF,188
+1992,Pre-University 2,Science,F,79
+1992,Pre-University 3,Arts,MF,267
+1992,Pre-University 3,Arts,F,193
+1992,Pre-University 3,Commerce,MF,1531
+1992,Pre-University 3,Commerce,F,1123
+1992,Pre-University 3,Science,MF,146
+1992,Pre-University 3,Science,F,54
+1993,Junior College 1,Arts,MF,1622
+1993,Junior College 1,Arts,F,1171
+1993,Junior College 1,Commerce,MF,2134
+1993,Junior College 1,Commerce,F,1582
+1993,Junior College 1,Science,MF,6457
+1993,Junior College 1,Science,F,2776
+1993,Junior College 2,Arts,MF,1506
+1993,Junior College 2,Arts,F,1062
+1993,Junior College 2,Commerce,MF,1851
+1993,Junior College 2,Commerce,F,1362
+1993,Junior College 2,Science,MF,5526
+1993,Junior College 2,Science,F,2241
+1993,Pre-University 1,Arts,MF,148
+1993,Pre-University 1,Arts,F,93
+1993,Pre-University 1,Commerce,MF,1114
+1993,Pre-University 1,Commerce,F,750
+1993,Pre-University 1,Science,MF,111
+1993,Pre-University 1,Science,F,43
+1993,Pre-University 2,Arts,MF,211
+1993,Pre-University 2,Arts,F,148
+1993,Pre-University 2,Commerce,MF,1205
+1993,Pre-University 2,Commerce,F,842
+1993,Pre-University 2,Science,MF,157
+1993,Pre-University 2,Science,F,64
+1993,Pre-University 3,Arts,MF,288
+1993,Pre-University 3,Arts,F,199
+1993,Pre-University 3,Commerce,MF,1458
+1993,Pre-University 3,Commerce,F,998
+1993,Pre-University 3,Science,MF,170
+1993,Pre-University 3,Science,F,69
+1994,Junior College 1,Arts,MF,1297
+1994,Junior College 1,Arts,F,906
+1994,Junior College 1,Commerce,MF,2175
+1994,Junior College 1,Commerce,F,1586
+1994,Junior College 1,Science,MF,6094
+1994,Junior College 1,Science,F,2531
+1994,Junior College 2,Arts,MF,1419
+1994,Junior College 2,Arts,F,1041
+1994,Junior College 2,Commerce,MF,2003
+1994,Junior College 2,Commerce,F,1511
+1994,Junior College 2,Science,MF,6212
+1994,Junior College 2,Science,F,2664
+1994,Pre-University 1,Arts,MF,110
+1994,Pre-University 1,Arts,F,71
+1994,Pre-University 1,Commerce,MF,840
+1994,Pre-University 1,Commerce,F,574
+1994,Pre-University 1,Science,MF,97
+1994,Pre-University 1,Science,F,38
+1994,Pre-University 2,Arts,MF,130
+1994,Pre-University 2,Arts,F,81
+1994,Pre-University 2,Commerce,MF,925
+1994,Pre-University 2,Commerce,F,635
+1994,Pre-University 2,Science,MF,73
+1994,Pre-University 2,Science,F,32
+1994,Pre-University 3,Arts,MF,203
+1994,Pre-University 3,Arts,F,144
+1994,Pre-University 3,Commerce,MF,1121
+1994,Pre-University 3,Commerce,F,797
+1994,Pre-University 3,Science,MF,158
+1994,Pre-University 3,Science,F,65
+1995,Junior College 1,Arts,MF,1278
+1995,Junior College 1,Arts,F,885
+1995,Junior College 1,Commerce,MF,2361
+1995,Junior College 1,Commerce,F,1754
+1995,Junior College 1,Science,MF,6412
+1995,Junior College 1,Science,F,2710
+1995,Junior College 2,Arts,MF,1215
+1995,Junior College 2,Arts,F,865
+1995,Junior College 2,Commerce,MF,2046
+1995,Junior College 2,Commerce,F,1504
+1995,Junior College 2,Science,MF,5808
+1995,Junior College 2,Science,F,2411
+1995,Pre-University 1,Arts,MF,65
+1995,Pre-University 1,Arts,F,39
+1995,Pre-University 1,Commerce,MF,498
+1995,Pre-University 1,Commerce,F,333
+1995,Pre-University 1,Science,MF,48
+1995,Pre-University 1,Science,F,25
+1995,Pre-University 2,Arts,MF,105
+1995,Pre-University 2,Arts,F,67
+1995,Pre-University 2,Commerce,MF,760
+1995,Pre-University 2,Commerce,F,511
+1995,Pre-University 2,Science,MF,61
+1995,Pre-University 2,Science,F,25
+1995,Pre-University 3,Arts,MF,123
+1995,Pre-University 3,Arts,F,76
+1995,Pre-University 3,Commerce,MF,827
+1995,Pre-University 3,Commerce,F,582
+1995,Pre-University 3,Science,MF,83
+1995,Pre-University 3,Science,F,35
+1996,Junior College 1,Arts,MF,1375
+1996,Junior College 1,Arts,F,965
+1996,Junior College 1,Commerce,MF,2377
+1996,Junior College 1,Commerce,F,1674
+1996,Junior College 1,Science,MF,6715
+1996,Junior College 1,Science,F,2817
+1996,Junior College 2,Arts,MF,1197
+1996,Junior College 2,Arts,F,828
+1996,Junior College 2,Commerce,MF,2232
+1996,Junior College 2,Commerce,F,1659
+1996,Junior College 2,Science,MF,6173
+1996,Junior College 2,Science,F,2607
+1996,Pre-University 1,Arts,MF,60
+1996,Pre-University 1,Arts,F,45
+1996,Pre-University 1,Commerce,MF,264
+1996,Pre-University 1,Commerce,F,180
+1996,Pre-University 1,Science,MF,52
+1996,Pre-University 1,Science,F,22
+1996,Pre-University 2,Arts,MF,58
+1996,Pre-University 2,Arts,F,35
+1996,Pre-University 2,Commerce,MF,435
+1996,Pre-University 2,Commerce,F,286
+1996,Pre-University 2,Science,MF,42
+1996,Pre-University 2,Science,F,25
+1996,Pre-University 3,Arts,MF,99
+1996,Pre-University 3,Arts,F,63
+1996,Pre-University 3,Commerce,MF,722
+1996,Pre-University 3,Commerce,F,489
+1996,Pre-University 3,Science,MF,57
+1996,Pre-University 3,Science,F,23
+1997,Junior College 1,Arts,MF,1564
+1997,Junior College 1,Arts,F,1072
+1997,Junior College 1,Commerce,MF,2465
+1997,Junior College 1,Commerce,F,1771
+1997,Junior College 1,Science,MF,7099
+1997,Junior College 1,Science,F,3221
+1997,Junior College 2,Arts,MF,1288
+1997,Junior College 2,Arts,F,921
+1997,Junior College 2,Commerce,MF,2284
+1997,Junior College 2,Commerce,F,1624
+1997,Junior College 2,Science,MF,6477
+1997,Junior College 2,Science,F,2724
+1997,Pre-University 1,Arts,MF,65
+1997,Pre-University 1,Arts,F,50
+1997,Pre-University 1,Commerce,MF,199
+1997,Pre-University 1,Commerce,F,123
+1997,Pre-University 1,Science,MF,60
+1997,Pre-University 1,Science,F,25
+1997,Pre-University 2,Arts,MF,52
+1997,Pre-University 2,Arts,F,42
+1997,Pre-University 2,Commerce,MF,211
+1997,Pre-University 2,Commerce,F,150
+1997,Pre-University 2,Science,MF,36
+1997,Pre-University 2,Science,F,12
+1997,Pre-University 3,Arts,MF,61
+1997,Pre-University 3,Arts,F,35
+1997,Pre-University 3,Commerce,MF,409
+1997,Pre-University 3,Commerce,F,269
+1997,Pre-University 3,Science,MF,41
+1997,Pre-University 3,Science,F,24
+1998,Junior College 1,Arts,MF,1776
+1998,Junior College 1,Arts,F,1300
+1998,Junior College 1,Commerce,MF,2108
+1998,Junior College 1,Commerce,F,1421
+1998,Junior College 1,Science,MF,7987
+1998,Junior College 1,Science,F,3700
+1998,Junior College 2,Arts,MF,1425
+1998,Junior College 2,Arts,F,993
+1998,Junior College 2,Commerce,MF,2391
+1998,Junior College 2,Commerce,F,1733
+1998,Junior College 2,Science,MF,6843
+1998,Junior College 2,Science,F,3087
+1998,Pre-University 1,Arts,MF,92
+1998,Pre-University 1,Arts,F,67
+1998,Pre-University 1,Commerce,MF,265
+1998,Pre-University 1,Commerce,F,182
+1998,Pre-University 1,Science,MF,77
+1998,Pre-University 1,Science,F,35
+1998,Pre-University 2,Arts,MF,46
+1998,Pre-University 2,Arts,F,35
+1998,Pre-University 2,Commerce,MF,167
+1998,Pre-University 2,Commerce,F,105
+1998,Pre-University 2,Science,MF,55
+1998,Pre-University 2,Science,F,21
+1998,Pre-University 3,Arts,MF,50
+1998,Pre-University 3,Arts,F,39
+1998,Pre-University 3,Commerce,MF,214
+1998,Pre-University 3,Commerce,F,150
+1998,Pre-University 3,Science,MF,34
+1998,Pre-University 3,Science,F,11
+1999,Junior College 1,Arts,MF,1988
+1999,Junior College 1,Arts,F,1433
+1999,Junior College 1,Commerce,MF,1838
+1999,Junior College 1,Commerce,F,1267
+1999,Junior College 1,Science,MF,8547
+1999,Junior College 1,Science,F,4064
+1999,Junior College 2,Arts,MF,1645
+1999,Junior College 2,Arts,F,1213
+1999,Junior College 2,Commerce,MF,1973
+1999,Junior College 2,Commerce,F,1335
+1999,Junior College 2,Science,MF,7750
+1999,Junior College 2,Science,F,3600
+1999,Pre-University 1,Arts,MF,170
+1999,Pre-University 1,Arts,F,114
+1999,Pre-University 1,Commerce,MF,199
+1999,Pre-University 1,Commerce,F,129
+1999,Pre-University 1,Science,MF,110
+1999,Pre-University 1,Science,F,48
+1999,Pre-University 2,Arts,MF,84
+1999,Pre-University 2,Arts,F,58
+1999,Pre-University 2,Commerce,MF,222
+1999,Pre-University 2,Commerce,F,159
+1999,Pre-University 2,Science,MF,60
+1999,Pre-University 2,Science,F,28
+1999,Pre-University 3,Arts,MF,41
+1999,Pre-University 3,Arts,F,32
+1999,Pre-University 3,Commerce,MF,154
+1999,Pre-University 3,Commerce,F,94
+1999,Pre-University 3,Science,MF,53
+1999,Pre-University 3,Science,F,20
+2000,Junior College 1,Arts,MF,2442
+2000,Junior College 1,Arts,F,1757
+2000,Junior College 1,Commerce,MF,-
+2000,Junior College 1,Commerce,F,-
+2000,Junior College 1,Science,MF,9355
+2000,Junior College 1,Science,F,4529
+2000,Junior College 2,Arts,MF,1904
+2000,Junior College 2,Arts,F,1392
+2000,Junior College 2,Commerce,MF,1737
+2000,Junior College 2,Commerce,F,1200
+2000,Junior College 2,Science,MF,8262
+2000,Junior College 2,Science,F,3928
+2000,Pre-University 1,Arts,MF,138
+2000,Pre-University 1,Arts,F,87
+2000,Pre-University 1,Commerce,MF,165
+2000,Pre-University 1,Commerce,F,120
+2000,Pre-University 1,Science,MF,91
+2000,Pre-University 1,Science,F,50
+2000,Pre-University 2,Arts,MF,103
+2000,Pre-University 2,Arts,F,69
+2000,Pre-University 2,Commerce,MF,221
+2000,Pre-University 2,Commerce,F,144
+2000,Pre-University 2,Science,MF,97
+2000,Pre-University 2,Science,F,38
+2000,Pre-University 3,Arts,MF,81
+2000,Pre-University 3,Arts,F,55
+2000,Pre-University 3,Commerce,MF,161
+2000,Pre-University 3,Commerce,F,118
+2000,Pre-University 3,Science,MF,47
+2000,Pre-University 3,Science,F,19
+2001,Junior College 1,Arts,MF,2365
+2001,Junior College 1,Arts,F,1673
+2001,Junior College 1,Commerce,MF,-
+2001,Junior College 1,Commerce,F,-
+2001,Junior College 1,Science,MF,9783
+2001,Junior College 1,Science,F,4830
+2001,Junior College 2,Arts,MF,2283
+2001,Junior College 2,Arts,F,1666
+2001,Junior College 2,Commerce,MF,-
+2001,Junior College 2,Commerce,F,-
+2001,Junior College 2,Science,MF,8913
+2001,Junior College 2,Science,F,4347
+2001,Pre-University 1,Arts,MF,132
+2001,Pre-University 1,Arts,F,87
+2001,Pre-University 1,Commerce,MF,110
+2001,Pre-University 1,Commerce,F,76
+2001,Pre-University 1,Science,MF,97
+2001,Pre-University 1,Science,F,54
+2001,Pre-University 2,Arts,MF,115
+2001,Pre-University 2,Arts,F,74
+2001,Pre-University 2,Commerce,MF,132
+2001,Pre-University 2,Commerce,F,101
+2001,Pre-University 2,Science,MF,75
+2001,Pre-University 2,Science,F,46
+2001,Pre-University 3,Arts,MF,108
+2001,Pre-University 3,Arts,F,72
+2001,Pre-University 3,Commerce,MF,182
+2001,Pre-University 3,Commerce,F,115
+2001,Pre-University 3,Science,MF,81
+2001,Pre-University 3,Science,F,29
+2002,Junior College 1,Arts,MF,2512
+2002,Junior College 1,Arts,F,1740
+2002,Junior College 1,Commerce,MF,-
+2002,Junior College 1,Commerce,F,-
+2002,Junior College 1,Science,MF,10531
+2002,Junior College 1,Science,F,5264
+2002,Junior College 2,Arts,MF,2215
+2002,Junior College 2,Arts,F,1570
+2002,Junior College 2,Commerce,MF,-
+2002,Junior College 2,Commerce,F,-
+2002,Junior College 2,Science,MF,9198
+2002,Junior College 2,Science,F,4557
+2002,Pre-University 1,Arts,MF,136
+2002,Pre-University 1,Arts,F,96
+2002,Pre-University 1,Commerce,MF,126
+2002,Pre-University 1,Commerce,F,87
+2002,Pre-University 1,Science,MF,99
+2002,Pre-University 1,Science,F,52
+2002,Pre-University 2,Arts,MF,104
+2002,Pre-University 2,Arts,F,73
+2002,Pre-University 2,Commerce,MF,92
+2002,Pre-University 2,Commerce,F,64
+2002,Pre-University 2,Science,MF,83
+2002,Pre-University 2,Science,F,49
+2002,Pre-University 3,Arts,MF,87
+2002,Pre-University 3,Arts,F,55
+2002,Pre-University 3,Commerce,MF,124
+2002,Pre-University 3,Commerce,F,92
+2002,Pre-University 3,Science,MF,69
+2002,Pre-University 3,Science,F,41
+2003,Junior College 1,Arts,MF,2015
+2003,Junior College 1,Arts,F,1337
+2003,Junior College 1,Commerce,MF,-
+2003,Junior College 1,Commerce,F,-
+2003,Junior College 1,Science,MF,9524
+2003,Junior College 1,Science,F,4784
+2003,Junior College 2,Arts,MF,2314
+2003,Junior College 2,Arts,F,1627
+2003,Junior College 2,Commerce,MF,-
+2003,Junior College 2,Commerce,F,-
+2003,Junior College 2,Science,MF,9855
+2003,Junior College 2,Science,F,4930
+2003,Pre-University 1,Arts,MF,124
+2003,Pre-University 1,Arts,F,71
+2003,Pre-University 1,Commerce,MF,90
+2003,Pre-University 1,Commerce,F,59
+2003,Pre-University 1,Science,MF,125
+2003,Pre-University 1,Science,F,72
+2003,Pre-University 2,Arts,MF,122
+2003,Pre-University 2,Arts,F,83
+2003,Pre-University 2,Commerce,MF,92
+2003,Pre-University 2,Commerce,F,58
+2003,Pre-University 2,Science,MF,75
+2003,Pre-University 2,Science,F,36
+2003,Pre-University 3,Arts,MF,75
+2003,Pre-University 3,Arts,F,51
+2003,Pre-University 3,Commerce,MF,78
+2003,Pre-University 3,Commerce,F,55
+2003,Pre-University 3,Science,MF,70
+2003,Pre-University 3,Science,F,43
+2004,Junior College 1,Arts,MF,2220
+2004,Junior College 1,Arts,F,1504
+2004,Junior College 1,Commerce,MF,-
+2004,Junior College 1,Commerce,F,-
+2004,Junior College 1,Science,MF,10771
+2004,Junior College 1,Science,F,5389
+2004,Junior College 2,Arts,MF,1885
+2004,Junior College 2,Arts,F,1249
+2004,Junior College 2,Commerce,MF,-
+2004,Junior College 2,Commerce,F,-
+2004,Junior College 2,Science,MF,8836
+2004,Junior College 2,Science,F,4424
+2004,Pre-University 1,Arts,MF,145
+2004,Pre-University 1,Arts,F,101
+2004,Pre-University 1,Commerce,MF,123
+2004,Pre-University 1,Commerce,F,84
+2004,Pre-University 1,Science,MF,176
+2004,Pre-University 1,Science,F,104
+2004,Pre-University 2,Arts,MF,87
+2004,Pre-University 2,Arts,F,48
+2004,Pre-University 2,Commerce,MF,89
+2004,Pre-University 2,Commerce,F,55
+2004,Pre-University 2,Science,MF,103
+2004,Pre-University 2,Science,F,58
+2004,Pre-University 3,Arts,MF,81
+2004,Pre-University 3,Arts,F,51
+2004,Pre-University 3,Commerce,MF,99
+2004,Pre-University 3,Commerce,F,67
+2004,Pre-University 3,Science,MF,66
+2004,Pre-University 3,Science,F,36
+2005,Junior College 1,Arts,MF,2776
+2005,Junior College 1,Arts,F,1966
+2005,Junior College 1,Commerce,MF,-
+2005,Junior College 1,Commerce,F,-
+2005,Junior College 1,Science,MF,12840
+2005,Junior College 1,Science,F,6384
+2005,Junior College 2,Arts,MF,2058
+2005,Junior College 2,Arts,F,1404
+2005,Junior College 2,Commerce,MF,-
+2005,Junior College 2,Commerce,F,-
+2005,Junior College 2,Science,MF,10066
+2005,Junior College 2,Science,F,5030
+2005,Pre-University 1,Arts,MF,142
+2005,Pre-University 1,Arts,F,102
+2005,Pre-University 1,Commerce,MF,199
+2005,Pre-University 1,Commerce,F,141
+2005,Pre-University 1,Science,MF,216
+2005,Pre-University 1,Science,F,128
+2005,Pre-University 2,Arts,MF,96
+2005,Pre-University 2,Arts,F,66
+2005,Pre-University 2,Commerce,MF,131
+2005,Pre-University 2,Commerce,F,94
+2005,Pre-University 2,Science,MF,148
+2005,Pre-University 2,Science,F,92
+2005,Pre-University 3,Arts,MF,92
+2005,Pre-University 3,Arts,F,53
+2005,Pre-University 3,Commerce,MF,60
+2005,Pre-University 3,Commerce,F,41
+2005,Pre-University 3,Science,MF,77
+2005,Pre-University 3,Science,F,41
+2006,Junior College 1,Arts,MF,2452
+2006,Junior College 1,Arts,F,1653
+2006,Junior College 1,Commerce,MF,-
+2006,Junior College 1,Commerce,F,-
+2006,Junior College 1,Science,MF,12181
+2006,Junior College 1,Science,F,6107
+2006,Junior College 2,Arts,MF,2559
+2006,Junior College 2,Arts,F,1837
+2006,Junior College 2,Commerce,MF,-
+2006,Junior College 2,Commerce,F,-
+2006,Junior College 2,Science,MF,12262
+2006,Junior College 2,Science,F,6108
+2006,Pre-University 1,Arts,MF,183
+2006,Pre-University 1,Arts,F,132
+2006,Pre-University 1,Commerce,MF,141
+2006,Pre-University 1,Commerce,F,92
+2006,Pre-University 1,Science,MF,187
+2006,Pre-University 1,Science,F,99
+2006,Pre-University 2,Arts,MF,188
+2006,Pre-University 2,Arts,F,129
+2006,Pre-University 2,Commerce,MF,73
+2006,Pre-University 2,Commerce,F,57
+2006,Pre-University 2,Science,MF,176
+2006,Pre-University 2,Science,F,104
+2006,Pre-University 3,Arts,MF,126
+2006,Pre-University 3,Arts,F,87
+2006,Pre-University 3,Commerce,MF,68
+2006,Pre-University 3,Commerce,F,50
+2006,Pre-University 3,Science,MF,130
+2006,Pre-University 3,Science,F,79
+2007,Junior College 1,Arts,MF,2876
+2007,Junior College 1,Arts,F,1940
+2007,Junior College 1,Commerce,MF,-
+2007,Junior College 1,Commerce,F,-
+2007,Junior College 1,Science,MF,13559
+2007,Junior College 1,Science,F,6923
+2007,Junior College 2,Arts,MF,2195
+2007,Junior College 2,Arts,F,1500
+2007,Junior College 2,Commerce,MF,-
+2007,Junior College 2,Commerce,F,-
+2007,Junior College 2,Science,MF,11469
+2007,Junior College 2,Science,F,5804
+2007,Pre-University 1,Arts,MF,196
+2007,Pre-University 1,Arts,F,132
+2007,Pre-University 1,Commerce,MF,278
+2007,Pre-University 1,Commerce,F,175
+2007,Pre-University 1,Science,MF,247
+2007,Pre-University 1,Science,F,143
+2007,Pre-University 2,Arts,MF,87
+2007,Pre-University 2,Arts,F,71
+2007,Pre-University 2,Commerce,MF,189
+2007,Pre-University 2,Commerce,F,122
+2007,Pre-University 2,Science,MF,140
+2007,Pre-University 2,Science,F,71
+2007,Pre-University 3,Arts,MF,89
+2007,Pre-University 3,Arts,F,66
+2007,Pre-University 3,Commerce,MF,157
+2007,Pre-University 3,Commerce,F,111
+2007,Pre-University 3,Science,MF,145
+2007,Pre-University 3,Science,F,88
+2008,Junior College 1,Arts,MF,2840
+2008,Junior College 1,Arts,F,1893
+2008,Junior College 1,Commerce,MF,-
+2008,Junior College 1,Commerce,F,-
+2008,Junior College 1,Science,MF,13308
+2008,Junior College 1,Science,F,6819
+2008,Junior College 2,Arts,MF,2560
+2008,Junior College 2,Arts,F,1750
+2008,Junior College 2,Commerce,MF,-
+2008,Junior College 2,Commerce,F,-
+2008,Junior College 2,Science,MF,12304
+2008,Junior College 2,Science,F,6273
+2008,Pre-University 1,Arts,MF,193
+2008,Pre-University 1,Arts,F,142
+2008,Pre-University 1,Commerce,MF,290
+2008,Pre-University 1,Commerce,F,182
+2008,Pre-University 1,Science,MF,205
+2008,Pre-University 1,Science,F,127
+2008,Pre-University 2,Arts,MF,163
+2008,Pre-University 2,Arts,F,119
+2008,Pre-University 2,Commerce,MF,199
+2008,Pre-University 2,Commerce,F,127
+2008,Pre-University 2,Science,MF,197
+2008,Pre-University 2,Science,F,110
+2008,Pre-University 3,Arts,MF,86
+2008,Pre-University 3,Arts,F,68
+2008,Pre-University 3,Commerce,MF,125
+2008,Pre-University 3,Commerce,F,79
+2008,Pre-University 3,Science,MF,109
+2008,Pre-University 3,Science,F,60
+2009,Junior College 1,Arts,MF,2682
+2009,Junior College 1,Arts,F,1816
+2009,Junior College 1,Commerce,MF,-
+2009,Junior College 1,Commerce,F,-
+2009,Junior College 1,Science,MF,13439
+2009,Junior College 1,Science,F,6994
+2009,Junior College 2,Arts,MF,2428
+2009,Junior College 2,Arts,F,1631
+2009,Junior College 2,Commerce,MF,-
+2009,Junior College 2,Commerce,F,-
+2009,Junior College 2,Science,MF,12119
+2009,Junior College 2,Science,F,6206
+2009,Pre-University 1,Arts,MF,147
+2009,Pre-University 1,Arts,F,108
+2009,Pre-University 1,Commerce,MF,235
+2009,Pre-University 1,Commerce,F,154
+2009,Pre-University 1,Science,MF,236
+2009,Pre-University 1,Science,F,129
+2009,Pre-University 2,Arts,MF,89
+2009,Pre-University 2,Arts,F,66
+2009,Pre-University 2,Commerce,MF,248
+2009,Pre-University 2,Commerce,F,154
+2009,Pre-University 2,Science,MF,130
+2009,Pre-University 2,Science,F,83
+2009,Pre-University 3,Arts,MF,114
+2009,Pre-University 3,Arts,F,83
+2009,Pre-University 3,Commerce,MF,129
+2009,Pre-University 3,Commerce,F,84
+2009,Pre-University 3,Science,MF,114
+2009,Pre-University 3,Science,F,61
+2010,Junior College 1,Arts,MF,2733
+2010,Junior College 1,Arts,F,1835
+2010,Junior College 1,Commerce,MF,-
+2010,Junior College 1,Commerce,F,-
+2010,Junior College 1,Science,MF,13594
+2010,Junior College 1,Science,F,7001
+2010,Junior College 2,Arts,MF,2400
+2010,Junior College 2,Arts,F,1641
+2010,Junior College 2,Commerce,MF,-
+2010,Junior College 2,Commerce,F,-
+2010,Junior College 2,Science,MF,12324
+2010,Junior College 2,Science,F,6389
+2010,Pre-University 1,Arts,MF,164
+2010,Pre-University 1,Arts,F,123
+2010,Pre-University 1,Commerce,MF,184
+2010,Pre-University 1,Commerce,F,131
+2010,Pre-University 1,Science,MF,223
+2010,Pre-University 1,Science,F,131
+2010,Pre-University 2,Arts,MF,127
+2010,Pre-University 2,Arts,F,92
+2010,Pre-University 2,Commerce,MF,146
+2010,Pre-University 2,Commerce,F,98
+2010,Pre-University 2,Science,MF,168
+2010,Pre-University 2,Science,F,93
+2010,Pre-University 3,Arts,MF,63
+2010,Pre-University 3,Arts,F,49
+2010,Pre-University 3,Commerce,MF,197
+2010,Pre-University 3,Commerce,F,128
+2010,Pre-University 3,Science,MF,97
+2010,Pre-University 3,Science,F,58
+2011,Junior College 1,Arts,MF,2769
+2011,Junior College 1,Arts,F,1879
+2011,Junior College 1,Commerce,MF,-
+2011,Junior College 1,Commerce,F,-
+2011,Junior College 1,Science,MF,13426
+2011,Junior College 1,Science,F,6863
+2011,Junior College 2,Arts,MF,2331
+2011,Junior College 2,Arts,F,1582
+2011,Junior College 2,Commerce,MF,-
+2011,Junior College 2,Commerce,F,-
+2011,Junior College 2,Science,MF,12440
+2011,Junior College 2,Science,F,6370
+2011,Pre-University 1,Arts,MF,126
+2011,Pre-University 1,Arts,F,96
+2011,Pre-University 1,Commerce,MF,229
+2011,Pre-University 1,Commerce,F,158
+2011,Pre-University 1,Science,MF,196
+2011,Pre-University 1,Science,F,107
+2011,Pre-University 2,Arts,MF,106
+2011,Pre-University 2,Arts,F,69
+2011,Pre-University 2,Commerce,MF,144
+2011,Pre-University 2,Commerce,F,102
+2011,Pre-University 2,Science,MF,182
+2011,Pre-University 2,Science,F,105
+2011,Pre-University 3,Arts,MF,89
+2011,Pre-University 3,Arts,F,70
+2011,Pre-University 3,Commerce,MF,135
+2011,Pre-University 3,Commerce,F,98
+2011,Pre-University 3,Science,MF,123
+2011,Pre-University 3,Science,F,66
+2012,Junior College 1,Arts,MF,3025
+2012,Junior College 1,Arts,F,2069
+2012,Junior College 1,Commerce,MF,-
+2012,Junior College 1,Commerce,F,-
+2012,Junior College 1,Science,MF,13130
+2012,Junior College 1,Science,F,6732
+2012,Junior College 2,Arts,MF,2451
+2012,Junior College 2,Arts,F,1681
+2012,Junior College 2,Commerce,MF,-
+2012,Junior College 2,Commerce,F,-
+2012,Junior College 2,Science,MF,12208
+2012,Junior College 2,Science,F,6213
+2012,Pre-University 1,Arts,MF,101
+2012,Pre-University 1,Arts,F,76
+2012,Pre-University 1,Commerce,MF,288
+2012,Pre-University 1,Commerce,F,181
+2012,Pre-University 1,Science,MF,183
+2012,Pre-University 1,Science,F,100
+2012,Pre-University 2,Arts,MF,68
+2012,Pre-University 2,Arts,F,56
+2012,Pre-University 2,Commerce,MF,150
+2012,Pre-University 2,Commerce,F,104
+2012,Pre-University 2,Science,MF,146
+2012,Pre-University 2,Science,F,80
+2012,Pre-University 3,Arts,MF,87
+2012,Pre-University 3,Arts,F,58
+2012,Pre-University 3,Commerce,MF,118
+2012,Pre-University 3,Commerce,F,87
+2012,Pre-University 3,Science,MF,132
+2012,Pre-University 3,Science,F,74
+2013,Junior College 1,Arts,MF,2854
+2013,Junior College 1,Arts,F,1957
+2013,Junior College 1,Commerce,MF,-
+2013,Junior College 1,Commerce,F,-
+2013,Junior College 1,Science,MF,13407
+2013,Junior College 1,Science,F,6785
+2013,Junior College 2,Arts,MF,2614
+2013,Junior College 2,Arts,F,1833
+2013,Junior College 2,Commerce,MF,-
+2013,Junior College 2,Commerce,F,-
+2013,Junior College 2,Science,MF,11987
+2013,Junior College 2,Science,F,6073
+2013,Pre-University 1,Arts,MF,135
+2013,Pre-University 1,Arts,F,96
+2013,Pre-University 1,Commerce,MF,283
+2013,Pre-University 1,Commerce,F,176
+2013,Pre-University 1,Science,MF,211
+2013,Pre-University 1,Science,F,100
+2013,Pre-University 2,Arts,MF,68
+2013,Pre-University 2,Arts,F,51
+2013,Pre-University 2,Commerce,MF,167
+2013,Pre-University 2,Commerce,F,106
+2013,Pre-University 2,Science,MF,137
+2013,Pre-University 2,Science,F,77
+2013,Pre-University 3,Arts,MF,58
+2013,Pre-University 3,Arts,F,49
+2013,Pre-University 3,Commerce,MF,139
+2013,Pre-University 3,Commerce,F,98
+2013,Pre-University 3,Science,MF,105
+2013,Pre-University 3,Science,F,54
+2014,Junior College 1,Arts,MF,2697
+2014,Junior College 1,Arts,F,1873
+2014,Junior College 1,Commerce,MF,-
+2014,Junior College 1,Commerce,F,-
+2014,Junior College 1,Science,MF,12640
+2014,Junior College 1,Science,F,6383
+2014,Junior College 2,Arts,MF,2467
+2014,Junior College 2,Arts,F,1726
+2014,Junior College 2,Commerce,MF,-
+2014,Junior College 2,Commerce,F,-
+2014,Junior College 2,Science,MF,12434
+2014,Junior College 2,Science,F,6247
+2014,Pre-University 1,Arts,MF,168
+2014,Pre-University 1,Arts,F,124
+2014,Pre-University 1,Commerce,MF,233
+2014,Pre-University 1,Commerce,F,134
+2014,Pre-University 1,Science,MF,199
+2014,Pre-University 1,Science,F,78
+2014,Pre-University 2,Arts,MF,94
+2014,Pre-University 2,Arts,F,67
+2014,Pre-University 2,Commerce,MF,224
+2014,Pre-University 2,Commerce,F,136
+2014,Pre-University 2,Science,MF,167
+2014,Pre-University 2,Science,F,82
+2014,Pre-University 3,Arts,MF,59
+2014,Pre-University 3,Arts,F,45
+2014,Pre-University 3,Commerce,MF,131
+2014,Pre-University 3,Commerce,F,85
+2014,Pre-University 3,Science,MF,100
+2014,Pre-University 3,Science,F,55
+2015,Junior College 1,Arts,MF,2508
+2015,Junior College 1,Arts,F,1753
+2015,Junior College 1,Commerce,MF,-
+2015,Junior College 1,Commerce,F,-
+2015,Junior College 1,Science,MF,11535
+2015,Junior College 1,Science,F,5784
+2015,Junior College 2,Arts,MF,2455
+2015,Junior College 2,Arts,F,1743
+2015,Junior College 2,Commerce,MF,-
+2015,Junior College 2,Commerce,F,-
+2015,Junior College 2,Science,MF,11779
+2015,Junior College 2,Science,F,5919
+2015,Pre-University 1,Arts,MF,113
+2015,Pre-University 1,Arts,F,85
+2015,Pre-University 1,Commerce,MF,192
+2015,Pre-University 1,Commerce,F,109
+2015,Pre-University 1,Science,MF,164
+2015,Pre-University 1,Science,F,103
+2015,Pre-University 2,Arts,MF,99
+2015,Pre-University 2,Arts,F,79
+2015,Pre-University 2,Commerce,MF,181
+2015,Pre-University 2,Commerce,F,110
+2015,Pre-University 2,Science,MF,161
+2015,Pre-University 2,Science,F,60
+2015,Pre-University 3,Arts,MF,86
+2015,Pre-University 3,Arts,F,61
+2015,Pre-University 3,Commerce,MF,167
+2015,Pre-University 3,Commerce,F,101
+2015,Pre-University 3,Science,MF,119
+2015,Pre-University 3,Science,F,60
+2016,Junior College 1,Arts,MF,2443
+2016,Junior College 1,Arts,F,1732
+2016,Junior College 1,Commerce,MF,-
+2016,Junior College 1,Commerce,F,-
+2016,Junior College 1,Science,MF,11679
+2016,Junior College 1,Science,F,5881
+2016,Junior College 2,Arts,MF,2314
+2016,Junior College 2,Arts,F,1620
+2016,Junior College 2,Commerce,MF,-
+2016,Junior College 2,Commerce,F,-
+2016,Junior College 2,Science,MF,10805
+2016,Junior College 2,Science,F,5417
+2016,Pre-University 1,Arts,MF,131
+2016,Pre-University 1,Arts,F,96
+2016,Pre-University 1,Commerce,MF,182
+2016,Pre-University 1,Commerce,F,110
+2016,Pre-University 1,Science,MF,167
+2016,Pre-University 1,Science,F,88
+2016,Pre-University 2,Arts,MF,75
+2016,Pre-University 2,Arts,F,56
+2016,Pre-University 2,Commerce,MF,132
+2016,Pre-University 2,Commerce,F,79
+2016,Pre-University 2,Science,MF,129
+2016,Pre-University 2,Science,F,72
+2016,Pre-University 3,Arts,MF,81
+2016,Pre-University 3,Arts,F,66
+2016,Pre-University 3,Commerce,MF,164
+2016,Pre-University 3,Commerce,F,98
+2016,Pre-University 3,Science,MF,140
+2016,Pre-University 3,Science,F,54
+2017,Junior College 1,Arts,MF,2427
+2017,Junior College 1,Arts,F,1684
+2017,Junior College 1,Commerce,MF,-
+2017,Junior College 1,Commerce,F,-
+2017,Junior College 1,Science,MF,12411
+2017,Junior College 1,Science,F,6271
+2017,Junior College 2,Arts,MF,2278
+2017,Junior College 2,Arts,F,1610
+2017,Junior College 2,Commerce,MF,-
+2017,Junior College 2,Commerce,F,-
+2017,Junior College 2,Science,MF,11003
+2017,Junior College 2,Science,F,5491
+2017,Pre-University 1,Arts,MF,147
+2017,Pre-University 1,Arts,F,100
+2017,Pre-University 1,Commerce,MF,206
+2017,Pre-University 1,Commerce,F,120
+2017,Pre-University 1,Science,MF,182
+2017,Pre-University 1,Science,F,109
+2017,Pre-University 2,Arts,MF,88
+2017,Pre-University 2,Arts,F,72
+2017,Pre-University 2,Commerce,MF,116
+2017,Pre-University 2,Commerce,F,70
+2017,Pre-University 2,Science,MF,123
+2017,Pre-University 2,Science,F,63
+2017,Pre-University 3,Arts,MF,65
+2017,Pre-University 3,Arts,F,49
+2017,Pre-University 3,Commerce,MF,114
+2017,Pre-University 3,Commerce,F,69
+2017,Pre-University 3,Science,MF,92
+2017,Pre-University 3,Science,F,51
+2018,Junior College 1,1,MF,2302
+2018,Junior College 1,1,F,1589
+2018,Junior College 1,2,MF,11720
+2018,Junior College 1,2,F,5851
+2018,Junior College 2,1,MF,2267
+2018,Junior College 2,1,F,1583
+2018,Junior College 2,2,MF,11811
+2018,Junior College 2,2,F,5943
+2018,Pre-University 1,1,MF,80
+2018,Pre-University 1,1,F,49
+2018,Pre-University 1,2,MF,175
+2018,Pre-University 1,2,F,96
+2018,Pre-University 1,4,MF,121
+2018,Pre-University 1,4,F,72
+2018,Pre-University 2,1,MF,78
+2018,Pre-University 2,1,F,58
+2018,Pre-University 2,2,MF,135
+2018,Pre-University 2,2,F,75
+2018,Pre-University 2,4,MF,145
+2018,Pre-University 2,4,F,83
+2018,Pre-University 3,1,MF,50
+2018,Pre-University 3,1,F,41
+2018,Pre-University 3,2,MF,65
+2018,Pre-University 3,2,F,31
+2018,Pre-University 3,4,MF,63
+2018,Pre-University 3,4,F,32

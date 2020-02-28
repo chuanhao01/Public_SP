@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="fd13a3b3-c2d6-493b-bacd-0ffe3ec482f0" data-root-id="1293"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1438">
+          {"775e21d1-027a-4173-9eb2-cfd565f9119e":{"roots":{"references":[{"attributes":{},"id":"1335","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"1325","type":"ColumnDataSource"}},"id":"1329","type":"CDSView"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1338","type":"BoxAnnotation"},{"attributes":{},"id":"1316","type":"ResetTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1312","type":"PanTool"},{"id":"1313","type":"WheelZoomTool"},{"id":"1314","type":"BoxZoomTool"},{"id":"1315","type":"SaveTool"},{"id":"1316","type":"ResetTool"},{"id":"1317","type":"HelpTool"}]},"id":"1318","type":"Toolbar"},{"attributes":{},"id":"1300","type":"LinearScale"},{"attributes":{},"id":"1333","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"1325","type":"ColumnDataSource"},"glyph":{"id":"1326","type":"Circle"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1327","type":"Circle"},"selection_glyph":null,"view":{"id":"1329","type":"CDSView"}},"id":"1328","type":"GlyphRenderer"},{"attributes":{"ticker":{"id":"1303","type":"BasicTicker"}},"id":"1306","type":"Grid"},{"attributes":{},"id":"1336","type":"UnionRenderers"},{"attributes":{"callback":null},"id":"1296","type":"DataRange1d"},{"attributes":{"axis_label":"gross monthly median income","formatter":{"id":"1335","type":"BasicTickFormatter"},"ticker":{"id":"1308","type":"BasicTicker"}},"id":"1307","type":"LinearAxis"},{"attributes":{},"id":"1298","type":"LinearScale"},{"attributes":{},"id":"1303","type":"BasicTicker"},{"attributes":{"below":[{"id":"1302","type":"LinearAxis"}],"center":[{"id":"1306","type":"Grid"},{"id":"1311","type":"Grid"}],"left":[{"id":"1307","type":"LinearAxis"}],"renderers":[{"id":"1328","type":"GlyphRenderer"}],"title":{"id":"1331","type":"Title"},"toolbar":{"id":"1318","type":"Toolbar"},"x_range":{"id":"1294","type":"DataRange1d"},"x_scale":{"id":"1298","type":"LinearScale"},"y_range":{"id":"1296","type":"DataRange1d"},"y_scale":{"id":"1300","type":"LinearScale"}},"id":"1293","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1317","type":"HelpTool"},{"attributes":{"callback":null,"data":{"x":{"__ndarray__":"oO6rQk5MtEJLbK9CekiuQjdqrkI=","dtype":"float32","shape":[5]},"y":{"__ndarray__":"RaNJRYzLVUX2UU9FpCNWRT7eV0U=","dtype":"float32","shape":[5]}},"selected":{"id":"1337","type":"Selection"},"selection_policy":{"id":"1336","type":"UnionRenderers"}},"id":"1325","type":"ColumnDataSource"},{"attributes":{},"id":"1337","type":"Selection"},{"attributes":{},"id":"1308","type":"BasicTicker"},{"attributes":{"overlay":{"id":"1338","type":"BoxAnnotation"}},"id":"1314","type":"BoxZoomTool"},{"attributes":{},"id":"1312","type":"PanTool"},{"attributes":{},"id":"1313","type":"WheelZoomTool"},{"attributes":{},"id":"1315","type":"SaveTool"},{"attributes":{"text":""},"id":"1331","type":"Title"},{"attributes":{"axis_label":"employment rate overall","formatter":{"id":"1333","type":"BasicTickFormatter"},"ticker":{"id":"1303","type":"BasicTicker"}},"id":"1302","type":"LinearAxis"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"x":{"field":"x"},"y":{"field":"y"}},"id":"1326","type":"Circle"},{"attributes":{"callback":null},"id":"1294","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"x":{"field":"x"},"y":{"field":"y"}},"id":"1327","type":"Circle"},{"attributes":{"dimension":1,"ticker":{"id":"1308","type":"BasicTicker"}},"id":"1311","type":"Grid"}],"root_ids":["1293"]},"title":"Bokeh Application","version":"1.4.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1438').textContent;
+                  var render_items = [{"docid":"775e21d1-027a-4173-9eb2-cfd565f9119e","roots":{"1293":"fd13a3b3-c2d6-493b-bacd-0ffe3ec482f0"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
