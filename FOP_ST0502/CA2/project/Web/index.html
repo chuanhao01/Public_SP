@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add this to <head> -->
+    <link rel="stylesheet" href="utils/bootstrap.min.css">
+    <link rel="stylesheet" href="utils/bootstrap-vue.min.css">
+    <script src="utils/vue.js"></script>
+    <script src="utils/bootstrap-vue.min.js"></script>
+    <title>Vue</title>
+</head>
+<body>
+    <header class="mb-3 container-fluid bg-dark">
+        <div class="row">
+            <div class="col-1"></div>
+            <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center col-10">
+                <a href="https://github.com/chuanhao01" target="_blank" class="d-flex w-25 mr-auto logo"><h2 class="logo text-white">Chuanhao01</h2></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link text-center active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="#">React</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-1"></div>
+        </div>
+    </header>
+    <main class="container-fluid">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="row justify-content-center" id='app'>
+                        <template v-if='template_to_show === "SelectName_1"'>
+                            <p class="w-100 text-center d-block">-= Welcome to Quiz Application =-</p>
+                            <form @submit.prevent='handleName'>
+                                <label for="name_input mr-3">Please Enter your name to continue: </label>
+                                <input type="text" v-model='name_input' class="mr-3">
+                                <input type="submit" value="Submit" :disabled='check_name'>
+                            </form>
+                        </template>
+                        <template v-if='template_to_show === "SelectTopic_2"'>
+                            <p class="w-100 text-center d-block">Welcome {{name_input}}, please choose the quiz category you would like to attempt:</p>
+                            <b-card-group deck>
+                                <b-card 
+                                v-for='(topic, index) in topics'
+                                :title='topic' 
+                                >
+                                    <button @click='handleTopic(index)'>Choose Me!</button>
+                                </b-card>
+                            </b-card-group>
+                        </template>
+                        <template v-if='template_to_show === "Quiz_3"'>
+                            <h1 class="w-100 text-center d-block">Topic Choosen: {{selected_topic}}</h1>
+                            <div class="w-100 mb-3"
+                            v-for='(question, index) in selected_questions' 
+                            >
+                                <b-card-group>
+                                    <quiz-question
+                                    :q_obj='{
+                                        question: question,
+                                        index: index,
+                                    }'
+                                    >
+                                    </quiz-question>
+                                </b-card-group>
+                            </div>
+                            <p v-if='check_finish_question' class="w-100">You have not attempted all the questions.</p>
+                            <p v-else class="w-100">You have attempted all the questions!</p>
+                            <b-button @click='handleSubmitQuiz' class="mb-3">Submit</button>
+                        </template>
+                        <template v-if='template_to_show === "Submit_Quiz_4"'>
+                            <h1>Congratulations on completing the Quiz.<br>Here are your answers:</h1>
+                            <div class="w-100 mb-3"
+                                v-for='(question, index) in selected_questions'
+                            >
+                                <b-card-group>
+                                        <b-card 
+                                            :title="getQuestionTitle(question.question, index)"
+                                            :bg-variant="getBackground(question)"
+                                            text-variant='white'
+                                        >
+                                            <article v-if='question.isCorrect === null'>
+                                                    <b-card-text>
+                                                        You did not attempt this question.
+                                                    </b-card-text>
+                                                    <b-card-text>
+                                                        Correct Answer: {{question.getCorrectAnswer()}}
+                                                    </b-card-text>                              
+                                            </article>
+                                            <article v-else-if='question.isCorrect'>
+                                                <b-card-text>
+                                                    You got this question right!
+                                                </b-card-text>
+                                                <b-card-text>
+                                                    Correct Answer: {{question.getCorrectAnswer()}}
+                                                </b-card-text>
+                                            </article>
+                                            <article v-else>
+                                                <b-card-text>
+                                                    You got this question wrong
+                                                </b-card-text>
+                                                <b-card-text>
+                                                    Your Answer: {{question.getUserAnswer()}}
+                                                </b-card-text>
+                                                <b-card-text>
+                                                    Correct Answer: {{question.getCorrectAnswer()}}
+                                                </b-card-text>
+                                            </article>
+                                        </b-card>
+                                </b-card-group>
+                            </div>
+                            <div class="row w-100 mb-3">
+                                <div class="col-10"></div>
+                                <div class="col-2">
+                                    <b-button @click='resetQuiz'>
+                                        Try again!
+                                    </b-button>
+                                    <b-button 
+                                        @click='exitQuiz'
+                                        variant='danger'
+                                    >
+                                        Exit
+                                    </b-button>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </main>
+        <!-- Loading in the data from js files -->
+        <script src="data/Topic_1.js"></script>
+        <script src="data/Topic_2.js"></script>
+        <script src="data/Topic_3.js"></script>
+        <script src="data/Topic_4.js"></script>
+        <!-- Loading in parsing utils -->
+        <script src="utils/parse.js"></script>
+        <!-- Main vue/app script -->
+        <script>
+            let app = new Vue({
+                el: '#app',
+                data: {
+                    template_to_show: 'SelectName_1',
+                    topics: topics,
+                    questions: questions,
+                    name_input: '',
+                    selected_topic: '',
+                    selected_questions: [],
+                },
+                computed: {
+                    check_name(){
+                        return this.name_input === '';
+                    },
+                    check_finish_question(){
+                        let check_finished = false;
+                        for(let question of this.selected_questions){
+                            if(question.user_answer === null){
+                                check_finished = true;
+                            }
+                        }
+                        return check_finished;
+                    },
+                },
+                methods: {
+                    handleName(){
+                        this.template_to_show = 'SelectTopic_2';
+                    },
+                    handleTopic(topic_index){
+                        this.selected_topic = this.topics[topic_index];
+                        this.selected_questions = this.questions[topic_index];
+                        this.template_to_show = 'Quiz_3';
+                    },
+                    handleSubmitQuiz(){
+                        this.template_to_show = 'Submit_Quiz_4';
+                    },
+                    getQuestionTitle(question, index){
+                        return `Question ${index + 1}: ${question}`;
+                    },
+                    getBackground(question){
+                        if(question.isCorrect === null){
+                            return 'secondary';
+                        }
+                        else if(question.isCorrect){
+                                return 'success';
+                        }
+                        else{
+                            return 'danger';
+                        }
+                    },
+                    resetQuiz(){
+                        current_questions = this.selected_questions;
+                        for(let question of current_questions){
+                            question.reset();
+                        }
+                        this.selected_questions = [];
+                        this.selected_topic = '';
+                        this.template_to_show = 'SelectTopic_2';
+                    },
+                    exitQuiz(){
+                        current_questions = this.selected_questions;
+                        for(let question of current_questions){
+                            question.reset();
+                        }
+                        this.selected_questions = [];
+                        this.selected_topic = '';
+                        this.name_input = '';
+                        alert('Thanks for playing');
+                        this.template_to_show = 'SelectName_1';
+                    }
+                },
+            });
+            let v_question = Vue.component('quiz-question' ,{
+                props: ['q_obj'],
+                data: function (){
+                    return {
+                        user_selected: 0,
+                        question_title: `Question ${parseInt(this.q_obj.index) + 1}: ${this.q_obj.question.question}`,
+                    };
+                },
+                methods: {
+                    handleChange(index){
+                        this.q_obj.question.updateUserAnswer(index);
+                    },
+                },
+                template: `
+                <b-card 
+                    :title="question_title"    
+                >
+                        <b-form-group label="Options">
+                            <b-form-radio-group stacked>
+                                <b-form-radio
+                                    v-for='(option, index) in q_obj.question.options'
+                                    v-model="user_selected"
+                                    :value='index'
+                                    name="options"
+                                    @change='handleChange(index)'
+                                >
+                                    ({{index + 1}}) {{option.option}}
+                                </b-form-radio>
+                            </b-form-radio-group>
+                        </b-form-group>
+                </b-card>
+                `
+            });
+        </script>
+</body>
+</html>
