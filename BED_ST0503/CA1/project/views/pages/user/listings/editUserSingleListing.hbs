@@ -1,0 +1,144 @@
+<main class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12">
+            <template
+            v-if='listing'>
+                <b-card
+                :title='listing.title'
+                :bg-variant='listing.availability ? "primary" : "success"'>
+                    <b-card-text>
+                        <span class="d-block font-weight-bold">Description</span>
+                        <p>
+                            \{{listing.description}}
+                        </p>
+                    </b-card-text>
+                    <b-card-text>
+                        <article>
+                            <span class="font-weight-bold">Price: </span>
+                            <span>
+                                \{{listing.price}}
+                            </span>
+                        </article>
+                    </b-card-text>
+                </b-card>
+            </template>
+        </div>
+        <div class="col-12">
+            <article class="d-block w-100">
+                <h2 class="d-block text-center">
+                    Editing a listing
+                </h2>
+            </article>
+            <b-form 
+            @submit='onSubmit'
+            @reset='onReset'
+            v-if='showForm'
+            >
+                {{!-- For the title --}}
+                <b-form-group
+                label='Title of your product'
+                label-for='fTitle'>
+                    <b-form-input
+                    id="fTitle"
+                    v-model='form.title'
+                    type='text'
+                    required
+                    placeholder='Title'>
+                    </b-form-input>
+                </b-form-group>
+                {{!-- For the description --}}
+                <b-form-group
+                label="Your item's description"
+                label-for='fDescription'>
+                    <b-form-input
+                    id="fDescription"
+                    v-model='form.description'
+                    type='text'
+                    required
+                    placeholder='Description'>
+                    </b-form-input>
+                </b-form-group>
+                {{!-- For the price --}}
+                <b-form-group
+                label="Your item's Price"
+                label-for='fPrice'>
+                    <b-form-input
+                    id="fPrice"
+                    v-model='form.price'
+                    type='number'
+                    required
+                    placeholder='Price'>
+                    </b-form-input>
+                </b-form-group>
+                {{!-- Submit and reset buttons --}}
+                <b-button type="submit" variant="primary">Submit</b-button>
+                <b-button type="reset" variant="danger">Reset</b-button>
+            </b-form>
+        </div>
+    </div>    
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            listing: null,
+            form: {
+                title: '',
+                description: '',
+                price: null
+            },
+            showForm: true
+        },
+        methods: {
+            getListing(){
+                const listing_id = window.location.pathname.split("/").pop();
+                axios
+                .get(`/api/listing/${listing_id}`)
+                .then(
+                    function(res){
+                        this.listing = res.data.listing;
+                    }.bind(this)
+                )
+                .catch(
+                    function(err){
+                        console.log(err.response);
+                    }
+                )
+            },
+            onReset(event){
+                event.preventDefault();
+                this.form.title= '';
+                this.form.description = '';
+                this.form.price= null;
+                //This is to reload the form to make it empty
+                this.showForm = false;
+                Vue.nextTick(() => {
+                    this.showForm = true;
+                });
+            },
+            onSubmit(event){
+                event.preventDefault();
+                const listing_id = window.location.pathname.split("/").pop();
+                axios
+                .put(`/api/listing/${listing_id}`, this.form)
+                .catch(
+                    function(err){
+                        console.log(err.response);
+                    }
+                )
+                .then(
+                    function(res){
+                        console.log(res);
+                        window.location.pathname = `/user/listing/${listing_id}`;
+                    }
+                );
+            }
+        },
+        created(){
+            this.getListing();
+        }
+    });
+</script>
+{{/section}}

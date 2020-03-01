@@ -1,0 +1,306 @@
+<main class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12">
+            <template
+            v-if='listing'>
+                <b-card
+                :title='listing.title'
+                :bg-variant='listing.availability ? "primary" : "success"'>
+                    <b-card-text>
+                        <span class="d-block font-weight-bold">Description</span>
+                        <p>
+                            \{{listing.description}}
+                        </p>
+                    </b-card-text>
+                    <b-card-text>
+                        <article class="d-block">
+                            <span class="font-weight-bold">Price: </span>
+                            <span>
+                                \{{listing.price}}
+                            </span>
+                        </article>
+                        <article class="d-block">
+                            <span class="font-weight-bold">By: </span>
+                            <span>
+                                \{{listing.listing_user_username}}
+                            </span>
+                        </article>
+                        <article>
+                            <span>
+                                Likes: \{{listing.num_likes}} 
+                            </span>
+                            <template
+                            v-if='like_before'>
+                                <b-button variant='danger' @click=unlikeListing>Unlike the listing</b-button>
+                            </template>
+                            <template
+                            v-else>
+                                <b-button variant='primary' @click=likeListing>Like the listing</b-button>
+                            </template>
+                        </article>
+                    </b-card-text>
+                    <b-card-text>
+                        <template
+                        v-if='offer_placed'>
+                            <b-button variant="warning" :href='`/listing/offer/edit/${listing.listing_id}`'>Edit your offering</b-button>
+                            <b-button variant='danger' @click='deleteOffer'>Delete your offer</b-button>
+                        </template>
+                        <template
+                        v-else>
+                            <b-button variant="primary" :href='`/listing/offer/${listing.listing_id}`'>Place an offering</b-button>
+                        </template>
+                    </b-card-text>
+                </b-card>
+            </template>
+        </div>
+        <div 
+        class="col-12 text-center"
+        >
+            <template
+            v-if='listing'>
+                <b-card
+                :title='`Showing pictures of ${listing.title}`'
+                bg-variant='info'
+                class="d-flex align-items-center"
+                >
+                    <b-card-body
+                    style='width: 600px; height: 100%;'
+                    >
+                        <template
+                        v-if='listing_pictures.length'>
+                            <b-carousel
+                            id="carousel-1"
+                            v-model="slide"
+                            :interval="4000"
+                            no-animation
+                            controls
+                            indicators
+                            background="#ababab"
+                            img-width="600"
+                            img-height="480"
+                            style="text-shadow: 1px 1px 2px #333;"
+                            @sliding-start="onSlideStart"
+                            @sliding-end="onSlideEnd"
+                            >
+                                <!-- Text slides with image -->
+                                <b-carousel-slide
+                                v-for='listing_picture of listing_pictures'
+                                :img-src='`/api/listing/picture/${listing_picture.listing_picture_file_name}`'
+                                >
+                                </b-carousel-slide>
+                            </b-carousel>
+                            <p class="mt-4">
+                            Picture #: \{{ slide + 1 }}
+                            </p>
+                        </template>
+                        <template
+                        v-else>
+                            <article>
+                                <h4>This listing has no pictures</h4>
+                            </article>
+                        </template>
+                    </b-card-body>
+                </b-card>
+            </template>
+        </div>
+        <div class="col-12 mt-3">
+            <article class="d-block">
+                <h3 class="d-block text-center">
+                    Offers for this listing
+                </h3>
+            </article>
+            <template
+            v-if='offers.length'>
+                <b-card
+                v-for='offer in offers'
+                :bg-variant='offer.status ? "warning" : "primary"'
+                >
+                    <b-card-text>
+                        <article class="d-block">
+                            <span class="font-weight-bold">Offer price: </span>
+                            <span>
+                                \{{offer.offer_price}}
+                            </span>
+                        </article>
+                        <article class="d-block">
+                            <span class="font-weight-bold">By: </span>
+                            <span>
+                                \{{offer.offer_user_username}}
+                            </span>
+                        </article>
+                    </b-card-text>
+                </b-card>
+            </template>
+            <template
+            v-else>
+                <article class="text-center">
+                    <h4>There are no offers for this listing</h4>
+                </article>
+            </template>
+        </div>
+    </div>    
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            listing: null,
+            // For likes
+            like_before: null,
+            // For listing pictures
+            listing_pictures: [],
+            slide: 0,
+            sliding: null,
+            // For offers
+            offers: [],
+            offer_placed: null,
+        },
+        methods: {
+            getListing(){
+                const listing_id = window.location.pathname.split("/").pop();
+                return axios.get(`/api/listing/${listing_id}`)
+                .then(
+                    function(res){
+                        this.listing = res.data.listing;
+                    }.bind(this)
+                )
+                .catch(
+                    function(err){
+                        console.log(err.response);
+                        throw 'GET_ERR';
+                    }
+                )
+            },
+            getOffers(){
+                const listing_id = window.location.pathname.split("/").pop();
+                axios
+                .get(`/api/offer/${listing_id}`)
+                .then(
+                    function(res){
+                        this.offers = res.data.offers
+                    }.bind(this)
+                )
+                .catch(
+                    function(err){
+                        console.log(err);
+                        throw 'GET_ERR';
+                    }
+                )
+            },
+            checkOfferMade(){
+                const listing_id = window.location.pathname.split("/").pop();
+                axios
+                .get(`/api/offer/check/${listing_id}`)
+                .then(
+                    function(res){
+                        console.log(res)
+                        this.offer_placed = res.data.offer_placed;
+                    }.bind(this)
+                )
+                .catch(
+                    function(err){
+                        console.log(err.response);
+                    }
+                )
+            },
+            checkLike(){
+                const listing_id = window.location.pathname.split("/").pop();
+                axios
+                .get(`/api/like/check/${listing_id}`)
+                .then(
+                    function(res){
+                        console.log(res)
+                        this.like_before = res.data.like_before;
+                    }.bind(this)
+                )
+                .catch(
+                    function(err){
+                        console.log(err.response);
+                    }
+                )
+            },
+            deleteOffer(){
+                const listing_id = window.location.pathname.split("/").pop();
+                axios
+                .delete(`/api/offer/${listing_id}`)
+                .then(
+                    function(res){
+                        console.log(res.data);
+                        document.location.reload(true);
+                    }
+                )
+                .catch(
+                    function(err){
+                        console.log(err.response);
+                    }
+                )
+            },
+            likeListing(){
+                const listing_id = window.location.pathname.split("/").pop();
+                axios
+                .post(`/api/like/${listing_id}`)
+                .then(
+                    function(res){
+                        console.log(res);
+                        document.location.reload(true);
+                    }
+                )
+                .catch(
+                    function(err){
+                        console.log(err);
+                    }
+                )
+            },
+            unlikeListing(){
+                const listing_id = window.location.pathname.split("/").pop();
+                axios
+                .delete(`/api/like/${listing_id}`)
+                .then(
+                    function(res){
+                        console.log(res);
+                        document.location.reload(true);
+                    }
+                )
+                .catch(
+                    function(err){
+                        console.log(err);
+                    }
+                )
+            },
+            // Get the pictures for the listing
+            getListingPictures(){
+                const listing_id = window.location.pathname.split("/").pop();
+                axios
+                .get(`/api/listing/pictures/${listing_id}`)
+                .then(
+                    function(res){
+                        console.log(res);
+                        this.listing_pictures = res.data.listing_pictures;
+                    }.bind(this)
+                )
+                .catch(
+                    function(err){
+                        console.log(err);
+                    }
+                )
+            },
+            // Methods for carousel
+            onSlideStart(slide) {
+                this.sliding = true
+            },
+            onSlideEnd(slide) {
+                this.sliding = false
+            }
+        },
+        created(){
+            this.getListing();
+            this.getOffers();
+            this.checkOfferMade();
+            this.checkLike();
+            this.getListingPictures();
+        }
+    });
+</script>
+{{/section}}

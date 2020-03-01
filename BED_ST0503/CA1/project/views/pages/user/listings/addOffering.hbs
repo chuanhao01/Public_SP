@@ -1,0 +1,127 @@
+<main class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12">
+            <article class="d-block w-100">
+                <h2 class="d-block text-center">
+                    Adding an offer 
+                </h2>
+            </article>
+            <b-form 
+            @submit='onSubmit'
+            @reset='onReset'
+            v-if='showForm'
+            >
+                {{!-- For the price --}}
+                <b-form-group
+                label="Your offer price"
+                label-for='fOffer'>
+                    <b-form-input
+                    id="fOffer"
+                    v-model='form.offer_price'
+                    type='number'
+                    required
+                    placeholder='Offer price'>
+                    </b-form-input>
+                </b-form-group>
+                {{!-- Submit and reset buttons --}}
+                <b-button type="submit" variant="primary">Submit</b-button>
+                <b-button type="reset" variant="danger">Reset</b-button>
+            </b-form>
+        </div>
+        <div class="col-12">
+            <article class="d-block">
+                <h3 class="d-block text-center">
+                    The listing
+                </h2>
+            </article>
+            <template
+            v-if='listing'>
+                <b-card
+                :title='listing.title'
+                :bg-variant='listing.availability ? "primary" : "success"'>
+                    <b-card-text>
+                        <span class="d-block font-weight-bold">Description</span>
+                        <p>
+                            \{{listing.description}}
+                        </p>
+                    </b-card-text>
+                    <b-card-text>
+                        <article class="d-block">
+                            <span class="font-weight-bold">Price: </span>
+                            <span>
+                                \{{listing.price}}
+                            </span>
+                        </article>
+                        <article class="d-block">
+                            <span class="font-weight-bold">By: </span>
+                            <span>
+                                \{{listing.listing_user_username}}
+                            </span>
+                        </article>
+                    </b-card-text>
+                </b-card>
+            </template>
+        </div>
+    </div>
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            form: {
+                offer_price: null,
+            },
+            showForm: true,
+            listing: null,
+        },
+        methods:{
+            onReset(event){
+                event.preventDefault();
+                this.form.offer_price = null;
+                //This is to reload the form to make it empty
+                this.showForm = false;
+                Vue.nextTick(() => {
+                    this.showForm = true;
+                });
+            },
+            onSubmit(event){
+                event.preventDefault();
+                const listing_id = window.location.pathname.split("/").pop();
+                axios
+                .post(`/api/offer/${listing_id}`, this.form)
+                .then(
+                    function(res){
+                        console.log(res);
+                        window.location.pathname = `/listing/${listing_id}`;
+                    }
+                )
+                .catch(
+                    function(err){
+                        console.log(err.response);
+                    }
+                );
+            },
+            getListing(){
+                const listing_id = window.location.pathname.split("/").pop();
+                axios
+                .get(`/api/listing/${listing_id}`)
+                .then(
+                    function(res){
+                        this.listing = res.data.listing;
+                    }.bind(this)
+                )
+                .catch(
+                    function(err){
+                        console.log(err.response);
+                    }
+                )
+            }
+        },
+        created(){
+            this.getListing();
+        }
+    });
+</script>
+{{/section}}

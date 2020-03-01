@@ -1,0 +1,101 @@
+<main class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12">
+            <article class="d-block w-100">
+                <h2 class="d-block text-center">
+                    Adding a new listing
+                </h2>
+            </article>
+            <b-form 
+            @submit='onSubmit'
+            @reset='onReset'
+            v-if='showForm'
+            >
+                {{!-- For the title --}}
+                <b-form-group
+                label='Title of your product'
+                label-for='fTitle'>
+                    <b-form-input
+                    id="fTitle"
+                    v-model='form.title'
+                    type='text'
+                    required
+                    placeholder='Title'>
+                    </b-form-input>
+                </b-form-group>
+                {{!-- For the description --}}
+                <b-form-group
+                label="Your item's description"
+                label-for='fDescription'>
+                    <b-form-input
+                    id="fDescription"
+                    v-model='form.description'
+                    type='text'
+                    required
+                    placeholder='Description'>
+                    </b-form-input>
+                </b-form-group>
+                {{!-- For the price --}}
+                <b-form-group
+                label="Your item's Price"
+                label-for='fPrice'>
+                    <b-form-input
+                    id="fPrice"
+                    v-model='form.price'
+                    type='number'
+                    required
+                    placeholder='Price'>
+                    </b-form-input>
+                </b-form-group>
+                {{!-- Submit and reset buttons --}}
+                <b-button type="submit" variant="primary">Submit</b-button>
+                <b-button type="reset" variant="danger">Reset</b-button>
+            </b-form>
+        </div>
+    </div>
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            form: {
+                title: '',
+                description: '',
+                price: null
+            },
+            showForm: true,
+        },
+        methods:{
+            onReset(event){
+                event.preventDefault();
+                this.form.title= '';
+                this.form.description = '';
+                this.form.price= null;
+                //This is to reload the form to make it empty
+                this.showForm = false;
+                Vue.nextTick(() => {
+                    this.showForm = true;
+                });
+            },
+            onSubmit(event){
+                event.preventDefault();
+                axios
+                .post('/api/listing', this.form)
+                .then(
+                    function(res){
+                        console.log(res);
+                        window.location.pathname = '/user/listing';
+                    }
+                )
+                .catch(
+                    function(err){
+                        console.log(err.response);
+                    }
+                );
+            }
+        },
+    });
+</script>
+{{/section}}

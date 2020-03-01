@@ -1,0 +1,85 @@
+<main class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12">
+            <article class="d-block w-100">
+                <h2 class="d-block w-100 text-center">
+                    Looking at your own listings
+                </h2>
+            </article>
+        </div>
+        <div class="col-12">
+            <template
+            v-if='listings'>
+                <div class="row">
+                    <template
+                    v-if='listings.length > 0'>
+                    {{!-- If there are other listings --}}
+                        <b-card
+                        v-for='listing in listings'
+                        :title='listing.title'
+                        :bg-variant='listing.availability ? "primary" : "success"'
+                        class="col-4 mt-3 mb-3">
+                            <b-card-text>
+                                <span class="d-block font-weight-bold">Description</span>
+                                <p>
+                                    \{{listing.description}}
+                                </p>
+                            </b-card-text>
+                            <b-card-text>
+                                <article class="d-block">
+                                    <span class="font-weight-bold">Price: </span>
+                                    <span>
+                                        \{{listing.price}}
+                                    </span>
+                                </article>
+                                <article class="d-block">
+                                    <span class="font-weight-bold">By: </span>
+                                    <span>
+                                        \{{listing.listing_user_username}}
+                                    </span>
+                                    <p>
+                                        Likes: \{{listing.num_likes}}
+                                    </p>
+                                </article>
+                            </b-card-text>
+                            <b-card-text>
+                                <b-button variant="primary" :href='`/listing/${listing.listing_id}`'>View the listing</b-button>
+                            </b-card-text>
+                        </b-card>
+                    </template>
+                </div>
+            </template>
+        </div>
+    </div>
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            listings: null,
+        },
+        methods: {
+            getUserListing(){
+                axios
+                .get('/api/other/listing')
+                .then(
+                    function(res){
+                        console.log(res.data.listings);
+                        this.listings = res.data.listings;
+                    }.bind(this)
+                )
+                .catch(
+                    function(err){
+                        console.log(err);
+                    }
+                )
+            },
+        },
+        created(){
+            this.getUserListing();
+        }
+    });
+</script>
+{{/section}}

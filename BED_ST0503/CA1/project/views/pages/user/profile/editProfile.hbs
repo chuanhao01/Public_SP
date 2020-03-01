@@ -1,0 +1,170 @@
+<main class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12">
+            <article class="d-block">
+                <h2 class="d-block text-center">Editing your profile</h2>
+            </article>
+        </div>
+        <div class="col-12">
+            <b-card
+            bg-variant='secondary'>
+                <b-form 
+                {{!-- These corrospond to button type submit and reset events when pressed
+                This then triggers the function in the vue object with the name --}}
+                @submit='onSubmit'
+                @reset='onReset'
+                v-if='showForm'
+                enctype="multipart/form-data"
+                >
+                    {{!-- A form group is like an input here, group contains the label and input field --}}
+                    {{!-- Input to upload avatar icon --}}
+                    <b-form-group
+                    label='Your new avatar icon here'
+                    label-for='fAvatar'>
+                        <b-form-file
+                        id="fAvatar"
+                        v-model='form.avatar_icon'
+                        placeholder='Choose an avatar or drop it here'
+                        drop-placeholder='Drop it here'
+                        required
+                        >
+                        </b-form-file>
+                        <div>
+                            <article>
+                                <p class="d-block">Selected file: \{{form.file ? form.file.name : 'No file currently selected'}}</p>
+                            </article>
+                        </div>
+                    </b-form-group>
+                    {{!-- Input for username --}}
+                    <b-form-group
+                    label='Your new username'
+                    label-for='fUsername'>
+                        <b-form-input
+                        id="fUsername"
+                        v-model='form.username'
+                        type='text'
+                        required
+                        placeholder='Username'>
+                        </b-form-input>
+                    </b-form-group>    
+                    {{!-- Input for password --}}
+                    <b-form-group
+                    label='Your new password'
+                    label-for='fPassword'>
+                        <b-form-input
+                        id="fPassword"
+                        v-model='form.password'
+                        type='password'
+                        required
+                        placeholder='Password'>
+                        </b-form-input>
+                    </b-form-group>
+                    {{!-- Submit and reset buttons --}}
+                    <b-button type="submit" variant="primary">Submit</b-button>
+                    <b-button type="reset" variant="danger">Reset</b-button>
+                </b-form>
+            </b-card>
+        </div>
+        <div class="col-12 mt-3">
+            <b-card
+            bg-variant='primary'
+            >
+                <h4>Your avatar icon</h4>
+                <b-card-text class="row">
+                    <div class="col-12">
+                        <img src="/api/user/avatar_icon" alt="Avatar icon failed too load" style="max-height: 40rem;">
+                    </div>
+                </b-card-text>
+                <b-card-text>
+                    <template
+                    v-if='user'>
+                        <article>
+                            <p>Your username: \{{user.username}}</p>
+                        </article>
+                    </template>
+                </b-card-text>
+            </b-card>
+        </div>
+    </div>    
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            user: null,
+            form: {
+                username: '',
+                password: '',
+                avatar_icon: null,
+            },
+            showForm: true
+        },
+        methods: {
+            getUserDetails(){
+                axios
+                .get('/api/user')
+                .then(
+                    function(res){
+                        this.user = res.data.user;
+                    }.bind(this)
+                )
+            },
+            onSubmit(event){
+                event.preventDefault();
+                // Creating the formdata object to send using axios
+                let form_data = new FormData();
+                form_data.append('avatar_icon', this.form.avatar_icon);
+                form_data.append('username', this.form.username);
+                form_data.append('password', this.form.password);
+                // Post request sent here
+                axios
+                .put('/api/user', form_data, {
+                    headers:{
+                        'Content-Type': 'multipart/form-data'
+                    }
+                })
+                .then(
+                    function(res){
+                        // If editing the profile is successful
+                        document.location.pathname = '/user/profile';
+                    }
+                )
+                .catch(
+                    function(err){
+                        console.log(err);
+                        if(err.response.status === 422){
+                            // Wrong file extension given
+                            return;
+                        }
+                        else if(err.response.status === 413){
+                            // Uploaded file is too large
+                            return;
+                        }
+                        else if(err.response.status === 403){
+                            // Username is already taken
+                            return;
+                        }
+                    }
+                );
+            },
+            // Method called to reset the whole form
+            onReset(event){
+                event.preventDefault();
+                this.form.username = '';
+                this.form.password = '';
+                this.form.avatar_icon = null;
+                //This is to reload the form to make it empty
+                this.showForm = false;
+                Vue.nextTick(() => {
+                    this.showForm = true;
+                });
+            }
+        },
+        created(){
+            this.getUserDetails();
+        }
+    });
+</script>
+{{/section}}

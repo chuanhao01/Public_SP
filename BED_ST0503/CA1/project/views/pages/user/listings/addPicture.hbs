@@ -1,0 +1,106 @@
+<main class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12 w-100">
+            <article class="w-100 d-block">
+                <h2 class="text-center">Adding a picture to the listing</h2>
+            </article>
+        </div>
+        <div class="col-6">
+            <b-form 
+            {{!-- These corrospond to button type submit and reset events when pressed
+            This then triggers the function in the vue object with the name --}}
+            @submit='onSubmit'
+            @reset='onReset'
+            v-if='showForm'
+            enctype="multipart/form-data"
+            >
+                {{!-- A form group is like an input here, group contains the label and input field --}}
+                {{!-- Input to upload avatar icon --}}
+                <b-form-group
+                label='Your Avatar icon here'
+                label-for='fAvatar'>
+                    <b-form-file
+                    id="fAvatar"
+                    v-model='form.listing_picture'
+                    placeholder='Choose an avatar or drop it here'
+                    drop-placeholder='Drop it here'
+                    required
+                    >
+                    </b-form-file>
+                    <div>
+                        <article>
+                            <p class="d-block">Selected file: \{{form.file ? form.file.name : 'No file currently selected'}}</p>
+                        </article>
+                    </div>
+                </b-form-group>
+                {{!-- Submit and reset buttons --}}
+                <b-button type="submit" variant="primary">Submit</b-button>
+                <b-button type="reset" variant="danger">Reset</b-button>
+            </b-form>
+        </div>
+    </div>
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            form: {
+                listing_picture: null,
+            },
+            showForm: true
+        },
+        methods: {
+            // Method called when form is submitted
+            onSubmit(event){
+                event.preventDefault();
+                const listing_id = window.location.pathname.split("/").pop();
+                // Creating the formdata object to send using axios
+                let form_data = new FormData();
+                form_data.append('listing_picture', this.form.listing_picture);
+                // Post request sent here
+                axios
+                .post(`/api/listing/pictures/${listing_id}`, form_data, {
+                    headers:{
+                        'Content-Type': 'multipart/form-data'
+                    }
+                })
+                .then(
+                    function(res){
+                        // If account creation is successful, redirect to login page
+                        window.location.pathname = `/user/listing/${listing_id}`;
+                    }
+                )
+                .catch(
+                    function(err){
+                        console.log(err.response);
+                        if(err.response.status === 422){
+                            // Wrong file extension given
+                            return;
+                        }
+                        else if(err.response.status === 413){
+                            // Uploaded file is too large
+                            return;
+                        }
+                        else if(err.response.status === 403){
+                            // Username is already taken
+                            return;
+                        }
+                    }
+                );
+            },
+            // Method called to reset the whole form
+            onReset(event){
+                event.preventDefault();
+                this.form.listing_picture= null;
+                //This is to reload the form to make it empty
+                this.showForm = false;
+                Vue.nextTick(() => {
+                    this.showForm = true;
+                });
+            }
+        }
+    });
+</script>
+{{/section}}

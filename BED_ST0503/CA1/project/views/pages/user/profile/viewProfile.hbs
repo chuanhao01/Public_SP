@@ -1,0 +1,57 @@
+<main class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12">
+            <article class="d-block">
+                <h2 class="d-block text-center">Your profile</h2>
+            </article>
+        </div>
+        <div class="col-12">
+            <b-card
+            bg-variant='primary'
+            >
+                <h4>Your avatar icon</h4>
+                <b-card-text class="row">
+                    <div class="col-12">
+                        <img src="/api/user/avatar_icon" alt="Avatar icon failed too load" style="max-height: 40rem;">
+                    </div>
+                </b-card-text>
+                <b-card-text>
+                    <template
+                    v-if='user'>
+                        <article>
+                            <p>Your username: \{{user.username}}</p>
+                        </article>
+                    </template>
+                </b-card-text>
+            </b-card>
+            <div class="mt-3">
+                <b-button href='/user/profile/edit' variant='warning'>Edit profile</b-button>
+            </div>
+        </div>
+    </div>    
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            user: null,
+        },
+        methods: {
+            getUserDetails(){
+                axios
+                .get('/api/user')
+                .then(
+                    function(res){
+                        this.user = res.data.user;
+                    }.bind(this)
+                )
+            }
+        },
+        created(){
+            this.getUserDetails();
+        }
+    });
+</script>
+{{/section}}

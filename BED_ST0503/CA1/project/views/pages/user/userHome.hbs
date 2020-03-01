@@ -1,0 +1,42 @@
+<main class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12">
+            <article class="d-block w-100">
+                <h2 class="d-block text-center">
+                    Welcome to your user dashboard
+                </h2>
+            </article>
+        </div>
+        <div class="col-6">
+            <b-card title="Your profile" bg-variant="primary" text-variant="white">
+                <b-button href="/user/profile" class="card-link btn btn-info">
+                    View your profile 
+                </b-button>
+                <b-button href="/user/profile/edit" class="card-link btn btn-warning">
+                    Edit your profile
+                </b-button>
+            </b-card>
+        </div>
+        <div class="col-6">
+            <b-card title="Your listings" bg-variant="secondary" text-variant="white">
+                <b-button href="/user/listing/add" class="card-link btn btn-success">
+                    Add a listing
+                </b-button>
+                <b-button href="/user/listing" class="card-link btn btn-info">
+                    View your listings 
+                </b-button>
+                <b-button href="/listing" class="card-link btn btn-warning">
+                    View other listings
+                </b-button>
+            </b-card>
+        </div>
+    </div>
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+    });
+</script>
+{{/section}}

@@ -1,0 +1,17 @@
+<main class="container-fluid mt-3">
+    
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+    });
+    // Custom function called to logout the user
+    function logout(){
+        deleteAllCookies();
+        window.location.pathname = '/login';
+    }
+    logout();
+</script>
+{{/section}}

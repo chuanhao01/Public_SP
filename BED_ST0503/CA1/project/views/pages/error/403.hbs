@@ -1,0 +1,36 @@
+<main class="container-fluid mt-3">
+    
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+    });
+    // Custom function to reload access token when it is expired or missing
+    function checkRefreshToken(){
+        if(window.location.pathname === '/error/403'){
+            axios
+                .get('/api/refresh_token')
+                .then(
+                    function(res){
+                        // If the request was successful, set the access token and try again
+                        document.cookie = 'access_token=' + res.data.access_token + '; path=/';
+                        window.location.pathname = '/user/home';
+                    }
+                )
+                .catch(
+                    function(err){
+                        // If there was an error
+                        console.log(err.response);
+                        if(err.response.data.error_code === 'NO_TOKEN'){
+                            // If the error was that they have no refresh and access token
+                            window.location.pathname = '/login';
+                        }
+                    }
+                );
+        }
+    }
+    checkRefreshToken();
+</script>
+{{/section}}

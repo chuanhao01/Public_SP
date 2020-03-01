@@ -1,0 +1,84 @@
+<main class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12 w-100">
+            <article class="w-100 d-block">
+                <h2 class="text-center">Login</h2>
+            </article>
+        </div>
+        <div class="col-12 text-center">
+            <b-form 
+            {{!-- These corrospond to button type submit and reset events when pressed
+            This then triggers the function in the vue object with the name --}}
+            @submit='onSubmit'
+            >
+                {{!-- A form group is like an input here, group contains the label and input field --}}
+                {{!-- Input for username --}}
+                <b-form-group
+                label='Username'
+                label-for='fUsername'>
+                    <b-form-input
+                    id="fUsername"
+                    v-model='form.username'
+                    type='text'
+                    required
+                    placeholder='Username'>
+                    </b-form-input>
+                </b-form-group>    
+                {{!-- Input for password --}}
+                <b-form-group
+                label='Password'
+                label-for='fPassword'>
+                    <b-form-input
+                    id="fPassword"
+                    v-model='form.password'
+                    type='password'
+                    required
+                    placeholder='Password'>
+                    </b-form-input>
+                </b-form-group>
+                {{!-- Submit and reset buttons --}}
+                <b-button type="submit" variant="primary">Login</b-button>
+            </b-form>
+        </div>
+    </div>
+</main>
+
+{{#section 'scripts'}}
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            form: {
+                username: '',
+                password: '',
+            },
+        },
+        methods: {
+            // Method called when form is submitted
+            onSubmit(event){
+                event.preventDefault();
+                // Post request sent here
+                axios
+                    .post('/api/login', this.form)
+                    .then(
+                        function(res){
+                            // Setting cookies if login is successful
+                            console.log(res.data);
+                            document.cookie = 'access_token=' + res.data.access_token;
+                            document.cookie = 'refresh_token=' + res.data.refresh_token;
+                            window.location.pathname = '/user/home';
+                            // Redirect to home page
+                            //window.location.pathname = '/';
+                        }
+                    )
+                    .catch(
+                        function(err){
+                            console.error(err.response);
+                            return;
+                        }
+                    );
+            },
+        }
+    });
+</script>
+{{/section}}

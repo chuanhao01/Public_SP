@@ -1,0 +1,5 @@
+# Change the strings for your own setup
+export MysqlUser='Your MySQL username GOES HERE';
+export MysqlPassword='Your MySQL password GOES HERE';
+export JWT_SECRET='Your JWT SECRET GOES HERE';
+export COOKIE_SECRET='Your COOKIE SECRET GOES HERE';

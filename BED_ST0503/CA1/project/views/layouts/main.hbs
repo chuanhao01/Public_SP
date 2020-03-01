@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{!-- Adding Libraries here --}}
+    <!-- Bootstrap Vue added here -->
+    <!-- Load required Bootstrap and BootstrapVue CSS -->
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+    <!-- Load polyfills to support older browsers -->
+    <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+    <!-- Load Vue followed by BootstrapVue -->
+    <script src="//unpkg.com/vue@latest/dist/vue.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+
+    <!-- Axios added here -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <title>{{title}}</title>
+</head>
+<body class="bg-dark text-white">
+
+    <main id="app">
+        <b-navbar type='dark' class="bg-secondary">
+            <b-navbar-brand href='/user/home'>SnapSell</b-navbar-brand>
+            <b-nav-text
+            class="text-white">
+                Welcome {{user.username}}
+            </b-nav-text>
+            {{#if user}}
+            <b-navbar-nav class="ml-auto">
+                <b-nav-item-dropdown text="Profile">
+                    <b-dropdown-item href="/user/profile">View your profile</b-dropdown-item>
+                    <b-dropdown-item href="/user/profile/edit">Edit your profile</b-dropdown-item>
+                </b-nav-item-dropdown>                
+                <b-nav-item-dropdown text="Listings">
+                    <b-dropdown-item href="/user/listing/add">Add a listing</b-dropdown-item>
+                    <b-dropdown-item href="/user/listing">View your Listings</b-dropdown-item>
+                    <b-dropdown-item href="/listing">View other listings</b-dropdown-item>
+                </b-nav-item-dropdown>                
+                <b-button class="btn btn-danger ml-2" id="logoutBtn" href='/logout'>
+                    Logout
+                </b-button>
+            </b-navbar-nav>
+            {{else}}
+            <b-navbar-nav class="ml-auto">
+                <b-nav-item href="/login">Login</b-nav-item>
+                <b-nav-item href="/account/create">Create an account</b-nav-item>
+            </b-navbar-nav>
+            {{/if}}
+        </b-navbar>
+
+        {{{body}}}
+    </main> 
+
+    <!-- Utility functions -->
+    <script>
+        function formatMB(bytes, decimals = 6) {
+            if (bytes === 0) return '0 Bytes';
+
+            const k = 1024;
+            const dm = decimals < 0 ? 0 : decimals;
+            const i = 2
+
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(dm));
+        }  
+       // Function to clear out all existing cookies
+        function deleteAllCookies() {
+            var cookies = document.cookie.split(";");
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                var eqPos = cookie.indexOf("=");
+                var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                document.cookie = name + "=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            }
+        }
+    </script>
+
+    {{{_sections.scripts}}}
+</body>
+
+</html>
