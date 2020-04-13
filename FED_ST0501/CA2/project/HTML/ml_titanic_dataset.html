@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add this to <head> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="../Libraries/Bootstrap/bootstrap.min.css">
+    <script src="../Libraries/Bootstrap/popper.min.js"></script>
+    <script src="../Libraries/Bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="../Libraries/Bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>ML Titanic Dataset</title>
+</head>
+<body class="bg-dark text-white">
+    <header class="container-fluid bg-transparent">
+            <div class="row">
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-10 col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg navbar-transparent">
+                        <a class="navbar-brand text-white" href="index.html">chuanhao01</a>
+                        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="mr-auto">
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            <ul class="navbar-nav ml-auto ">
+                                <li class="nav-item">
+                                    <a href="about_me.html" class="nav-link text-white">About me</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="past_projects.html" class="nav-link dropdown-toggle text-white" id='headerProjectDropdown' role="button" data-toggle="dropdown">Past Projects</a>
+                                    <div class="dropdown-menu">
+                                        <a href="past_projects.html" class="dropdown-item">The Page</a>
+                                        <a href="front_end_projects.html" class="dropdown-item">Front-End Projects</a>
+                                        <a href="ml_titanic_dataset.html" class="dropdown-item">ML titanic dataset</a>
+                                        <a href="construction.html" class="dropdown-item">Personal Finance Tracker</a>
+                                        <a href="construction.html" class="dropdown-item">Python calculator</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="skills.html" class="nav-link text-white">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link text-white">Contact Me</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+            </div>
+    </header>
+    <!-- Main Container -->
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <div class="col-lg-10 col-12">
+                <!-- 
+                    Main article header for the page
+                 -->
+                <article class="col-12 w-100 my-3 mb-5">
+                    <h3 class="d-block text-center w-100">ML titanic dataset</h3>
+                    <p class="d-block text-center w-100">
+                        This was a beginner project/dataset I found on Kaggle to practice my skills in Data science and machine learning in python. 
+                        The libraries used were, sciPy and sci-kit learn.
+                    </p>
+                </article>
+                <!-- 
+                    Each part is segmented into its own div row wrapper
+                    With an article as an introduction and then a jumbotron with the rest of the information
+                 -->
+                <div class="row">
+                    <article class="col-12 w-100 d-block">
+                        <h4 class="d-block w-100 text-center">Introduction</h4>
+                        <p class="d-block w-100 text-center">
+                            I got interested in data science and machine learning after tinkering around with python for a bit. 
+                            This was as I wanted to combine my interest in mathematics and programming into one. 
+                            After looking around, I found that kaggle was a good place to start learning machine learning and data science.
+                        </p>
+                    </article>
+                    <div class="jumbotron d-block w-100 col-12 text-dark">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <figure class="figure d-block text-center">
+                                    <img src="../Content/titanic_begin.png" alt="Screenshot of the titanic dataset on kaggle" class="img-fluid figure-img">
+                                    <figcaption class="d-block w-100 text-center">
+                                        Figure 1: Screenshot of the titanic dataset on kaggle
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                <article>
+                                    <h5 class="d-block w-100 text-center mb-3">Where it began</h5>
+                                    <p>
+                                        After finishing the basic tutorials for machine learning and data science on kaggle, I wanted to try my hands on an actual dataset and project. 
+                                        This was when I stumbled onto the Titanic dataset where it was not only suited for beginners but also had some tutorials made by other people. 
+                                        This gave me the idea to try the project on my own before I looked at other people's tutorial/solution. 
+                                        This way I was able to experience the project on my own, while still easy access to help if I get stuck. 
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <article class="col-12 w-100 d-block">
+                        <h4 class="d-block w-100 text-center">Process</h4>
+                        <p class="d-block w-100 text-center">
+                            This section will be a summary of the thought process I had while attempting this project.  
+                            As I was still relatively new to the libraries, I had to check the documentation of specific methods multiple times. 
+                            Also, I may not always use the most efficient way to perform some operations and thus I apologise for this.
+                        </p>
+                    </article>
+                    <div class="jumbotron d-block w-100 col-12 text-dark">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <figure class="figure d-block text-center">
+                                    <img src="../Content/titanic_data.png" alt="Screenshot of data summarised in pandas" class="img-fluid figure-img">
+                                    <figcaption class="d-block w-100 text-center">
+                                        Figure 2: Screenshot of data summarised in pandas
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                <article>
+                                    <h5 class="d-block w-100 text-center mb-3">Data Science/Analysis</h5>
+                                    <p>
+                                        I encountered a few problems while trying to analyse the dataset. 
+                                        This was as I still did not know how to properly visualise the correlation of particular features in the dataset. 
+                                        I also did not know what was the 'right' way to clean up missing data in datasets yet. However, in the end, I decided to use the median average as a way to fill gaps in my data. 
+                                        In addition, I picked out some features that I felt had a strong correlation with the survivability of the passenger.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <figure class="figure d-block text-center">
+                                    <img src="../Content/titanic_ML.png" alt="Screenshot of the class code for the ML models" class="img-fluid figure-img">
+                                    <figcaption class="d-block w-100 text-center">
+                                        Figure 3: Screenshot of the class code for the ML models
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                <article>
+                                    <h5 class="d-block w-100 text-center mb-3">Machine Learning</h5>
+                                    <p>
+                                        I decided to use a class in python to somewhat automate the process of trying out different models from sci-kit learn. 
+                                        Such models include random tree classifiers,  logistical regression and the K nearest neighbours. The class would split the training dataset into train, test and validate datasets. 
+                                        Using these datasets, I would try out different combination of models and hyperparameters to try and get the best results.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <article class="col-12 w-100 d-block">
+                        <h4 class="d-block w-100 text-center">Conclusion</h4>
+                        <p class="d-block w-100 text-center">
+                            All in all, I learnt a lot about machine learning and data science from this project. 
+                            With the knowledge I gained through this project I am actually attempting another dataset on kaggle, this time with much more data and features, so you can expect that project to be up here soon.
+                        </p>
+                    </article>
+                    <div class="jumbotron d-block w-100 col-12 text-dark">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <figure class="figure d-block text-center">
+                                    <img src="../Content/titanic_learnt.png" alt="Screenshot of my position on the kaggle leaderboard" class="img-fluid figure-img">
+                                    <figcaption class="d-block w-100 text-center">
+                                            Figure 4: Screenshot of my position on the kaggle leaderboard
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                <article>
+                                    <h5 class="d-block w-100 text-center mb-3">What I Learnt</h5>
+                                    <p>
+                                        Through the whole project, I have learnt how to visualise data using the libraries seaborn and matplotlib to get a better understanding of trends in data. 
+                                        I have also learnt how to manipulate and work with data through the libraries numPy and pandas. 
+                                        Lastly, I have learnt how to generate, train and validate models in sci-kit learn modules.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <figure class="figure d-block text-center">
+                                    <img src="../Content/titanic_finished.png" alt="Screenshot of the accuracy of my submissions into kaggle" class="img-fluid figure-img">
+                                    <figcaption class="d-block w-100 text-center">
+                                        Figure 5: Screenshot of the accuracy of my submissions into kaggle
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                <article>
+                                    <h5 class="d-block w-100 text-center mb-3">Finished Product</h5>
+                                    <p>
+                                        In the end, I managed to get a 79% accuracy on my predictions which was much better than my expectations. 
+                                        This project has made me have a much better appreciation for the intricacies in dealing with data and trying to predict the future using this data. 
+                                        I am now even more interested in this field of data science and artificial intelligence and would probably continue to try out more things in this field.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <article class="col-12 w-100 d-block">
+                        <h3 class="w-100 d-block text-center">Appendix</h3>
+                        <p class="w-100 d-block text-center">
+                            Extra Infomation. There is a table at the bottom as a reference of how the data in the dataset actually looks like. 
+                        </p>
+                    </article>
+                    <div class="col-12 w-100 d-block">
+                        <!--Table-->
+                    <table class="table table-hover table-bordered table-secondary table-responsive-lg">
+                        <thead>
+                            <tr>
+                                <th>Passenger</th>
+                                <th>Survived</th>
+                                <th>Pclass</th>
+                                <th>Name</th>
+                                <th>Sex</th>
+                                <th>Age</th>
+                                <th>SibSp</th>
+                                <th>Parch</th>
+                                <th>Ticket</th>
+                                <th>Fare</th>
+                                <th>Cabin</th>
+                                <th>Embarked</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>Braund, Mr. Owen Harris</td>
+                                <td>Male</td>
+                                <td>22</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>A/5 21171</td>
+                                <td>7.25</td>
+                                <td></td>
+                                <td>S</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>Cumings Mrs. John Bradley (Florence Briggs Thayer)</td>
+                                <td>female</td>
+                                <td>38</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>PC 17599</td>
+                                <td>71.2833</td>
+                                <td>C85</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
+                                <td>female</td>
+                                <td>35</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>113803</td>
+                                <td>53.1</td>
+                                <td>C123</td>
+                                <td>S</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">21</th>
+                                <td>0</td>
+                                <td>2</td>
+                                <td>Fynney, Mr. Joseph J</td>
+                                <td>male</td>
+                                <td>35</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>239865</td>
+                                <td>26</td>
+                                <td></td>
+                                <td>S</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block"></div>
+        </div>
+    </main> 
+     <footer class="footer container-fluid text-secondary" >
+        <div class="row py-5">
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row mb-3">
+                    <h4 class="d-block col-12 w-100 text-center">Subscribe to our newsletter</h4>
+                    <div class="w-100 d-flex justify-content-center">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Email">
+                            <button class="btn btn-success my-2 my-sm-0" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="d-block w-100 col-12 text-center">chuanhao01</h2>
+                    <h4 class="d-block w-100 col-12 text-center">&#9400; 2019 chuan hao</h4>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Follow Us</h4>
+                    <div class="col-3">
+                        <a href="https://github.com/chuanhao01" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-github-square "></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="mailto:businesschuanhao01@gmail.com" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://twitter.com/businesschuanh1" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.linkedin.com/in/chuanhao01/" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Contact Us</h4>
+                    <article class="d-block w-100 col-12 text-center">
+                        <p><span class="font-weight-bold">Email:</span> businesschuanhao01@gmail.com</p>
+                        <p>If you want to contact us, please click <a href="contact.html">here</a></p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12">
+                <article class="d-block text-center">
+                    <h3>Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary footerLink nounderline">Home</a></li>
+                        <li><a href="about_me.html" class="text-secondary footerLink nounderline">About Me</a></li>
+                        <li><a href="past_projects.html" class="text-secondary footerLink nounderline">Past Projects</a></li>
+                        <li><a href="skills.html" class="text-secondary footerLink nounderline">Skills</a></li>
+                        <li><a href="contact.html" class="text-secondary footerLink nounderline">Contact Me</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

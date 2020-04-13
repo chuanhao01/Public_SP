@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add this to <head> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="../Libraries/Bootstrap/bootstrap.min.css">
+    <script src="../Libraries/Bootstrap/popper.min.js"></script>
+    <script src="../Libraries/Bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="../Libraries/Bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Contact</title>
+</head>
+<body class="bg-dark text-white">
+    <header class="container-fluid bg-transparent">
+            <div class="row">
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-10 col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg navbar-transparent">
+                        <a class="navbar-brand text-white" href="index.html">chuanhao01</a>
+                        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="mr-auto">
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            <ul class="navbar-nav ml-auto ">
+                                <li class="nav-item">
+                                    <a href="about_me.html" class="nav-link text-white">About me</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="past_projects.html" class="nav-link dropdown-toggle text-white" id='headerProjectDropdown' role="button" data-toggle="dropdown">Past Projects</a>
+                                    <div class="dropdown-menu">
+                                        <a href="past_projects.html" class="dropdown-item">The Page</a>
+                                        <a href="front_end_projects.html" class="dropdown-item">Front-End Projects</a>
+                                        <a href="ml_titanic_dataset.html" class="dropdown-item">ML titanic dataset</a>
+                                        <a href="construction.html" class="dropdown-item">Personal Finance Tracker</a>
+                                        <a href="construction.html" class="dropdown-item">Python calculator</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="skills.html" class="nav-link text-white">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link text-white">Contact Me</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+            </div>
+    </header> 
+    <!-- Container for the main -->
+    <main class="container-fluid my-5">
+        <div class="row">
+            <div class="col-1 d-none d-sm-block"></div>
+            <!-- 
+                The column for the form, where the user will input information
+             -->
+            <div class="col-xl-5 col-lg-10">
+                <form class="form">
+                    <!-- 
+                        The format for the input fields are done using a wrapping div row and col
+                     -->
+                    <div class="form-group row" id="form">
+                        <!-- 
+                            For each label and input field, it is warpped in its own div
+                         -->
+                        <div class="col-lg-6 col-sm-12">
+                            <label for="contactName">Name*</label>
+                            <input type="text" class="form-control" id='contactName' placeholder="Your Name" value="">
+                            <div class="valid-feedback">
+                                <span>Looks Good!</span>
+                            </div>
+                            <div class="invalid-feedback">
+                                <span>Please enter a valid name.</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <label for="contactEmail">Email*</label>
+                            <input type="text" class='form-control' id="contactEmail" placeholder="Email">
+                            <div class="valid-feedback">
+                                <span>Looks Good!</span>
+                            </div>
+                            <div class="invalid-feedback">
+                                <span>Please enter a valid email.</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <label for="contactNumber">Contact Number*</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" id="contactDropdown" value="">Country Code</button>
+                                    <!-- 
+                                        Specially for the Country code selection
+                                     -->
+                                    <div class="dropdown-menu" id="contactDropdownList">
+                                        <button class="dropdown-item" value="+65">+65 Singapore</button>
+                                        <button class="dropdown-item" value="+60">+60 Malaysia</button>
+                                        <button class="dropdown-item" value="+63">+63 Philippines</button>
+                                        <button class="dropdown-item" value="+86">+86 China</button>
+                                        <button class="dropdown-item" value="+62">+62 Indonesia</button>
+                                        <button class="dropdown-item" value="+81">+81 Japan</button>
+                                        <button class="dropdown-item" value="+91">+91 India</button>
+                                        <button class="dropdown-item" value="+1">+1 USA</button>
+                                    </div>
+                                </div>
+                                <input type="number" id="contactNumber" class="form-control" placeholder="Your Telephone Number">
+                                <div class="valid-feedback">
+                                    <span>Looks Good!</span>
+                                </div>
+                                <div class="invalid-feedback">
+                                    <span>Please enter a valid phone number.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <label for="contactCountry">Country*</label>
+                            <select id="contactCountry" class="custom-select" >
+                                <!-- 
+                                    Options are added dynamically in JS
+                                 -->
+                                <option value="" selected>Please select your country</option>
+                            </select>
+                            <div class="valid-feedback">
+                                <span>Looks Good!</span>
+                            </div>
+                            <div class="invalid-feedback">
+                                <span>Please select a country.</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <p class="d-block w-100 mb-0">What kind of message is this?*</p>
+                            <div class="form-check row">
+                                <div class="ml-3 col-sm-6">
+                                    <input type="checkbox" id="contactType1" class="form-check-input checkbox" value="To contact me">
+                                    <label for="contactType1" class="form-check-label">To contact me</label>
+                                </div>
+                                <div class="ml-3 col-sm-6">
+                                    <input type="checkbox"  id="contactType2" class="form-check-input checkbox" value="You have a message for me"> 
+                                    <label for="contactType2" class="form-check-label">You have a message for me</label>
+                                </div>
+                                <div class="ml-3 col-sm-6">
+                                    <input type="checkbox"  id="contactType3" class="form-check-input checkbox" value="You just want to chat">
+                                    <label for="contactType3" class="form-check-label">You just want to chat</label>
+                                </div>
+                            </div>
+                            <div class="valid-feedback" id="contactTypeCheckValid">
+                                <span>Looks Good!</span>
+                            </div>
+                            <div class="invalid-feedback" id="contactTypeCheckInvalid">
+                                <span>Please pick one option.</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="contactMessage">Message*</label>
+                            <textarea id="contactMessage" class="form-control" rows="3" ></textarea>
+                            <div class="valid-feedback">
+                                <span>Looks Good!</span>
+                            </div>
+                            <div class="invalid-feedback">
+                                <span>Please enter a valid message.</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <input type="submit" class="btn btn-primary mt-3" id="contactSubmit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-1 d-none d-sm-block d-xl-none"></div>
+            <div class="col-lg-1 d-none d-sm-block d-xl-none"></div>
+            <!-- 
+               Mail div that updates its information as the user inputs their information.
+               A good visual que for the user
+            -->
+            <div class="col-xl-5 col-lg-10 d-flex align-items-center justify-content-center" id="formMail">
+                <div class="h-90 w-90 rounded" >
+                    <div class="w-100 h-20 d-flex justify-content-end">
+                        <img src="https://www.singpost.com/sites/default/files/pr20170808-1.png" alt="" class="img-fluid" id="mailStamp">
+                    </div>    
+                    <p>To: Lim Chuan Hao</p>
+                    <p>From: <span id="mailName"></span></p> 
+                    <p>Email: <span id="mailEmail"></span></p>
+                    <p>Number: <span id="mailDropdown"> </span> <span id="mailNumber"></span></p>
+                    <p>Country: <span id="mailCountry"></span></p>
+                    <p>Type of message: <p id="mailType"></p>
+                    <p>Message: <p id="mailMessage"></p>
+                </div>
+            </div>
+            <div class="col-lg-1 d-none d-sm-block"></div>
+        </div>
+    </main>
+    <footer class="footer container-fluid text-secondary" >
+        <div class="row py-5">
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row mb-3">
+                    <h4 class="d-block col-12 w-100 text-center">Subscribe to our newsletter</h4>
+                    <div class="w-100 d-flex justify-content-center">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Email">
+                            <button class="btn btn-success my-2 my-sm-0" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="d-block w-100 col-12 text-center">chuanhao01</h2>
+                    <h4 class="d-block w-100 col-12 text-center">&#9400; 2019 chuan hao</h4>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Follow Us</h4>
+                    <div class="col-3">
+                        <a href="https://github.com/chuanhao01" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-github-square "></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="mailto:businesschuanhao01@gmail.com" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://twitter.com/businesschuanh1" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.linkedin.com/in/chuanhao01/" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Contact Us</h4>
+                    <article class="d-block w-100 col-12 text-center">
+                        <p><span class="font-weight-bold">Email:</span> businesschuanhao01@gmail.com</p>
+                        <p>If you want to contact us, please click <a href="contact.html">here</a></p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12">
+                <article class="d-block text-center">
+                    <h3>Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary footerLink nounderline">Home</a></li>
+                        <li><a href="about_me.html" class="text-secondary footerLink nounderline">About Me</a></li>
+                        <li><a href="past_projects.html" class="text-secondary footerLink nounderline">Past Projects</a></li>
+                        <li><a href="skills.html" class="text-secondary footerLink nounderline">Skills</a></li>
+                        <li><a href="contact.html" class="text-secondary footerLink nounderline">Contact Me</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </footer>
+<script src="../Scripts/contact.js"></script>    
+</body>
+</html>

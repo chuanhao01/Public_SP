@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add this to <head> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="../Libraries/Bootstrap/bootstrap.min.css">
+    <script src="../Libraries/Bootstrap/popper.min.js"></script>
+    <script src="../Libraries/Bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="../Libraries/Bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Construction</title>
+</head>
+<body class="bg-dark text-white">
+    <header class="container-fluid bg-transparent">
+            <div class="row">
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-10 col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg navbar-transparent">
+                        <a class="navbar-brand text-white" href="index.html">chuanhao01</a>
+                        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="mr-auto">
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            <ul class="navbar-nav ml-auto ">
+                                <li class="nav-item">
+                                    <a href="about_me.html" class="nav-link text-white">About me</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="past_projects.html" class="nav-link dropdown-toggle text-white" id='headerProjectDropdown' role="button" data-toggle="dropdown">Past Projects</a>
+                                    <div class="dropdown-menu">
+                                        <a href="past_projects.html" class="dropdown-item">The Page</a>
+                                        <a href="front_end_projects.html" class="dropdown-item">Front-End Projects</a>
+                                        <a href="ml_titanic_dataset.html" class="dropdown-item">ML titanic dataset</a>
+                                        <a href="construction.html" class="dropdown-item">Personal Finance Tracker</a>
+                                        <a href="construction.html" class="dropdown-item">Python calculator</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="skills.html" class="nav-link text-white">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link text-white">Contact Me</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+            </div>
+    </header> 
+    <!-- 
+        Main container holding most content in the page
+     -->
+    <main class="container-fluid my-4" id="main_construction">
+        <div class="row">
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <!-- 
+                The construction SVGs are encased in their own div element and are not displayed on md and smaller
+             -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <figure>
+                    <img src="../Content/under-construction.svg" alt="Under construction SVG" class="img-fluid">
+                    <figcaption class="d-block w-100 text-center text-secondary">
+                        <del>Nothing to see here, move along.</del>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-12">
+                <article class="d-block w-100 col-12">
+                    <h4 class="w-100 d-block text-center lead">Sorry this page is still under construction.</h4>
+                </article>
+                <div class="d-block w-100 col-12">
+                    <div class="jumbotron w-100 d-block text-dark" id="clock">
+                        <article class="w-100 d-block">
+                            <h3 class="w-100 d-block text-center">Time left until page is done:</h3>
+                            <div class="row">
+                                <span class="col-3 d-inline-block text-center">Days:</span>
+                                <span class="col-3 d-inline-block text-center">Hours:</span>
+                                <span class="col-3 d-inline-block text-center">Minutes:</span>
+                                <span class="col-3 d-inline-block text-center">Seconds:</span>
+                            </div>
+                            <div class="row">
+                                <span class="col-3 d-inline-block text-center" id="days"></span>
+                                <span class="col-3 d-inline-block text-center" id="hours"></span>
+                                <span class="col-3 d-inline-block text-center" id="minutes"></span>
+                                <span class="col-3 d-inline-block text-center" id="seconds"></span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <article class="col-12 w-100 d-block no-gutters">
+                    <h5>Here are some tabs pills from bootstrap</h5>
+                </article>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+                <div class="tab-content text-dark" id="myTabContent">
+                    <div class="tab-pane fade show active bg-light" id="home" role="tabpanel" >
+                        I'm the first tab, to tell you there is nothing here
+                    </div>
+                    <div class="tab-pane fade bg-light" id="profile" role="tabpanel" >
+                        I'm the second tab to say there is nothing here as well
+                    </div>
+                    <div class="tab-pane fade bg-light" id="contact" role="tabpanel" >
+                        But really why are you still here
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block">
+                <figure>
+                    <img src="../Content/under-construction.svg" alt="Under construction SVG" class="img-fluid" id="rightConstruction">
+                    <figcaption class="d-block w-100 text-center text-secondary">
+                        <abbr title="There is really nothing here">Nothing to see here, move along.</abbr>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block"></div>
+        </div>
+    </main> 
+    <footer class="footer container-fluid text-secondary" >
+        <div class="row py-5">
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row mb-3">
+                    <h4 class="d-block col-12 w-100 text-center">Subscribe to our newsletter</h4>
+                    <div class="w-100 d-flex justify-content-center">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Email">
+                            <button class="btn btn-success my-2 my-sm-0" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="d-block w-100 col-12 text-center">chuanhao01</h2>
+                    <h4 class="d-block w-100 col-12 text-center">&#9400; 2019 chuan hao</h4>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Follow Us</h4>
+                    <div class="col-3">
+                        <a href="https://github.com/chuanhao01" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-github-square "></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="mailto:businesschuanhao01@gmail.com" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://twitter.com/businesschuanh1" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.linkedin.com/in/chuanhao01/" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Contact Us</h4>
+                    <article class="d-block w-100 col-12 text-center">
+                        <p><span class="font-weight-bold">Email:</span> businesschuanhao01@gmail.com</p>
+                        <p>If you want to contact us, please click <a href="contact.html">here</a></p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12">
+                <article class="d-block text-center">
+                    <h3>Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary footerLink nounderline">Home</a></li>
+                        <li><a href="about_me.html" class="text-secondary footerLink nounderline">About Me</a></li>
+                        <li><a href="past_projects.html" class="text-secondary footerLink nounderline">Past Projects</a></li>
+                        <li><a href="skills.html" class="text-secondary footerLink nounderline">Skills</a></li>
+                        <li><a href="contact.html" class="text-secondary footerLink nounderline">Contact Me</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </footer>
+    <script src="../Scripts/construction.js"></script>
+</body>
+</html>

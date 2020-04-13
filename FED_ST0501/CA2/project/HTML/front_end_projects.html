@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add this to <head> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="../Libraries/Bootstrap/bootstrap.min.css">
+    <script src="../Libraries/Bootstrap/popper.min.js"></script>
+    <script src="../Libraries/Bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="../Libraries/Bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Front-End Projects</title>
+</head>
+<body class="bg-dark text-white">
+    <header class="container-fluid bg-transparent">
+            <div class="row">
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-10 col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg navbar-transparent">
+                        <a class="navbar-brand text-white" href="index.html">chuanhao01</a>
+                        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="mr-auto">
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            <ul class="navbar-nav ml-auto ">
+                                <li class="nav-item">
+                                    <a href="about_me.html" class="nav-link text-white">About me</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="past_projects.html" class="nav-link dropdown-toggle text-white" id='headerProjectDropdown' role="button" data-toggle="dropdown">Past Projects</a>
+                                    <div class="dropdown-menu">
+                                        <a href="past_projects.html" class="dropdown-item">The Page</a>
+                                        <a href="front_end_projects.html" class="dropdown-item">Front-End Projects</a>
+                                        <a href="ml_titanic_dataset.html" class="dropdown-item">ML titanic dataset</a>
+                                        <a href="construction.html" class="dropdown-item">Personal Finance Tracker</a>
+                                        <a href="construction.html" class="dropdown-item">Python calculator</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="skills.html" class="nav-link text-white">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link text-white">Contact Me</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+            </div>
+    </header> 
+    <!-- Main Container -->
+    <main class="container-fluid my-3">
+        <div class="row">
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <div class="col-lg-10 col-12">
+                <!-- 
+                    Row warpper div,
+                    Each section is wrapped with its own div so as to ensure each row is shown on its own section
+                 -->
+                <div class="row ">
+                    <!-- 
+                        For the intro, it is done in an article element
+                     -->
+                    <article class="d-block col-12 w-100">
+                        <h3 class="d-block text-center">Front-End Projects</h3>
+                        <p class="d-block text-center">
+                            Here are a few examples of the front-end projects that I have made. Most of them are hosted on github and you can actually vist their
+                            respective websites to check them out.<br>
+                            You can do this by click the github icon in each section.
+                        </p>
+                    </article>
+                </div>
+                <!-- 
+                    Subsequent rows of the carousel are a wrapper row div with its own jumbotron.
+                    Each jumbotron has a title of the project with a short description.
+                 -->
+                <div class="row ">
+                    <div class="jumbotron w-100 bg-secondary col-12">
+                        <div class="row">
+                            <article class="w-100 col-12 d-block">
+                                <h4 class="d-block w-100 text-center">SP Quiz Application</h4>
+                                <p class="d-block w-100 text-center">
+                                    A quiz application I made using bootstrap-vue for my school's assignment.
+                                </p>
+                            </article>
+                            <div class="carousel w-100 position-relative col-12" id="quiz_carousel">
+                                <div class="w-100 h-100 d-flex" >
+                                    <div class="w-100 d-flex justify-content-center my-auto" id="picFrame">
+                
+                                    </div>
+                                </div>
+                                <a class="arrowKeys display-4 darkArrow" id="leftArrow">&#10094;</a>
+                                <a class="arrowKeys display-4 darkArrow" id="rightArrow">&#10095;</a>
+                                <div class="w-100 mb-1" id="slideShowDescription">
+                                    <div id="descriptionBox" class="d-flex w-100 justify-content-center text-secondary">
+            
+                                    </div>
+                                    <div id="dotSelector" class="d-flex w-100 justify-content-center">
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 w-100 mt-3">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <article class="w-100 d-block">
+                                            <h5 class="d-block w-100 text-center">Github Repository</h5>
+                                        </article>
+                                        <a href="https://github.com/chuanhao01/projects_with_react-vue" target="_blank" class="d-block w-100 text-center">
+                                            <i class="icon text-dark fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <article class="w-100 d-block">
+                                            <h5 class="d-block w-100 text-center">Direct Link:</h5>
+                                        </article>
+                                        <a href="https://chuanhao01.github.io/projects_with_react-vue/Vue/" target="_blank" class="d-block w-100 text-center">
+                                            <i class="icon text-dark fab fa-chrome"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron w-100 bg-secondary col-12">
+                        <div class="row">
+                            <article class="w-100 col-12 d-block">
+                                <h4 class="d-block w-100 text-center">Pomodoro Timer</h4>
+                                <p class="d-block w-100 text-center">
+                                    This was an idea I had last year and I tried to make in python.<br>
+                                    However, after learning bootstrap-vue, I realised I could easily make the timer and I succeeded.
+                                </p>
+                            </article>
+                            <div class="carousel w-100 position-relative" id="pomodoro_carousel">
+                                <div class="w-100 h-100 d-flex" >
+                                    <div class="w-100 d-flex justify-content-center my-auto" id="picFrame">
+                
+                                    </div>
+                                </div>
+                                <a class="arrowKeys display-4 " id="leftArrow">&#10094;</a>
+                                <a class="arrowKeys display-4 " id="rightArrow">&#10095;</a>
+                                <div class="w-100 mb-1" id="slideShowDescription">
+                                    <div id="descriptionBox" class="d-flex w-100 justify-content-center text-secondary">
+            
+                                    </div>
+                                    <div id="dotSelector" class="d-flex w-100 justify-content-center">
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 w-100 mt-3">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <article class="w-100 d-block">
+                                            <h5 class="d-block w-100 text-center">Github Repository</h5>
+                                        </article>
+                                        <a href="https://github.com/chuanhao01/Pomodoro-timer" class="d-block w-100 text-center" target="_blank">
+                                            <i class="icon text-dark fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <article class="w-100 d-block">
+                                            <h5 class="d-block w-100 text-center">Direct Link:</h5>
+                                        </article>
+                                        <a href="https://chuanhao01.github.io/Pomodoro-timer/web_version/" class="d-block w-100 text-center" target="_blank">
+                                            <i class="icon text-dark fab fa-chrome"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron w-100 bg-secondary col-12">
+                        <div class="row">
+                            <article class="w-100 col-12 d-block">
+                                <h4 class="d-block w-100 text-center">SEED Website</h4>
+                                <p class="d-block w-100 text-center">
+                                    A website I started for the Student Interest Group(SIG) I am in, SEED.
+                                </p>
+                            </article>
+                            <div class="carousel w-100 position-relative" id="seed_carousel">
+                                <div class="w-100 h-100 d-flex" >
+                                    <div class="w-100 d-flex justify-content-center my-auto" id="picFrame">
+                
+                                    </div>
+                                </div>
+                                <a class="arrowKeys display-4 " id="leftArrow">&#10094;</a>
+                                <a class="arrowKeys display-4 " id="rightArrow">&#10095;</a>
+                                <div class="w-100 mb-1" id="slideShowDescription">
+                                    <div id="descriptionBox" class="d-flex w-100 justify-content-center text-secondary">
+            
+                                    </div>
+                                    <div id="dotSelector" class="d-flex w-100 justify-content-center">
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 w-100 mt-3">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <article class="w-100 d-block">
+                                            <h5 class="d-block w-100 text-center">Github Repository</h5>
+                                        </article>
+                                        <a href="https://github.com/chuanhao01/SEED_Website" class="d-block w-100 text-center" target="_blank">
+                                            <i class="icon text-dark fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <article class="w-100 d-block">
+                                            <h5 class="d-block w-100 text-center">Direct Link:</h5>
+                                        </article>
+                                        <a href="https://chuanhao01.github.io/SEED_Website/" class="d-block w-100 text-center" target="_blank">
+                                            <i class="icon text-dark fab fa-chrome"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron w-100 bg-secondary col-12">
+                        <div class="row">
+                            <article class="w-100 col-12 d-block">
+                                <h4 class="d-block w-100 text-center">My personal Website</h4>
+                                <p class="d-block w-100 text-center">
+                                    This was a website I made for myself and my friends to use.<br>
+                                    There are some useful things there so check it out.
+                                </p>
+                            </article>
+                            <div class="carousel w-100 position-relative" id="personal_carousel">
+                                <div class="w-100 h-100 d-flex" >
+                                    <div class="w-100 d-flex justify-content-center my-auto" id="picFrame">
+                
+                                    </div>
+                                </div>
+                                <a class="arrowKeys display-4 " id="leftArrow">&#10094;</a>
+                                <a class="arrowKeys display-4 " id="rightArrow">&#10095;</a>
+                                <div class="w-100 mb-1" id="slideShowDescription">
+                                    <div id="descriptionBox" class="d-flex w-100 justify-content-center text-secondary">
+            
+                                    </div>
+                                    <div id="dotSelector" class="d-flex w-100 justify-content-center">
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 w-100 mt-3">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <article class="w-100 d-block">
+                                            <h5 class="d-block w-100 text-center">Github Repository</h5>
+                                        </article>
+                                        <a href="https://github.com/chuanhao01/chuanhao01.github.io" class="d-block w-100 text-center" target="_blank">
+                                            <i class="icon text-dark fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <article class="w-100 d-block">
+                                            <h5 class="d-block w-100 text-center">Direct Link:</h5>
+                                        </article>
+                                        <a href="https://chuanhao01.github.io/" class="d-block w-100 text-center" target="_blank">
+                                            <i class="icon text-dark fab fa-chrome"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                    Table below to summarise the projects
+                 -->
+                <div class="row">
+                    <article class="d-block w-100 col-12">
+                        <h4 class="d-block w-100 text-center">
+                            Here is a table summarising the info of the respective front-end projects. 
+                        </h4>
+                    </article>
+                    <table class="col-12 table table-hover table-bordered table-secondary table-responsive-lg">
+                       <thead>
+                           <tr>
+                               <th>Project Name</th>
+                               <th>Description</th>
+                               <th>Remarks</th>
+                           </tr>
+                       </thead> 
+                       <tbody>
+                            <tr>
+                                <th >SP Quiz Application</th>
+                                <th>
+                                    This was a quiz application I made using bootstrap-vue for my school programming assignment.<br>
+                                    I used this framework as it allowed me to focus more on coding the logic behind the quiz rather than messing with the front-end html and js.<br>
+                                    As vue already did the 2-way binding of elements and variables for me, while bootstrap allowed me to use componenets, all I had to do was implement the logic for the quiz.
+                                </th>
+                                <th>
+                                    I was limited in the data structure I had to use for both my quiz and mcq classes.<br>
+                                    The school assignemnt specified that I had to store the questions as an array and use its index as a unique ID for the question.<br>
+                                    Inspite of this limitation, I managed to implement a shuffle function for both the questiuons and options.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Pomodoro timer</th>
+                                <th>
+                                    This was a small project I tried doing in python as I wanted my own customisable pomodoro timer set-up.<br>
+                                    I had difficulty in the past as I did not know how to handle asynchronous calls in python for the timer. I also had a hard time dealing with time in python.<br>
+                                    Now, I managed to solve this problem using in JS using polling instead of interupt.
+                                </th>
+                                <th>
+                                    In the future I hope to implement this timer in async and use interput instead, in order to make the timer more efficent.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Seed Website</th>
+                                <th>
+                                    Nothing much to say here, it is still in the works.<br>
+                                    This was a website I started working on so a Student Interest Group that I am a part of in Singapore Polytechnic.
+                                </th>
+                                <th>
+                                    NIL 
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>My personal Website</th>
+                                <th>
+                                    As you may have read on the past projects home page, this was a personal website I made for links me and friends wanted to store.<br>
+                                    Besides that, I have some preogramming related links there for mostly python development.
+                                </th>
+                                <th>
+                                    I might add more stuff in the future.
+                                </th>
+                            </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block"></div>
+        </div>
+    </main> 
+    <footer class="footer container-fluid text-secondary" >
+        <div class="row py-5">
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row mb-3">
+                    <h4 class="d-block col-12 w-100 text-center">Subscribe to our newsletter</h4>
+                    <div class="w-100 d-flex justify-content-center">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Email">
+                            <button class="btn btn-success my-2 my-sm-0" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="d-block w-100 col-12 text-center">chuanhao01</h2>
+                    <h4 class="d-block w-100 col-12 text-center">&#9400; 2019 chuan hao</h4>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Follow Us</h4>
+                    <div class="col-3">
+                        <a href="https://github.com/chuanhao01" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-github-square "></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="mailto:businesschuanhao01@gmail.com" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://twitter.com/businesschuanh1" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.linkedin.com/in/chuanhao01/" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Contact Us</h4>
+                    <article class="d-block w-100 col-12 text-center">
+                        <p><span class="font-weight-bold">Email:</span> businesschuanhao01@gmail.com</p>
+                        <p>If you want to contact us, please click <a href="contact.html">here</a></p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12">
+                <article class="d-block text-center">
+                    <h3>Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary footerLink nounderline">Home</a></li>
+                        <li><a href="about_me.html" class="text-secondary footerLink nounderline">About Me</a></li>
+                        <li><a href="past_projects.html" class="text-secondary footerLink nounderline">Past Projects</a></li>
+                        <li><a href="skills.html" class="text-secondary footerLink nounderline">Skills</a></li>
+                        <li><a href="contact.html" class="text-secondary footerLink nounderline">Contact Me</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </footer>
+    <script src="../Data/carousel_data.js"></script>
+    <script src="../Scripts/carousel.js"></script>
+</body>
+</html>

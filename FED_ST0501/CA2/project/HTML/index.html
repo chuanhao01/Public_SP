@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add this to <head> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="../Libraries/Bootstrap/bootstrap.min.css">
+    <script src="../Libraries/Bootstrap/popper.min.js"></script>
+    <script src="../Libraries/Bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="../Libraries/Bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Home</title>
+</head>
+<body class="bg-dark text-white">
+    <!-- 
+        Header used for all pages
+        The format used for most parent containers is, col
+        lg: 1 10 1
+        md: 12
+        sm: 12
+        However in the parent containers, there might be more complex column structures
+    -->
+    <header class="container-fluid bg-transparent">
+            <div class="row">
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-10 col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg navbar-transparent">
+                        <a class="navbar-brand text-white" href="index.html">chuanhao01</a>
+                        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="mr-auto">
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            <ul class="navbar-nav ml-auto ">
+                                <li class="nav-item">
+                                    <a href="about_me.html" class="nav-link text-white">About me</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="past_projects.html" class="nav-link dropdown-toggle text-white" id='headerProjectDropdown' role="button" data-toggle="dropdown">Past Projects</a>
+                                    <div class="dropdown-menu">
+                                        <a href="past_projects.html" class="dropdown-item">The Page</a>
+                                        <a href="front_end_projects.html" class="dropdown-item">Front-End Projects</a>
+                                        <a href="ml_titanic_dataset.html" class="dropdown-item">ML titanic dataset</a>
+                                        <a href="construction.html" class="dropdown-item">Personal Finance Tracker</a>
+                                        <a href="construction.html" class="dropdown-item">Python calculator</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="skills.html" class="nav-link text-white">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link text-white">Contact Me</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+            </div>
+    </header> 
+    <!-- 
+        Image block with parallel scrolling
+     -->
+    <main class="container-fluid" id="intro">
+        <section class="row h-100">
+           <div class="col-lg-1 d-none d-lg-block">
+
+           </div>
+           <div class="col-lg-10 col-12 h-100">
+                <div class="row h-100">
+                    <div class="col-12 my-auto">
+                        <h1 class="d-block text-center w-100 font-weight-normal display-4">Hi, I'm Chuan Hao</h1>    
+                        <h3 class="d-block text-center w-100 font-weight-normal display-4">Data Scienist. Software Developer</h3>
+                    </div>
+                </div>
+           </div>
+           <div class="col-lg-1 d-none d-lg-block">
+           </div>
+        </section>
+    </main>    
+    <!-- 
+        Short desciption about me
+     -->
+    <section class="container-fluid bg-secondary mb-4" >
+        <div class="row h-100">
+            <div class="col-lg-2 d-none d-lg-block"></div>
+            <div class="col-lg-8 col-12 mt-3">
+                <div class="row h-100">
+                    <div class="col-lg-3 col-md-12 my-auto d-flex justify-content-center">
+                        <img src="../Content/face_picture.png" alt="Picture of my face" class="img-fluid" id='pictureOfFace'>
+                    </div>
+                    <div class="col-1 d-none d-lg-block"></div>
+                    <div class="col-lg-8 col-md-12 mt-3">
+                        <article class="jumbotron rounded text-dark">
+                            <h1>Hi there,</h1>
+                            <p>
+                                I am a 17-year-old (as of 2019)  student currently studying information technology at Singapore Polytechnic. 
+                                I have a strong passion for anything Mathematics and programming related. 
+                                Right now, I have a keen interest in  Data Science, Artificial intelligence and Cybersecurity.
+                                <br>
+                                <br>
+                                You can find out more about me by clicking the icons below.
+                            </p>
+                        </article>                 
+                    </div>
+                </div>
+           </div>
+            <div class="col-lg-2 d-none d-lg-block"></div>
+        </div>
+    </section>
+    <!-- 
+        Section of the respective oages icons, with a short description
+     -->
+    <section class="container-fluid" >
+       <div class="row">
+           <div class="col-lg-1 d-none d-lg-block"></div> 
+           <div class="col-lg-10 col-12">
+               <div class="row">
+                   <div class="col-lg-6 col-12 d-flex align-items-stretch my-3">
+                       <div class="card bg-secondary rounded">
+                           <a href="about_me.html" class="icon d-block my-auto mb-2 text-center rounded text-dark card-header">
+                                <i class="fas fa-smile"></i>
+                            </a>
+                            <article class="card-body">
+                                <h2 class="card-title d-block text-center">About Me</h2>
+                                <p class="card-text">
+                                    What school did I go to? What core values do I believe in? 
+                                    What do I do in my free time? 
+                                    Click here if you want to find out more about my life experiences and my personality and character.
+                                </p>
+                            </article>
+                       </div>
+                   </div>
+                   <div class="col-lg-6 col-12 d-flex align-items-stretch my-3">
+                        <div class="card bg-secondary rounded">
+                           <a href="past_projects.html" class="icon d-block my-auto mb-2 text-center rounded text-dark card-header">
+                                <i class="fas fa-project-diagram"></i>
+                            </a>
+                            <article class="card-body">
+                                <h2 class="card-title d-block text-center">Past Projects</h2>
+                                <p class="card-text">
+                                    These projects were something I did in my free time, either to practice my skills and have fun or to help me with some problem I had. 
+                                    I would not consider them complete by any means, but I'm proud of them nonetheless. 
+                                </p>
+                            </article>
+                        </div>
+                   </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch my-3">
+                        <div class="card bg-secondary rounded">
+                            <a href="skills.html" class="icon d-block my-auto mb-2 text-center rounded text-dark card-header">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <article class="card-body">
+                                    <h2 class="card-title d-block text-center">Skills</h2>
+                                    <p class="card-text">
+                                        What's my favourite programming language? 
+                                        What kind of technologies do I work with? 
+                                        Click here if you want to find out more of what I can do and what kind of technology I work with on a daily basis.
+                                    </p>
+                                </article>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch my-3">
+                            <div class="card bg-secondary rounded">
+                            <a href="contact.html" class="icon d-block my-auto mb-2 text-center rounded text-dark card-header">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <article class="card-body">
+                                    <h2 class="card-title d-block text-center">Contact Me</h2>
+                                    <p class="card-text">
+                                        If you want to drop me a message to talk more about what you see here or about anything else, I'm to down chat. 
+                                        Or if you like to check me out on other social media platforms such as my Linkedin, Github profile, E-mail or Twitter, the icons are down below.
+                                    </p>
+                                </article>
+                            </div>
+                    </div>
+                </div>
+           </div>
+           <div class="col-lg-1 d-none d-lg-block"></div> 
+       </div>
+    </section>
+    <footer class="footer container-fluid text-secondary" >
+        <div class="row py-5">
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row mb-3">
+                    <h4 class="d-block col-12 w-100 text-center">Subscribe to our newsletter</h4>
+                    <div class="w-100 d-flex justify-content-center">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Email">
+                            <button class="btn btn-success my-2 my-sm-0" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="d-block w-100 col-12 text-center">chuanhao01</h2>
+                    <h4 class="d-block w-100 col-12 text-center">&#9400; 2019 chuan hao</h4>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Follow Us</h4>
+                    <div class="col-3">
+                        <a href="https://github.com/chuanhao01" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-github-square "></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="mailto:businesschuanhao01@gmail.com" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://twitter.com/businesschuanh1" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.linkedin.com/in/chuanhao01/" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Contact Us</h4>
+                    <article class="d-block w-100 col-12 text-center">
+                        <p><span class="font-weight-bold">Email:</span> businesschuanhao01@gmail.com</p>
+                        <p>If you want to contact us, please click <a href="contact.html">here</a></p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12">
+                <article class="d-block text-center">
+                    <h3>Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary footerLink nounderline">Home</a></li>
+                        <li><a href="about_me.html" class="text-secondary footerLink nounderline">About Me</a></li>
+                        <li><a href="past_projects.html" class="text-secondary footerLink nounderline">Past Projects</a></li>
+                        <li><a href="skills.html" class="text-secondary footerLink nounderline">Skills</a></li>
+                        <li><a href="contact.html" class="text-secondary footerLink nounderline">Contact Me</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </footer>   
+</body>
+</html>

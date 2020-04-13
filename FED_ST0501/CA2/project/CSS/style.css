@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu&display=swap');
+
+/* For forms */
+#formMail{
+    border: 6px dashed rgb(220, 176, 176);
+    box-shadow: inset 0 -1px 0 0 rgb(220, 176, 176), inset 0 1px 0 0 rgb(220, 176, 176), 0 1px 0 0 rgb(220, 176, 176), 0 -1px 0 0 rgb(220, 176, 176), inset -1px 0 0 0 rgb(220, 176, 176), inset 1px 0 0 0 rgb(220, 176, 176), 1px 0 0 0 rgb(220, 176, 176), -1px 0 0 0 rgb(220, 176, 176);
+}
+
+#mailStamp{
+    height: 100%;
+}
+
+.h-90{
+    height: 90%;
+}
+
+.h-80{
+    height: 80%;
+}
+
+.h-20{
+    height: 20%;
+}
+
+.w-90{
+    width: 90%;
+}
+
+/* For Carousel */
+.darkArrow{
+    color: #343434 !important;
+}
+.arrowKeys{
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#rightArrow, #leftArrow{
+    position: absolute;
+    top: 50%;    
+    margin-top: -50px;
+}
+
+#rightArrow{
+    right: 0;
+}
+
+#slideShowDescription{
+    position: absolute;
+    bottom: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #000000;
+}
+
+.carousel{
+    height: 80vh;
+}
+/* For use in most pages */
+#intro{
+    background-image: url(../Content/index_background.jpg);
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pictureOfFace{
+    width: 200px;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+#main_construction{
+    height: 50vh;
+}
+
+#rightConstruction{
+    transform: scaleX(-1);
+}
+
+.card{
+    display: inline-block;
+}
+
+.icon{
+    font-size: 6rem;
+
+}
+
+.icon-project{
+    font-size: 10em;
+}
+
+.footer{
+    background-color: black;
+}
+
+.icon{
+    font-size: 4rem;
+}
+
+a.footerLink:hover{
+    color:  #28a745 !important;
+}
+
+a.footerLink:active{
+    color: #007bff !important;
+}
+
+.footerLink{
+    line-height: 2.5em;
+    font-size: 1.2em;
+}
+
+.nounderline{
+    text-decoration: none !important;
+}
+
+body, html{
+    height: 100%;
+}

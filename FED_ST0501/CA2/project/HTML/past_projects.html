@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add this to <head> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="../Libraries/Bootstrap/bootstrap.min.css">
+    <script src="../Libraries/Bootstrap/popper.min.js"></script>
+    <script src="../Libraries/Bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="../Libraries/Bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Past Projects</title>
+</head>
+<body class="bg-dark text-white">
+    <header class="container-fluid bg-transparent">
+            <div class="row">
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-10 col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg navbar-transparent">
+                        <a class="navbar-brand text-white" href="index.html">chuanhao01</a>
+                        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="mr-auto">
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            <ul class="navbar-nav ml-auto ">
+                                <li class="nav-item">
+                                    <a href="about_me.html" class="nav-link text-white">About me</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="past_projects.html" class="nav-link dropdown-toggle text-white" id='headerProjectDropdown' role="button" data-toggle="dropdown">Past Projects</a>
+                                    <div class="dropdown-menu">
+                                        <a href="past_projects.html" class="dropdown-item">The Page</a>
+                                        <a href="front_end_projects.html" class="dropdown-item">Front-End Projects</a>
+                                        <a href="ml_titanic_dataset.html" class="dropdown-item">ML titanic dataset</a>
+                                        <a href="construction.html" class="dropdown-item">Personal Finance Tracker</a>
+                                        <a href="construction.html" class="dropdown-item">Python calculator</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="skills.html" class="nav-link text-white">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link text-white">Contact Me</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+            </div>
+    </header> 
+    <!-- 
+        Section article header for the page
+     -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <div class="col-lg-10 w-100 d-block text-center">
+                <article>
+                    <h2>Past Project</h2>
+                    <p>
+                        This webpage host some of the past projects that I have done, giving you a breif description of the project and the technologies used.
+                        If you want to find out more, you can click on the icon of the respective projects to check out their github respositories.
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block"></div>
+        </div>
+    </section>
+    <main class="container-fluid text-dark">
+        <div class="row">
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <div class="col-lg-10 col-12">
+                <div class="row ">
+                    <!-- 
+                        Each card is wrapped in its own col
+                        The card are made to strech to fir
+                        The card contains a picture/icon, with a title and then a description.
+                        There is also a github icon to link to the repo
+                     -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch my-2">
+                       <div class="card w-100">
+                            <figure class="card-img-top w-100 d-block text-center my-4">
+                                <a href="front_end_projects.html">
+                                  <i class="fab fa-chrome icon-project text-secondary"></i>
+                                </a>
+                            </figure>
+                            <div class="card-body">
+                                <article class="d-block w-100 card-title">
+                                    <h4 class="d-block text-center">Front-End Projects</h4>
+                                </article>
+                                <article class="d-block w-100">
+                                    <h5 class="d-block text-center">Technologies Used</h5>
+                                    <p>
+                                        HTML5, CSS, JS, Vue.js, Bootstrap
+                                    </p>
+                                </article>
+                                <article class="d-block w-100">
+                                    <h5 class="d-block text-center">Brief Description</h5>
+                                    <p>
+                                        This is a collation of some of the front-end projects I did. Some projects include, a quiz application done in vue.js,
+                                        a Pomodoro timer also done in vue.js and my own website.<br>
+                                        For my website,
+                                        I this website to host links and files for me and my friends.<br>
+                                        Now, it is a website hosting online learning resources and programming resources.<br>
+                                        You can check out the website @ <a href="https://chuanhao01.github.io/" target="_blank">chuanhao01.github.io</a>
+                                    </p>
+                                </article>
+                                <figure class="card-img-bottom d-block w-100 text-center text-dark mt-4">
+                                    <figcaption>Github Respository</figcaption>
+                                    <a href="https://github.com/chuanhao01/chuanhao01.github.io">
+                                        <i class="icon text-dark fab fa-github"></i>
+                                    </a>
+                                </figure>
+                            </div>
+                       </div> 
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch my-2">
+                        <div class="card w-100">
+                            <figure class="card-img-top w-100 d-block text-center my-4">
+                                <a href="ml_titanic_dataset.html">
+                                  <i class="fas fa-ship icon-project text-secondary"></i>
+                                </a>
+                            </figure>
+                            <div class="card-body">
+                                <article class="d-block w-100 card-title">
+                                    <h4 class="d-block text-center">ML titanic dataset</h4>
+                                </article>
+                                <article class="d-block w-100">
+                                    <h5 class="d-block text-center">Technologies Used</h5>
+                                    <p>Python: SciPy, Sci-kit learn</p>
+                                </article>
+                                <article class="d-block w-100">
+                                    <h5 class="d-block text-center">Brief Description</h5>
+                                    <p>
+                                        My first project with data science, AI and machine learning.<br>
+                                        Using the dataset of almost 900 people, I predicted the likelyhood of how many of the other people would have survived the titanic crash.<br>
+                                        This was one of the beginner projects on kaggle and after submission I managed to get around 79% accuracy.
+                                    </p>
+                                </article>
+                                <figure class="card-img-bottom d-block w-100 text-center text-dark mt-4">
+                                    <figcaption>Github Respository</figcaption>
+                                    <a href="https://github.com/chuanhao01/Machine_Learning">
+                                        <i class="icon text-dark fab fa-github"></i>
+                                    </a>
+                                </figure>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch my-2">
+                        <div class="card w-100">
+                            <figure class="card-img-top w-100 d-block text-center my-4">
+                                <a href="construction.html">
+                                    <img src="../Content/finance_tracker_example.png" alt="finance tracker" class="img-fluid">
+                                </a>
+                            </figure>
+                            <div class="card-body">
+                                <article class="d-block w-100 card-title">
+                                    <h4 class="d-block text-center">Personal Finace Tracker</h4>
+                                </article>
+                                <article class="d-block w-100">
+                                    <h5 class="d-block text-center">Technologies Used</h5>
+                                    <p>
+                                        Python: tkinter, google APIs, pandas
+                                    </p>
+                                </article>
+                                <article class="d-block w-100">
+                                    <h5 class="d-block text-center">Brief Description</h5>
+                                    <p>
+                                        Made a personal finance tracker program to keep track of daily transactions, saving the data onto google sheets.<br>
+                                        Tkinter was used to make the base GUI and pandas was used to format the data sent and recieved from google sheets API.<br>
+                                    </p>
+                                </article>
+                                <figure class="card-img-bottom d-block w-100 text-center text-dark mt-4">
+                                    <figcaption>Github Respository</figcaption>
+                                    <a href="https://github.com/chuanhao01/Personal-Finance-Tracker">
+                                        <i class="icon text-dark fab fa-github"></i>
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch my-2">
+                        <div class="card w-100">
+                            <figure class="card-img-top w-100 d-block text-center my-4">
+                                <a href="construction.html">
+                                    <img src="../Content/python_calculator.png" alt="python calculator" class="img-fluid">
+                                </a>
+                            </figure>
+                            <div class="card-body">
+                                <article class="d-block w-100 card-title">
+                                    <h4 class="d-block text-center">Front-End Projects</h4>
+                                </article>
+                                <article class="d-block w-100">
+                                    <h5 class="d-block text-center">Technologies Used</h5>
+                                    <p>
+                                        Python: tkinter
+                                    </p>
+                                </article>
+                                <article class="d-block w-100">
+                                    <h5 class="d-block text-center">Brief Description</h5>
+                                    <p>
+                                        First project I did using tkinter to make GUIs.<br>
+                                        Made a replica of the windows calculator with almost all of its simple functions.<br>
+                                        There are still some bugs but it works if no invalid inputs are given.
+                                    </p>
+                                </article>
+                                <figure class="card-img-bottom d-block w-100 text-center text-dark mt-4">
+                                    <figcaption>Github Respository</figcaption>
+                                    <a href="https://github.com/chuanhao01/Python-Calculator">
+                                        <i class="icon text-dark fab fa-github"></i>
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block"></div>
+        </div>
+    </main>
+    <footer class="footer container-fluid text-secondary" >
+        <div class="row py-5">
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row mb-3">
+                    <h4 class="d-block col-12 w-100 text-center">Subscribe to our newsletter</h4>
+                    <div class="w-100 d-flex justify-content-center">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Email">
+                            <button class="btn btn-success my-2 my-sm-0" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="d-block w-100 col-12 text-center">chuanhao01</h2>
+                    <h4 class="d-block w-100 col-12 text-center">&#9400; 2019 chuan hao</h4>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-2">
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Follow Us</h4>
+                    <div class="col-3">
+                        <a href="https://github.com/chuanhao01" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-github-square "></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="mailto:businesschuanhao01@gmail.com" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://twitter.com/businesschuanh1" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.linkedin.com/in/chuanhao01/" target="_blank" class="icon d-block my-auto text-center text-secondary"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <h4 class="d-block w-100 col-12 text-center">Contact Us</h4>
+                    <article class="d-block w-100 col-12 text-center">
+                        <p><span class="font-weight-bold">Email:</span> businesschuanhao01@gmail.com</p>
+                        <p>If you want to contact us, please click <a href="contact.html">here</a></p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12">
+                <article class="d-block text-center">
+                    <h3>Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary footerLink nounderline">Home</a></li>
+                        <li><a href="about_me.html" class="text-secondary footerLink nounderline">About Me</a></li>
+                        <li><a href="past_projects.html" class="text-secondary footerLink nounderline">Past Projects</a></li>
+                        <li><a href="skills.html" class="text-secondary footerLink nounderline">Skills</a></li>
+                        <li><a href="contact.html" class="text-secondary footerLink nounderline">Contact Me</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
